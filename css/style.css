@@ -1,0 +1,88 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing:border-box;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(255, 255, 255);
+    font-size: 30px;
+}
+
+.grid_home {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 30% 50% 15% 15%;
+    grid-template-areas:"encabezado"
+                        "contenido_principal"
+                        "sponsors"
+                        "pie_de_pagina"
+}
+
+header {
+    grid-area: encabezado;
+    display: flex; 
+}
+
+header nav{
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    grid-area: contenido_principal;
+}
+
+#sponsors {
+    grid-area: sponsors;
+}
+
+footer {
+    grid-area: pie_de_pagina;
+}
+
+.navegacion {
+    display:flex;
+    font-family: 'Bebas Neue', cursive;
+    justify-content:space-evenly;
+    align-items:center;
+    list-style-type: none;
+    width: 80%;
+    font-size: 28px;
+}
+
+.navegacion li a:hover {
+    background-color: rgb(183, 245, 245);
+}
+
+.botonInicio { 
+    font-size: 28px;  
+}
+
+.botonInicio:hover {
+    background-color: rgb(49, 53, 53);
+}
+
+.botonIngresar {
+    background-color: rgb(49, 53, 53);   
+}
+
+.botonIngresar:hover {
+    background-color:rgb(20, 20, 20);
+}
+
+.colorRojo{
+    text-decoration: none;
+    color:rgb(190, 5, 5);
+}
+
+.colorAzul{
+    text-decoration: none;
+    color:rgb(27, 27, 207);
+}
+
+.fotosIndex{
+    display: flex;
+    width: 400px;
+    height: 120px;
+    flex-direction: column;
+}
