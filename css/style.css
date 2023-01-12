@@ -14,29 +14,19 @@ header {
 }
 
 header nav{
-    width: 80%;
+    width: 75%;
     display: flex;
     justify-content: center;
 }
 
-header div img {
-    display: flex;
-    width: 90%;
-    height: 80%; 
-}
-
-main {
+section {
     grid-area: contenido_principal;
-    display: flex;
-    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 45px;
+    padding: 200px;
     text-align: center;
-    padding: 180px;
 }
 
-main section h4 {
-    font-size: 40px;
-    text-align: center;
-}
 .fotosIndex{
     width: 400px;
     height: 120px;
@@ -45,8 +35,11 @@ main section h4 {
 }
 
 #sponsors {
+    padding: 5%;
     grid-area: sponsors;
+    text-align: center;
 }
+
 
 footer {
     grid-area: pie_de_pagina;
@@ -56,6 +49,12 @@ footer {
     text-align: center;
 }
 
+footer ul {
+    padding: 5%;
+    align-items: center;
+    justify-content: center;
+}
+
 .navegacion {
     display:flex;
     justify-content:space-around;
@@ -63,19 +62,8 @@ footer {
     font-family: 'Roboto', sans-serif;
     width: 100%;
     font-size: 25px;
-    
+    border-bottom:10px;
 }
-
-/**
-    
-    display:flex;
-    
-    font-family: 'Roboto', sans-serif;
-    justify-content:space-evenly;
-    align-items:center;
-    list-style-type: none;
-    width: 80%;
-    font-size: 28px;*/
 
 .navegacion li a:hover {
     background-color: rgb(183, 245, 245);
@@ -98,7 +86,6 @@ footer {
 }
 
 .colorRojo{
-    text-decoration: none;
     color:rgb(190, 5, 5);
 }
 
@@ -117,8 +104,7 @@ footer {
 
 .grid_home {
     display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 18% 50% 25% 20%;
+    grid-template-rows: auto auto auto auto;
     grid-template-areas:"encabezado"
                         "contenido_principal"
                         "sponsors"
