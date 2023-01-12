@@ -17,14 +17,16 @@ header nav{
     width: 75%;
     display: flex;
     justify-content: center;
+    background-color: rgb(238, 151, 20);
 }
 
 section {
     grid-area: contenido_principal;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 45px;
     padding: 200px;
     text-align: center;
+    background-color: rgb(238, 216, 20);
 }
 
 .fotosIndex{
@@ -38,10 +40,13 @@ section {
     padding: 5%;
     grid-area: sponsors;
     text-align: center;
+    background-color: rgb(238, 151, 20);
 }
 
 
 footer {
+    font-family: 'Raleway', sans-serif;
+    background-color:rgb(238, 216, 20);
     grid-area: pie_de_pagina;
     display: flex;
     height: 100%;
@@ -59,7 +64,7 @@ footer ul {
     display:flex;
     justify-content:space-around;
     align-items:center;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Raleway', sans-serif;
     width: 100%;
     font-size: 25px;
     border-bottom:10px;
@@ -70,7 +75,9 @@ footer ul {
 }
 
 .botonInicio { 
-    font-size: 28px;  
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
 }
 
 .botonInicio:hover {
