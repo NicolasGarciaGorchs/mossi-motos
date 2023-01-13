@@ -7,17 +7,22 @@
     color: black;
 }
 
-
 header {
     grid-area: encabezado;
     display: flex;
+}
+
+body div p{
+    display: grid;
+    background-color: rgb(0, 0, 0);
+    font-size: 1px;
+    width: 100%;
 }
 
 header nav{
     width: 75%;
     display: flex;
     justify-content: center;
-    background-color: rgb(238, 151, 20);
 }
 
 section {
@@ -26,7 +31,7 @@ section {
     font-size: 45px;
     padding: 200px;
     text-align: center;
-    background-color: rgb(238, 216, 20);
+    background-color: rgb(107, 126, 209) ;
 }
 
 .fotosIndex{
@@ -37,16 +42,22 @@ section {
 }
 
 #sponsors {
-    padding: 5%;
     grid-area: sponsors;
     text-align: center;
-    background-color: rgb(238, 151, 20);
+    size: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    background-color: rgb(107, 126, 209) ;
 }
-
+.fotosIndex{
+    width: 310px;
+    height: 90px;
+}
 
 footer {
     font-family: 'Raleway', sans-serif;
-    background-color:rgb(238, 216, 20);
+    background-color:rgb(98, 195, 252);
+    background-image: linear-gradient(to top, rgb(255, 255, 255),rgb(107, 126, 209)  );
     grid-area: pie_de_pagina;
     display: flex;
     height: 100%;
@@ -60,18 +71,26 @@ footer ul {
     justify-content: center;
 }
 
+.fondo {
+    background-image: linear-gradient(to bottom,rgb(255, 255, 255),rgb(107, 126, 209)  );
+}
+.imgNav {
+    width: 400px;
+    height: 150px;   
+}
+
 .navegacion {
+    background-image: linear-gradient(to bottom,rgb(255, 255, 255),rgb(107, 126, 209)  );
     display:flex;
     justify-content:space-around;
     align-items:center;
     font-family: 'Raleway', sans-serif;
     width: 100%;
     font-size: 25px;
-    border-bottom:10px;
 }
 
 .navegacion li a:hover {
-    background-color: rgb(183, 245, 245);
+    background-color: rgb(255, 255, 255);
 }
 
 .botonInicio { 
@@ -116,4 +135,30 @@ footer ul {
                         "contenido_principal"
                         "sponsors"
                         "pie_de_pagina"
+}
+
+@media screen and (max-width: 760px) {
+    .imgNav {
+        width: 103px;
+        height: 20px;   
+    }
+    .navegacion {
+        width: 100%;
+    font-size: 6px;
+    }
+
+    section {
+        font-size: 20px;
+        padding: 60px;
+    }
+
+    .fotosIndex{
+        width: 50px;
+        height: 20px;
+    }
+
+    footer ul {
+        padding: 2%;
+        font-size: 10px;
+    }
 }
