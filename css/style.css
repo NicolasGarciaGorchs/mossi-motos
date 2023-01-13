@@ -12,17 +12,9 @@ header {
     display: flex;
 }
 
-body div p{
-    display: grid;
-    background-color: rgb(0, 0, 0);
-    font-size: 1px;
+header nav {
     width: 100%;
-}
-
-header nav{
-    width: 75%;
     display: flex;
-    justify-content: center;
 }
 
 section {
@@ -31,7 +23,21 @@ section {
     font-size: 45px;
     padding: 200px;
     text-align: center;
-    background-color: rgb(107, 126, 209) ;
+    background-color: rgb(107, 172, 209) ;
+}
+
+form {
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 7%;
+}
+
+form h2{
+    padding-bottom: 5%
+}
+
+form ul a {
+    padding:10px;
 }
 
 .fotosIndex{
@@ -47,7 +53,7 @@ section {
     size: 10px;
     font-family: 'Raleway', sans-serif;
     font-size: 20px;
-    background-color: rgb(107, 126, 209) ;
+    background-color: rgb(107, 172, 209) ;
 }
 .fotosIndex{
     width: 310px;
@@ -57,7 +63,7 @@ section {
 footer {
     font-family: 'Raleway', sans-serif;
     background-color:rgb(98, 195, 252);
-    background-image: linear-gradient(to top, rgb(255, 255, 255),rgb(107, 126, 209)  );
+    background-image: linear-gradient(to top, rgb(255, 255, 255),rgb(107, 172, 209)  );
     grid-area: pie_de_pagina;
     display: flex;
     height: 100%;
@@ -72,15 +78,15 @@ footer ul {
 }
 
 .fondo {
-    background-image: linear-gradient(to bottom,rgb(255, 255, 255),rgb(107, 126, 209)  );
+    background-image: linear-gradient(to bottom,rgb(255, 255, 255),rgb(107, 172, 209)  );
 }
 .imgNav {
     width: 400px;
-    height: 150px;   
+    height: 150px;  
 }
 
 .navegacion {
-    background-image: linear-gradient(to bottom,rgb(255, 255, 255),rgb(107, 126, 209)  );
+    background-image: linear-gradient(to bottom,rgb(255, 255, 255),rgb(107, 172, 209)  );
     display:flex;
     justify-content:space-around;
     align-items:center;
@@ -138,13 +144,46 @@ footer ul {
 }
 
 @media screen and (max-width: 760px) {
+
+    header main div img {
+        /* HEIGHT ALTO - WIDTH ANCHO */
+        height: 200px;
+        width: 400px;
+    }
+    
+    .grid_home {
+        display: grid;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas:"logo_centro"
+                            "encabezado"
+                            "contenido_principal"
+                            "sponsors"
+                            "pie_de_pagina"
+    }
+
+    header {
+        grid-area:encabezado;
+        background-color: red;
+    }
+
+    header div {
+        grid-area: logo_centro;
+        background-color: blue;
+    }
+
     .imgNav {
         width: 103px;
-        height: 20px;   
+        height: 70px;
     }
+
     .navegacion {
         width: 100%;
     font-size: 6px;
+    }
+
+    #sponsors {
+        font-size: 10px;
+        size: 5px;
     }
 
     section {
