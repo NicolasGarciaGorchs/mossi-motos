@@ -80,6 +80,7 @@ footer ul {
 .fondo {
     background-image: linear-gradient(to bottom,rgb(255, 255, 255),rgb(107, 172, 209)  );
 }
+
 .imgNav {
     width: 400px;
     height: 150px;  
@@ -145,14 +146,10 @@ footer ul {
 
 @media screen and (max-width: 760px) {
 
-    header main div img {
-        /* HEIGHT ALTO - WIDTH ANCHO */
-        height: 200px;
-        width: 400px;
-    }
     
     .grid_home {
         display: grid;
+        grid-template-columns: auto;
         grid-template-rows: auto auto auto auto auto;
         grid-template-areas:"logo_centro"
                             "encabezado"
@@ -163,27 +160,45 @@ footer ul {
 
     header {
         grid-area:encabezado;
-        background-color: red;
+        background-image: linear-gradient(to bottom,rgb(255, 255, 255),rgb(107, 172, 209)  );
+        width: 100%;
+    }
+
+    header main div img {
+        /* HEIGHT ALTO - WIDTH ANCHO */
+        height: 100%;
+        width: 100%;
     }
 
     header div {
         grid-area: logo_centro;
-        background-color: blue;
+        
+    }
+
+    .fondo {
+        width: 70%;
+        background-image: linear-gradient(to bottom,rgb(255, 255, 255),rgb(107, 172, 209)  );
     }
 
     .imgNav {
-        width: 103px;
-        height: 70px;
+        width: 90%;
+        height: 90%;
+    }
+
+    .paddingB {
+        padding-bottom: 10px;
     }
 
     .navegacion {
+        display: flex;
         width: 100%;
-    font-size: 6px;
+        font-size: 7px;
+        justify-content: space-around;
     }
 
     #sponsors {
         font-size: 10px;
-        size: 5px;
+        size: 10%;
     }
 
     section {
@@ -192,8 +207,8 @@ footer ul {
     }
 
     .fotosIndex{
-        width: 50px;
-        height: 20px;
+        width: 85px;
+        height: 30px;
     }
 
     footer ul {
