@@ -150,7 +150,7 @@ footer ul {
     .grid_home {
         display: grid;
         grid-template-columns: auto;
-        grid-template-rows: 5% auto auto auto 5%;
+        grid-template-rows: 5vh auto auto auto 5vh;
         grid-template-areas:"logo_centro"
                             "encabezado"
                             "contenido_principal"
@@ -206,6 +206,9 @@ footer ul {
         height: 30px;
     }
 
+    footer {
+        padding-top: 5%;
+    }
     footer ul {
         padding: 2%;
         font-size: 10px;
