@@ -7,14 +7,27 @@
     color: black;
 }
 
-header {
-    grid-area: encabezado;
-    display: flex;
+.grid_home {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas:"icono icono"
+                        "contenido_principal contenido_principal"
+                        "sponsors sponsors"
+                        "pie_de_pagina pie_de_pagina"
 }
 
-header nav {
-    width: 100%;
+header {
+    grid-area: icono;
     display: flex;
+    align-items: center;
+}
+
+nav {
+    grid-area: icono;
+    display: flex;
+    align-items:center;
+    justify-content: end;
 }
 
 section {
@@ -82,17 +95,19 @@ footer ul {
 }
 
 .imgNav {
-    width: 400px;
-    height: 150px;  
+    display: flex;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+    size: 40%;
 }
 
 .navegacion {
-    background-image: linear-gradient(to bottom,rgb(255, 255, 255),rgb(107, 172, 209)  );
     display:flex;
     justify-content:space-around;
     align-items:center;
     font-family: 'Raleway', sans-serif;
-    width: 100%;
+    width: 65%;
     font-size: 25px;
 }
 
@@ -135,65 +150,65 @@ footer ul {
     padding-top: 40px;
 }
 
-.grid_home {
-    display: grid;
-    grid-template-rows: auto auto auto auto;
-    grid-template-areas:"encabezado"
-                        "contenido_principal"
-                        "sponsors"
-                        "pie_de_pagina"
-}
-
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 768px) {
 
     
     .grid_home {
         display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: 5vh auto auto auto 5vh;
-        grid-template-areas:"logo_centro"
-                            "encabezado"
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas:"icono"
+                            "menu"
                             "contenido_principal"
                             "sponsors"
                             "pie_de_pagina"
     }
 
     header {
+        grid-area: icono; 
         display: flex;
         align-items: center;
-        grid-area:encabezado;
-        background-image: linear-gradient(to bottom,rgb(255, 255, 255),rgb(107, 172, 209)  );
-        
+        background-image: linear-gradient(to bottom,rgb(255, 255, 255),rgb(107, 172, 209)  );  
     }
 
-    header div img {
-        grid-area: logo_centro;  
+    nav {
+        grid-area: menu;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-around;
     }
-
     .fondo {
-        width: 70%;
+        width: 100%;
         background-image: linear-gradient(to bottom,rgb(255, 255, 255),rgb(107, 172, 209)  );
     }
 
     .imgNav {
-        width: 90%;
-        height: 90%;
+        width: 100%;
     }
+
+    /*display: flex;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+    size: 40%;*/
 
     .paddingB {
         padding-bottom: 10px;
     }
 
     .navegacion {
-        display: flex;
+        grid-area: encabezado;
+        background-image: linear-gradient(to bottom,rgb(255, 255, 255),rgb(107, 172, 209)  );
         width: 100%;
-        font-size: 7px;
-        justify-content: space-around;
+        font-size: 12px;
+        align-items: center;
+        justify-content:space-around;
     }
 
     #sponsors {
         font-size: 10px;
-        size: 10%;
+        size: auto;
     }
 
     section {
@@ -207,10 +222,10 @@ footer ul {
     }
 
     footer {
-        padding-top: 5%;
+        padding-top: 5px;
     }
     footer ul {
-        padding: 2%;
+        padding: 4px;
         font-size: 10px;
     }
 }
