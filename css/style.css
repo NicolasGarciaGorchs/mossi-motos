@@ -97,9 +97,9 @@ form ul a {
 
 .paddingP {
     padding: 2%;
-    font-size: 20px;
-    
+    font-size: 100%;  
 }
+
 .footerH {
     text-decoration: none;
     padding: 5%;
@@ -142,71 +142,59 @@ form ul a {
 
 /* Small-Medium devices */
 
+
 @media screen and (max-width: 768px) {
     
-    .grid_home {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto auto auto;
-        grid-template-areas:"icono"
-                            "menu"
-                            "contenido_principal"
-                            "sponsors"
-                            "pie_de_pagina"
+    .sizeHome {
+        font-size: 150%;
     }
 
-    header {
-        grid-area: icono; 
-        display: flex;
-        align-items: center;
-        background-image: linear-gradient(to bottom,rgb(255, 255, 255),rgb(107, 172, 209)  );  
+    .sizeMenu {
+        font-size: 90%;
     }
 
-    nav {
-        grid-area: menu;
-        display: flex;
-        width: 100%;
-        align-items: center;
-        justify-content: space-around;
-    }
-    .fondo {
-        width: 100%;
-        background-image: linear-gradient(to bottom,rgb(255, 255, 255),rgb(107, 172, 209)  );
+    .sizeFoto {
+        width: 70%;
     }
 
-    .imgNav {
-        width: 100%;
-    }
-
-
-    .paddingB {
-        padding-bottom: 10px;
-    }
-
-    .navegacion {
-        grid-area: encabezado;
-        background-image: linear-gradient(to bottom,rgb(255, 255, 255),rgb(107, 172, 209)  );
-        width: 100%;
-        font-size: 12px;
-        align-items: center;
-        justify-content:space-around;
-    }
-
-    #sponsors {
-        font-size: 10px;
-        size: auto;
-    }
-
-    section {
-        font-size: 20px;
-        padding: 60px;
-    }
-
-    .fotosIndex{
-        width: 85px;
-        height: 30px;
+    .sizeFotoSponsor1 {
+        width: 28%;
+        transition: width 0.2s;
     }
     
+    .sizeFotoSponsor1:hover {
+        width: 32%;
+    }
+    
+    .sizeFotoSponsor2 {
+        width: 24%;
+        transition: width 0.2s;
+    }
+    
+    .sizeFotoSponsor2:hover {
+        width: 28%;
+    }
+    
+    .sizeFotoSponsor3 {
+        width: 29%;
+        transition: width 0.2s;
+    }
+    
+    .sizeFotoSponsor3:hover {
+        width: 33%;
+    }
+
+    .paddingP {
+        padding: 4%;
+        font-size: 70%;  
+    }
+    
+    .footerH {
+        text-decoration: none;
+        padding: 8%;
+        font-size: 80%;
+    }
+
 
 @media screen and (min-width: 1400px){
     
