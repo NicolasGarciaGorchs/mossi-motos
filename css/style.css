@@ -1,42 +1,11 @@
 *{
-    padding:0px;
-    margin:0px;
+    padding:0%;
+    margin:0%;
     box-sizing:border-box;
     text-decoration: none;
     list-style-type: none;
     color: black;
-}
-
-.grid_home {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto auto auto auto;
-    grid-template-areas:"icono icono"
-                        "contenido_principal contenido_principal"
-                        "sponsors sponsors"
-                        "pie_de_pagina pie_de_pagina"
-}
-
-header {
-    grid-area: icono;
-    display: flex;
-    align-items: center;
-}
-
-nav {
-    grid-area: icono;
-    display: flex;
-    align-items:center;
-    justify-content: end;
-}
-
-section {
-    grid-area: contenido_principal;
     font-family: 'Raleway', sans-serif;
-    font-size: 45px;
-    padding: 200px;
-    text-align: center;
-    background-color: rgb(107, 172, 209) ;
 }
 
 form {
@@ -53,66 +22,87 @@ form ul a {
     padding:10px;
 }
 
-.fotosIndex{
-    width: 400px;
-    height: 120px;
-    flex-direction: row;
-    align-items: center;   
+.sizeMenu {
+    font-size: 140%;
 }
 
-#sponsors {
-    grid-area: sponsors;
-    text-align: center;
-    size: 10px;
-    font-family: 'Raleway', sans-serif;
-    font-size: 20px;
-    background-color: rgb(107, 172, 209) ;
-}
-.fotosIndex{
-    width: 310px;
-    height: 90px;
+.sizeHome {
+    font-size: 260%;
 }
 
-footer {
-    font-family: 'Raleway', sans-serif;
-    background-color:rgb(98, 195, 252);
-    background-image: linear-gradient(to top, rgb(255, 255, 255),rgb(107, 172, 209)  );
-    grid-area: pie_de_pagina;
-    display: flex;
-    height: 100%;
-    justify-content: center;
-    text-align: center;
+.sizeReg{
+    padding-top: 8%;
+    font-size: 300%;
 }
 
-footer ul {
-    padding: 5%;
-    align-items: center;
-    justify-content: center;
+.sizeFoto {
+    width: 40%;
 }
 
-.fondo {
+.sizeFotoSponsor1 {
+    width: 18%;
+    transition: width 0.2s;
+}
+
+.sizeFotoSponsor1:hover {
+    width: 22%;
+}
+
+.sizeFotoSponsor2 {
+    width: 14%;
+    transition: width 0.2s;
+}
+
+.sizeFotoSponsor2:hover {
+    width: 18%;
+}
+
+.sizeFotoSponsor3 {
+    width: 19%;
+    transition: width 0.2s;
+}
+
+.sizeFotoSponsor3:hover {
+    width: 23%;
+}
+
+.sinDeco {
+    text-decoration: none;
+    color: black;
+}
+
+.fondoH {
     background-image: linear-gradient(to bottom,rgb(255, 255, 255),rgb(107, 172, 209)  );
 }
 
-.imgNav {
-    display: flex;
-    width: 40%;
-    align-items: center;
-    justify-content: center;
-    size: 40%;
+.fondoI {
+    background-image: radial-gradient(rgb(161, 235, 111),rgba(149, 184, 84, 0.651)  );
 }
 
-.navegacion {
-    display:flex;
-    justify-content:space-around;
-    align-items:center;
-    font-family: 'Raleway', sans-serif;
-    width: 65%;
-    font-size: 25px;
+.fondoP {
+    background-image: radial-gradient(rgb(255, 255, 255),rgb(255, 166, 0)  );
 }
 
-.navegacion li a:hover {
-    background-color: rgb(255, 255, 255);
+.fondoR {
+    background-image: radial-gradient(rgb(255, 255, 255),rgb(247, 13, 13)  );
+}
+
+.fondoT {
+    background-image: radial-gradient(rgb(255, 255, 255),rgb(255, 238, 0)  );
+}
+
+.paddingI {
+    padding: 15%;
+}
+
+.paddingP {
+    padding: 2%;
+    font-size: 20px;
+    
+}
+.footerH {
+    text-decoration: none;
+    padding: 5%;
 }
 
 .botonInicio { 
@@ -150,8 +140,9 @@ footer ul {
     padding-top: 40px;
 }
 
-@media screen and (max-width: 768px) {
+/* Small-Medium devices */
 
+@media screen and (max-width: 768px) {
     
     .grid_home {
         display: grid;
@@ -187,11 +178,6 @@ footer ul {
         width: 100%;
     }
 
-    /*display: flex;
-    width: 40%;
-    align-items: center;
-    justify-content: center;
-    size: 40%;*/
 
     .paddingB {
         padding-bottom: 10px;
@@ -220,12 +206,26 @@ footer ul {
         width: 85px;
         height: 30px;
     }
+    
 
-    footer {
-        padding-top: 5px;
+@media screen and (min-width: 1400px){
+    
+    .grid_home {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas:"icono menu"
+                            "contenido_principal contenido_principal"
+                            "sponsors sponsors"
+                            "pie_de_pagina pie_de_pagina"
     }
-    footer ul {
-        padding: 4px;
-        font-size: 10px;
+
+    nav {
+        grid-area: menu;
+        background-image: linear-gradient(to bottom,rgb(255, 255, 255),rgb(107, 172, 209)  );
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-around;
     }
-}
+}}
