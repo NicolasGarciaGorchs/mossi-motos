@@ -134,6 +134,11 @@ form ul a {
     padding-top: 40px;
 }
 
+.tamaño {
+    width: 20%;
+    justify-content: center;
+}
+
 /*Medium - Large devices */
 
 @media screen and (max-width: 1199px) {
@@ -320,6 +325,7 @@ form ul a {
         padding-top: 15%;
         padding-bottom: 15%;
         font-size: 60%;
+        position: fixed;
+        bottom: 0;
     }
 }
-
