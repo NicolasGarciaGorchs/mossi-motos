@@ -135,8 +135,8 @@ form ul a {
 }
 
 .tamaño {
-    width: 20%;
-    justify-content: center;
+    width: 100%;
+    padding:10%;
 }
 
 /*Medium - Large devices */
@@ -325,7 +325,5 @@ form ul a {
         padding-top: 15%;
         padding-bottom: 15%;
         font-size: 60%;
-        position: fixed;
-        bottom: 0;
     }
 }
