@@ -39,7 +39,7 @@
    </head>
 
    <body class="fondo">
-    <header class="container-fluid text-center">
+    <header class="container-fluid text-center borderB">
       <nav class="sinDeco">
         <a href="home.html"
           ><img
@@ -48,113 +48,96 @@
             src="../assets/diseños/editadobn.svg"
           />
         </a>
-        <ul class="nav justify-content-center">
+        <ul class="nav justify-content-center sizeMenu">
           <li class="nav-item">
-            <a href="./iniciarsesion.html"class="nav-link sizeMenu sinDeco" aria-current="page"
+            <a href="./iniciarsesion.html"class="nav-link sizeMenu" aria-current="page"
               >Inicia Sesión</a
             >
           </li>
-          <li class="nav-item sizeMenu">
-            <a href="./turnosonline.html" class="nav-link sinDeco" href="#"
+          <li class="nav-item">
+            <a href="./turnosonline.html" class="nav-link sizeMenu" href="#"
               >Turnos Online</a
             >
           </li>
-          <li class="nav-item sizeMenu">
-            <a href="./productos.html" class="nav-link sinDeco" href="#"
+          <li class="nav-item">
+            <a href="./productos.html" class="nav-link sizeMenu" href="#"
               >Productos</a
             >
           </li>
-          <li class="nav-item sizeMenu">
-            <a href="./sucursales.html" class="nav-link sinDeco">Sucursales</a>
+          <li class="nav-item">
+            <a href="./sucursales.html" class="nav-link sizeMenu">Sucursales</a>
           </li>
         </ul>
       </nav>
     </header>
-    <form>
-        <h2>
-            <label>Registrate</label>
-        </h2>
-        <div>
-            <ul>
-                <label for="">Usuario</label>
-            </ul>
-            <ul>
-                <input size="28%" type="text">
-            </ul>
+    <form class="text-center paddingTurnos">
+        <div class="paddingForm subrayado">
+            <h2>REGISTRATE</h2>
         </div>
-        <div>
-            <ul>
-                <label for="">Contraseña</label>
-            </ul>
-            <ul>
-                <input size="28%" type="password">
-            </ul>
+        <div class="paddingFormTexto">
+          ¡Creá tu cuenta y disfrutá de todos los beneficios de nuestra comunidad!
         </div>
-        <div>
-            <ul>
-                <label for="">Repetí contraseña</label>
-            </ul>
-            <ul>
-                <input size="28%" type="password">
-            </ul>
+        <div class="paddingForm">
+          <label for="">Usuario</label>
         </div>
-        <div>
-            <ul>
-                <label for="">Nombre</label>
-            </ul>
-            <ul>
-                <input size="28%" type="text">
-            </ul>
+        <div class="paddingForm">
+          <input class="sizeInput text-center" size="28px" type="text" />
         </div>
-        <div>
-            <ul>
-                <label for="">Apellido</label>
-                <ul>
-                    <input size="28%" type="text">
-                </ul>
+        <div class="paddingForm">
+          <label for="">Contraseña</label>
         </div>
-        <div>
-            <ul>
-                Sexo
-            </ul>
-            <select name="Sexo">
-                <option value="Masculino">M</option>
-                <option value="Femenino">F</option>
-                <option value="Otro">Otro</option>
-            </select>
+        <div class="paddingForm">
+          <input class="sizeInput text-center" size="28px" type="password" />
         </div>
-        <div>
-            <ul>
-                <label for="">Fecha de Nacimiento</label>
-                <ul>
-                    <input size="28%" type="date">
-                </ul>
+        <div class="paddingForm">
+          <label for="">Repetí contraseña</label>
         </div>
-        <div>
-            <ul>
-                <label for="">E-Mail</label>
-            </ul>
-            <ul>
-                <input size="28%" type="text">
-            </ul>
+        <div class="paddingForm">
+          <input class="sizeInput text-center" size="28px" type="password" />
+      <div class="paddingForm">
+          <label for="">Nombre</label>
         </div>
-        <div>
-            <ul>
-                <label for="">Repetí E-Mail</label>
-            </ul>
-            <ul>
-                <input size="28%" type="text">
-            </ul>
+        <div class="paddingForm">
+          <input class="sizeInput text-center" size="28px" type="text" />
+      <div class="paddingForm">
+          <label for="">Apellido</label>
         </div>
-        <div>
-            <ul>
-                <a href="">Enviar</a>
-            </ul>
+        <div class="paddingForm">
+          <input class="sizeInput text-center" size="28px" type="text" />
+       <div class="paddingForm">
+              <label for="">Sexo</label>
+      </div>
+      <div class="paddingForm">
+              <select name="Sexo">
+                  <option value="Masculino">M</option>
+                  <option value="Femenino">F</option>
+                  <option value="Otro">Otro</option>
+              </select>
+      </div>
+      <div class="paddingForm">
+              <label for="">Fecha de Nacimiento</label>
+      </div>
+      <div class="paddingForm">
+              <input size="28%" type="date">
+      </div>
+      <div class="paddingForm">
+          <label for="">E-Mail</label>
+        </div>
+        <div class="paddingForm">
+          <input class="sizeInput text-center" size="28px" type="text" />
+        </div>
+        <div class="paddingForm">
+          <label for="">Repetí E-Mail</label>
+        </div>
+        <div class="paddingForm">
+          <input class="sizeInput text-center" size="28px" type="text" />
+      </div>
+        <div class="text-center sizeBotonReg">
+          <button type="button" class="btn botonStyle">Enviar</button>
         </div>
     </form>
-    <p>.</p>
     <footer>
-      <ul class="container-fluid text-center footerH">
+      <ul class="container-fluid text-center paddingFoo borderT">
         <li>Mossi Motos</li>
         <li>Piovano 3323 - Moreno</li>
         <li>Todos los derechos reservados © 2022</li>
