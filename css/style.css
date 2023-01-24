@@ -8,6 +8,7 @@
     font-family: 'Raleway', sans-serif;
 }
 
+
 /* SIZES */
 
 .sizeMenu {
@@ -26,6 +27,7 @@
 
 .sizeIndex {
     width: 100%;
+    padding: 5%;
 }
 
 .sizeReg{
@@ -50,7 +52,7 @@
 }
 
 .sizeFoto {
-    width: 40%;
+    width: 20%;
 }
 
 .sizeFotoSponsor1 {
@@ -108,6 +110,10 @@
 
 /* PADDINGS */
 
+.paddingIndex {
+    padding: 10%;
+}
+
 .paddingPowered {
     padding: 5%;
     padding-top: 10%;
@@ -149,7 +155,7 @@
 /* BUTTONS */
 
 .sizeBotonIndex {
-    font-size: 80%;
+    font-size: 100%;
     padding-top:10%;
     padding-bottom:10%; 
 }
@@ -206,9 +212,120 @@
 }
 
 
-/*Medium - Large devices */
+/* Vista Mobile */
 
-@media screen and (max-width: 1199px) {
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    
+    .sizeIndex {
+        width: 100%;
+    }
+
+    .botonStyle {
+        font-size: 40%;
+        color:white;
+        background-color: rgb(0, 0, 0); 
+    }
+
+    .paddingIndex {
+        padding: 15%;
+    }
+
+    .subrayado {
+        text-decoration: underline 1px solid black;
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+
+    .paddingFormTexto {
+        padding-bottom: 15%;
+        font-size: 60%;
+    }
+
+    .paddingForm {
+        padding-top: 0.5%;
+        padding-bottom: 0.5%;
+        font-size: 50%;
+    }
+
+    .sizeHome {
+        font-size: 120%;
+    }
+
+    .sizeReg{
+        padding-top: 8%;
+        font-size: 75%;
+    }
+    
+    .sizeRegI {
+        text-decoration: none;
+        color:black;
+        font-size: 95%;
+    }
+
+    .sizeMenu {
+        text-decoration: none;
+        color:black;
+        font-size: 68%;
+    }
+
+    .sizeFoto {
+        width: 100%;
+    }
+
+    .sizeIndex {
+        width: 100%;
+        padding-top:20%;
+        padding-bottom:20%;
+    }
+
+    .sizeInput {
+        width: 40%;
+        border: none;
+    }
+
+    .sizeFotoSponsor1 {
+        width: 28%;
+        transition: width 0.2s;
+    }
+    
+    .sizeFotoSponsor1:hover {
+        width: 32%;
+    }
+    
+    .sizeFotoSponsor2 {
+        width: 24%;
+        transition: width 0.2s;
+    }
+    
+    .sizeFotoSponsor2:hover {
+        width: 28%;
+    }
+    
+    .sizeFotoSponsor3 {
+        width: 29%;
+        transition: width 0.2s;
+    }
+    
+    .sizeFotoSponsor3:hover {
+        width: 33%;
+    }
+
+    .paddingPowered {
+        padding: 4%;
+        font-size: 70%;  
+    }
+
+    .paddingFoo {
+        font-size: 50%;
+        text-decoration: none;
+        padding: 20%;
+        bottom: 0;
+    }
+}
+
+/* Vista Desktop */
+
+@media only screen and (min-width: 768px) {
 
     .sizeHome {
         font-size: 300%;
@@ -260,35 +377,35 @@
     }
 
     .sizeFotoSponsor1 {
-        width: 28%;
+        width: 20%;
         transition: width 0.2s;
     }
     
     .sizeFotoSponsor1:hover {
-        width: 32%;
+        width: 26%;
     }
     
     .sizeFotoSponsor2 {
-        width: 24%;
+        width: 15%;
         transition: width 0.2s;
     }
     
     .sizeFotoSponsor2:hover {
-        width: 28%;
+        width: 20%;
     }
     
     .sizeFotoSponsor3 {
-        width: 29%;
+        width: 20%;
         transition: width 0.2s;
     }
     
     .sizeFotoSponsor3:hover {
-        width: 33%;
+        width: 26%;
     }
 
     .paddingPowered {
-        padding: 4%;
-        font-size: 70%;  
+        padding: 6%;
+        font-size: 100%;  
     }
     
     .footerI {
@@ -303,99 +420,3 @@
         font-size: 80%;
     }
 }
-
-/* Extra Small - Small devices */
-
-@media screen and (max-width: 480px) {
-    
-    .sizeHome {
-        font-size: 120%;
-    }
-
-    .sizeReg{
-        padding-top: 8%;
-        font-size: 75%;
-    }
-    
-    .sizeRegI {
-        text-decoration: none;
-        color:black;
-        font-size: 95%;
-    }
-
-    .sizeMenu {
-        text-decoration: none;
-        color:black;
-        font-size: 68%;
-    }
-
-    .sizeFoto {
-        width: 100%;
-    }
-
-    .sizeIndex {
-        width: 100%;
-        padding-top:20%;
-        padding-bottom:20%;
-    }
-    
-    .botonInicioI {
-        padding-top:20%;
-        padding-bottom:30%; 
-    }
-
-    .botonInicio {
-        color:white;
-        background-color: rgb(0, 0, 0);
-        font-size: 80%; 
-    }
-
-    .sizeFotoSponsor1 {
-        width: 28%;
-        transition: width 0.2s;
-    }
-    
-    .sizeFotoSponsor1:hover {
-        width: 32%;
-    }
-    
-    .sizeFotoSponsor2 {
-        width: 24%;
-        transition: width 0.2s;
-    }
-    
-    .sizeFotoSponsor2:hover {
-        width: 28%;
-    }
-    
-    .sizeFotoSponsor3 {
-        width: 29%;
-        transition: width 0.2s;
-    }
-    
-    .sizeFotoSponsor3:hover {
-        width: 33%;
-    }
-
-    .paddingP {
-        padding: 4%;
-        font-size: 70%;  
-    }
-    
-    .footerH {
-        padding: 10%;
-        text-decoration: none;
-        font-size: 50%;
-    }
-
-    .footerI {
-        padding-top: 15%;
-        padding-bottom: 15%;
-        font-size: 60%;
-    }
-}
-
-
-
-/* 
-      
