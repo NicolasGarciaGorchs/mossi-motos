@@ -1,15 +1,109 @@
 *{
-    padding:0%;
-    margin:0%;
+    padding:0px;
+    margin:0px;
     box-sizing:border-box;
     text-decoration: none;
     list-style-type: none;
     color: black;
-    font-family: 'Raleway', sans-serif;
+    
 }
 
+.grid_home {
+    display: grid;
+    grid-template-areas:"encabezado"
+                        "barraNav"
+                        "contenido_inicio"
+                        "sponsors"
+                        "pie_de_pagina";
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns:auto;   
+}
 
-/* SIZES */
+.sizeHome {
+    font-size: 280% ;
+}
+header {
+    grid-area: encabezado;
+    flex-direction: row;
+    align-items: center;
+}
+
+header nav div{
+    width: 100%;
+}
+
+nav {
+    grid-area: barraNav ;
+}
+main {
+    grid-area: contenido_inicio;
+    /*display: grid;
+    font-family: 'Raleway', sans-serif;
+    font-size: 45px;
+    padding: 200px;
+    text-align: center;
+    background-color: rgb(107, 172, 209) ;
+    */
+}
+
+.contenidoInicio {
+    padding: 15%;
+    background-color: rgb(107, 172, 209) ;
+}
+
+.fotoNav {
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+    background-image: linear-gradient(to bottom,rgb(255, 255, 255),rgb(107, 172, 209)  );
+}
+
+nav {
+    display:flex;
+    justify-content: center;
+}
+section {
+    grid-area: sponsors;
+    text-align: center;
+}
+
+form {
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 7%;
+}
+form h2{
+    padding-bottom: 5%
+}
+form ul a {
+    padding:10px;
+}
+.fotosIndex{
+    width: 400px;
+    height: 120px;
+    flex-direction: row;
+    align-items: center;   
+}
+
+.navegacion {
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+    background-color: rgb(107, 172, 209);
+    width: 100%;
+    font-size: 22px;
+}
+.sizeImgNav {
+    width: 50%;
+}
+
+.sizeMenuHeader {
+    display: flex;
+}
+
+.sizeLogoNav {
+    width: 45%;
+}
 
 .sizeMenu {
     font-size: 110%;
@@ -17,27 +111,19 @@
     color: black;
 }
 
-.sizeHome {
-    font-size: 300%;
-    padding-left: 12%;
-    padding-right: 12%;
-    padding-top: 12%;
-    padding-bottom: 5%;
+#sponsors {
+    text-align: center;
+    background-color: rgb(107, 172, 209) ;
 }
 
-.sizeIndex {
-    width: 100%;
-    padding: 5%;
+.paddingTH{
+    padding-top: 3%;
+}
+.fotosIndex{
+    width: 310px;
+    height: 90px;
 }
 
-.sizeReg{
-    font-size: 110%;
-    padding: 5%;
-}
-
-.sizeTurnos {
-    font-size: 200%;
-}
 
 .sizeLinkH {
     text-decoration: none;
@@ -45,378 +131,145 @@
     font-size: 110%;
 }
 
-.sizeLinkT {
-    text-decoration: none;
-    color:black;
-    font-size: 110%;
+
+footer {
+    grid-area: pie_de_pagina;
+    background-color:rgb(98, 195, 252);
+    background-image: linear-gradient(to top, rgb(255, 255, 255),rgb(107, 172, 209)  );
+    padding: 15%;    
 }
 
-.sizeFoto {
-    width: 20%;
+.footerF {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    text-align: center;
 }
 
 .sizeFotoSponsor1 {
-    width: 18%;
+    width: 20%;
     transition: width 0.2s;
 }
 
 .sizeFotoSponsor1:hover {
-    width: 22%;
+    width: 26%;
 }
 
 .sizeFotoSponsor2 {
-    width: 14%;
+    width: 15%;
     transition: width 0.2s;
 }
 
 .sizeFotoSponsor2:hover {
-    width: 18%;
+    width: 20%;
 }
 
 .sizeFotoSponsor3 {
-    width: 19%;
+    width: 20%;
     transition: width 0.2s;
 }
 
 .sizeFotoSponsor3:hover {
-    width: 23%;
-}
-
-.sizeFotoTurnos {
-    width: 40%;
-    border-radius: 90%;
-}
-
-.sizeTurnos1 {
-    font-size: 80%;
-    padding: 5%;
-}
-
-.sizeTurnos2 {
-    font-size: 60%;
-}
-
-.sizeTurnos3 {
-    font-size: 100%;
-    padding-bottom: 7%;
-    padding-top: 5%;
-}
-
-.sizeInput {
-    width: 20%;
-    border: none;
-}
-
-
-/* PADDINGS */
-
-.paddingIndex {
-    padding: 10%;
-}
-
-.paddingPowered {
-    padding: 5%;
-    padding-top: 10%;
-    font-size: 110%;  
-}
-
-.paddingForm {
-    padding-top: 0.5%;
-    padding-bottom: 0.5%;
-}
-
-.paddingFormTexto {
-    padding-bottom: 5%;
-}
-
-.paddingFoo {
-    text-decoration: none;
-    padding: 10%;
-    padding-top: 15%;
-}
-
-.paddingIniciarS {
-    padding-top: 5%;
-    padding-bottom: 12%;
-}
-
-.paddingTurnos {
-    padding: 5%;
-}
-
-.paddingTextoTurnos {
-    padding: 2%;
-}
-
-.paddingSucursales {
-    padding: 7%;
-}
-
-/* BUTTONS */
-
-.sizeBotonIndex {
-    font-size: 100%;
-    padding-top:10%;
-    padding-bottom:10%; 
-}
-
-.sizeBotonInicioS {
-    font-size: 100%;
-    padding-top:2%;
-    padding-bottom:2%;
-}
-
-.sizeBotonReg {
-    font-size: 80%;
-    padding-top:2%;
-    padding-bottom:5%; 
-}
-
-.botonStyle {
-    color:white;
-    background-color: rgb(0, 0, 0); 
-}
-
-.botonStyle:hover {
-    background-color:rgb(255, 255, 255);
-    color:black
-}
-
-/* ESTILOS Y COLORES */
-
-.subrayado {
-    text-decoration: underline 2px solid black;
-    padding-bottom: 5%;
+    width: 26%;
 }
 
 .fondo {
     background-image: linear-gradient(to bottom,rgb(255, 255, 255),rgb(107, 172, 209)  );
 }
-
-.colorRojo{
-    color:rgb(190, 5, 5);
-    text-decoration: none;
+.imgNav {
+    width: 400px;
+    height: 150px;  
 }
 
+.navegacion li a:hover {
+    background-color: rgb(255, 255, 255);
+}
+.botonInicio { 
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+}
+.botonInicio:hover {
+    background-color: rgb(49, 53, 53);
+}
+.botonIngresar {
+    background-color: rgb(49, 53, 53);   
+}
+.botonIngresar:hover {
+    background-color:rgb(20, 20, 20);
+}
+.colorRojo{
+    color:rgb(190, 5, 5);
+}
 .colorAzul{
     text-decoration: none;
     color:rgb(27, 27, 207);
 }
-
-.borderT {
-    border-top: 1px solid black;
+.paddingB {
+    padding-bottom: 40px;
+}
+.paddingT {
+    padding-top: 40px;
 }
 
-.borderB {
-    border-bottom: 1px solid black;
-}
-
-
-/* Vista Mobile */
-
-@media only screen and (min-width: 0px) and (max-width: 767px) {
+@media screen and (max-width: 760px) {
     
-    .sizeIndex {
-        width: 100%;
+    .grid_home {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 5% auto auto auto 5%;
+        grid-template-rows: 5vh auto auto auto 5vh;
+        grid-template-areas:"logo_centro"
+                            "encabezado"
+                            "contenido_principal"
+                            "sponsors"
+                            "pie_de_pagina"
     }
-
-    .botonStyle {
-        font-size: 40%;
-        color:white;
-        background-color: rgb(0, 0, 0); 
+    header {
+        display: flex;
+        align-items: center;
+        grid-area:encabezado;
+        background-image: linear-gradient(to bottom,rgb(255, 255, 255),rgb(107, 172, 209)  );
+        
     }
-
-    .paddingIndex {
-        padding: 15%;
+    header div img {
+        grid-area: logo_centro;  
     }
-
-    .subrayado {
-        text-decoration: underline 1px solid black;
-        padding-top: 10%;
-        padding-bottom: 10%;
-    }
-
-    .paddingFormTexto {
-        padding-bottom: 15%;
-        font-size: 60%;
-    }
-
-    .paddingForm {
-        padding-top: 0.5%;
-        padding-bottom: 0.5%;
-        font-size: 50%;
-    }
-
-    .sizeHome {
-        font-size: 120%;
-    }
-
-    .sizeReg{
-        padding-top: 8%;
-        font-size: 75%;
-    }
-    
-    .sizeRegI {
-        text-decoration: none;
-        color:black;
-        font-size: 95%;
-    }
-
-    .sizeMenu {
-        text-decoration: none;
-        color:black;
-        font-size: 68%;
-    }
-
-    .sizeFoto {
-        width: 100%;
-    }
-
-    .sizeIndex {
-        width: 100%;
-        padding-top:20%;
-        padding-bottom:20%;
-    }
-
-    .sizeInput {
-        width: 40%;
-        border: none;
-    }
-
-    .sizeFotoSponsor1 {
-        width: 28%;
-        transition: width 0.2s;
-    }
-    
-    .sizeFotoSponsor1:hover {
-        width: 32%;
-    }
-    
-    .sizeFotoSponsor2 {
-        width: 24%;
-        transition: width 0.2s;
-    }
-    
-    .sizeFotoSponsor2:hover {
-        width: 28%;
-    }
-    
-    .sizeFotoSponsor3 {
-        width: 29%;
-        transition: width 0.2s;
-    }
-    
-    .sizeFotoSponsor3:hover {
-        width: 33%;
-    }
-
-    .paddingPowered {
-        padding: 4%;
-        font-size: 70%;  
-    }
-
-    .paddingFoo {
-        font-size: 50%;
-        text-decoration: none;
-        padding: 20%;
-        bottom: 0;
-    }
-}
-
-/* Vista Desktop */
-
-@media only screen and (min-width: 768px) {
-
-    .sizeHome {
-        font-size: 300%;
-        padding-left: 12%;
-        padding-right: 12%;
-        padding-top: 12%;
-        padding-bottom: 5%;
-    }
-
-    .sizeReg{
-        padding: 6%;
-        text-decoration: none;
-        color:black
-    }
-    .sizeReg{
-        font-size: 110%;
-        padding: 5%;
-    }
-    .sizeRegI {
-        text-decoration: none;
-        color:black;
-        font-size: 95%;
-    }
-
-    .sizeMenu {
-        text-decoration: none;
-        color:black
-    }
-
-    .sizeFoto {
+    .fondo {
         width: 70%;
+        background-image: linear-gradient(to bottom,rgb(255, 255, 255),rgb(107, 172, 209)  );
     }
-
-    .sizeIndex {
+    .imgNav {
+        width: 90%;
+        height: 90%;
+    }
+    .paddingB {
+        padding-bottom: 10px;
+    }
+    .navegacion {
+        display: flex;
         width: 100%;
-        padding-top: 3%;
-        padding-bottom: 5%;
+        font-size: 7px;
+        justify-content: space-around;
     }
-    
-    .botonIndex {
-        padding-top:7%;
-        padding-bottom: 5%; 
+    #sponsors {
+        font-size: 10px;
+        size: 10%;
     }
-
-    .botonStyle {
-        color:white;
-        background-color: rgb(0, 0, 0);
-        font-size: 100%;
+    section {
+        font-size: 20px;
+        padding: 60px;
     }
-
-    .sizeFotoSponsor1 {
-        width: 20%;
-        transition: width 0.2s;
-    }
-    
-    .sizeFotoSponsor1:hover {
-        width: 26%;
-    }
-    
-    .sizeFotoSponsor2 {
-        width: 15%;
-        transition: width 0.2s;
-    }
-    
-    .sizeFotoSponsor2:hover {
-        width: 20%;
-    }
-    
-    .sizeFotoSponsor3 {
-        width: 20%;
-        transition: width 0.2s;
-    }
-    
-    .sizeFotoSponsor3:hover {
-        width: 26%;
+    .fotosIndex{
+        width: 85px;
+        height: 30px;
     }
 
-    .paddingPowered {
-        padding: 6%;
-        font-size: 100%;  
+    footer {
+        padding-top: 5%;
     }
-    
-    .footerI {
-        text-decoration: none;
-        padding: 8%;
-        font-size: 80%;
-    }
-
-    .paddingFoo {
-        padding-top: 10%;
-        padding-bottom: 20%;
-        font-size: 80%;
+    footer ul {
+        padding: 2%;
+        font-size: 10px;
     }
 }
