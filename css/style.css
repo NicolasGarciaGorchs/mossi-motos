@@ -4,6 +4,17 @@
     box-sizing:border-box;
 }
 
+
+
+.grid_index {
+    display: grid;
+    grid-template-areas:"fotoCentral"
+                        "redes"
+                        "pie_de_pagina";
+    grid-template-rows: 40% 30% 30%;
+    grid-template-columns: 100%;
+}
+
 .grid_home {
     display: grid;
     grid-template-areas:"encabezado"
@@ -11,53 +22,39 @@
                         "contenido_inicio"
                         "sponsors"
                         "pie_de_pagina";
-    grid-template-rows: auto auto auto auto auto;
+    grid-template-rows: 10% 7% 33% 20% 30%;
     grid-template-columns:auto;   
 }
 
-.grid_index {
+.grid_iniciarSesion {
     display: grid;
-    grid-template-areas:"fotoCentral"
-                        "boton"
+    grid-template-areas:"encabezado"
+                        "barraNav"
+                        "formulario"
                         "pie_de_pagina";
-    grid-template-rows: 50% 25% 25%;
-    grid-template-columns: 100%;
+    grid-template-rows: 10% 7% 53% 30%;
+    grid-template-columns:auto; 
 }
 
-
-/* ORDENES DIRECTAS */
-
-
-header {
-    grid-area: encabezado;
-    flex-direction: row;
-    align-items: center;
-    font-family: 'Sofia Sans', sans-serif;  
+.grid_recuperarPassword {
+    display: grid;
+    grid-template-areas:"encabezado"
+                        "barraNav"
+                        "recuperarPassword"
+                        "pie_de_pagina";
+    grid-template-rows: 10% 7% 43% 40%;
+    grid-template-columns:auto;
 }
 
-nav {
-    grid-area: barraNav;
+.grid_registro {
+    display: grid;
+    grid-template-areas:"encabezado"
+                        "barraNav"
+                        "formularioR"
+                        "pie_de_pagina";
+    grid-template-rows: 10% 7% 53% 30%;
+    grid-template-columns:auto;
 }
-
-form {
-    text-align: center;
-    padding-top: 5%;
-    padding-bottom: 7%;
-    background-image: linear-gradient(to top, rgb(255, 255, 255),rgb(107, 172, 209)  );
-}
-form h2{
-    padding-bottom: 5%
-}
-form ul a {
-    padding:10px;
-}
-
-footer {
-    grid-area: pie_de_pagina;
-    background-image: linear-gradient(to top, rgb(255, 255, 255),rgb(107, 172, 209)  ); 
-}
-
-
 
 
 
@@ -69,6 +66,7 @@ footer {
     text-align: center;
     background-color: rgb(107, 172, 209) ;
     font-size: 60%;
+    padding-top: 20%;
 }
 
 #fotoCentral {
@@ -76,15 +74,28 @@ footer {
     background-image: linear-gradient(to bottom, rgb(255, 255, 255),rgb(107, 172, 209)  ); 
 }
 
+#navegacion {
+    grid-area: barraNav;
+}
+
+#footerArea {
+    grid-area: pie_de_pagina;
+    background-image: linear-gradient(to top, rgb(255, 255, 255),rgb(107, 172, 209)  );
+    padding-top: 20%;
+}
+
+
 
 
 
 /* SIZES */
 
+
+
 .sizeIndex {
-    width: 100%;
-    padding-top: 50%;
-    padding-bottom: 50%;
+    width: 90%;
+    padding-bottom: 45%;
+    padding-top: 45%;
 }
 
 .sizeHome {
@@ -114,6 +125,11 @@ footer {
     font-size: 110%;
     text-decoration: none;
     color: black;
+}
+
+.sizeInput {
+    text-align: center;
+    width: 30%;
 }
 
 .sizeFotoSponsor1 {
@@ -146,22 +162,8 @@ footer {
     width: 32%;
 }
 
-.btn-dark:hover{
-    background-color:  rgb(255, 255, 255);
-    color:black
-}
-
-.areaButton{
-    grid-area: boton;
-    text-align: center;
-    background-color: rgb(107, 172, 209) ;
-    padding-bottom: 20%;     
-}
-
-.botonIndex {
-    width: 20%;
-    height: 30%;
-    font-size: 50%;
+.sizeFooter {
+    font-size: 70%;
 }
 
 
@@ -169,41 +171,39 @@ footer {
 
 /* PADDINGS */
 
-.paddingB {
-    padding-bottom: 40px;
-}
-.paddingT {
-    padding-top: 40px;
-}
+
 
 .paddingTH{
-    padding-top: 3%;
+    padding-top: 5%;
 }
 
 .paddingFU {
     padding-top: 10%;
     font-size: 80%;
     font-family: 'Sofia Sans', sans-serif;
+    text-align: center;
 }
 
+.paddingForm {
+    padding-top: 3%;
+}
+
+.paddingFormRP {
+    padding-top: 2%;
+}
+
+.paddingFormR {
+    padding-top: 2%;
+}
 
 
 
 /* BUTTONS */
 
 
+
 .navegacion li a:hover {
     color: rgb(255, 255, 255);
-}
-
-.botonInicio { 
-    font-size: 28px;
-    display: flex;
-    justify-content: center;
-}
-
-.botonInicio:hover {
-    background-color: rgb(49, 53, 53);
 }
 
 .botonIngresar {
@@ -213,7 +213,6 @@ footer {
 .botonIngresar:hover {
     background-color:rgb(20, 20, 20);
 }
-
 
 .fa-instagram:hover {
     background-color: rgb(255, 255, 255);
@@ -230,11 +229,26 @@ footer {
     border-radius: 100%;
 }
 
+.botonIniciarSesion {
+    width: 15%;
+    font-size: 90%;
+}
+
+.botonRecuperarPassword {
+    width: 10%;
+    font-size: 80%;
+}
 
 
 
 
-/* ESTILOS Y COLORES */
+/* COLORES */
+
+
+
+.fondo {
+    background-image: linear-gradient(to bottom,rgb(255, 255, 255),rgb(107, 172, 209)  );
+}
 
 .colorRojo{
     color:rgb(190, 5, 5);
@@ -250,41 +264,13 @@ footer {
     margin: 1%;
 }
 
-.fondo {
-    background-image: linear-gradient(to bottom,rgb(255, 255, 255),rgb(107, 172, 209)  );
-}
 
-.centrarLogo{
-    display: flex;
-    justify-content: center;
-}
 
-.navegacion {
-    display: flex;
-    justify-content: center;
-    font-family: 'Sofia Sans', sans-serif;  
-    color: black; 
-    background-color: rgb(107, 172, 209);
-    width: 100%;
-    font-size: 50%;
-}
 
-.contenidoInicio {
-    grid-area: contenido_inicio;
-    padding: 20%;
-    background-color: rgb(107, 172, 209) ;
-    text-align: center;
-    font-family: 'Sofia Sans', sans-serif;
-}
 
-.footerF {
-    justify-content: center;
-    text-align: center;
-    padding-top: 15%;
-    padding-bottom: 10%;
-    font-size: 60%;
-    
-}
+/* FONTS */
+
+
 
 .fontInicio {
     font-family: 'Jost', sans-serif;
@@ -296,11 +282,120 @@ footer {
     font-size: 150%;
 }
 
+.subrayado {
+    text-decoration: underline 1px black;
+}
+
+
+
+
+/* AREAS GRID */
+
+
+
+.formIniciarSesion {
+    grid-area: formulario;
+    text-align: center;
+    background-color: rgb(107, 172, 209) ;
+    font-family: 'Jost', sans-serif;
+    font-size: 65%;
+    padding-top: 15%;
+    padding-bottom: 10%;
+    
+}
+
+.formRecuperarPassword {
+    grid-area: recuperarPassword;
+    text-align: center;
+    background-color: rgb(107, 172, 209) ;
+    font-family: 'Jost', sans-serif;
+    font-size: 100%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    
+}
+
+.formRegistro {
+    grid-area: formularioR;
+    text-align: center;
+    background-color: rgb(107, 172, 209) ;
+    font-family: 'Jost', sans-serif;
+    font-size: 70%;
+    padding-top: 15%;
+    padding-bottom: 10%;
+    
+}
+
+.navegacion {
+    display: flex;
+    justify-content: center;
+    font-family: 'Sofia Sans', sans-serif;  
+    color: black; 
+    background-color: rgb(107, 172, 209);
+    width: 100%;
+    font-size: 52%;
+}
+
+.contenidoInicio {
+    grid-area: contenido_inicio;
+    padding: 10%;
+    background-color: rgb(107, 172, 209) ;
+    text-align: center;
+    font-family: 'Sofia Sans', sans-serif;
+}
+
+.centrarLogo{
+    display: flex;
+    justify-content: center;
+}
+
+.areaH {
+    grid-area: encabezado;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'Sofia Sans', sans-serif; 
+}
+
+.textoPages {
+    padding: 10%;
+    font-size: 100%;
+    font-family: 'Jost', sans-serif;
+}
+
+.textoPagesR {
+    padding: 8%;
+    font-size: 100%;
+    font-family: 'Jost', sans-serif;
+}
+
+.footerIndex {
+    grid-area: redes;
+    background-image: linear-gradient(to top, rgb(255, 255, 255),rgb(107, 172, 209)  );
+}
+
+.footerF {
+    justify-content: center;
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 20%;
+    font-size: 75%;
+    
+}
+
+
+
 
 
 /* Vista Tablet */
 
+
+
 @media only screen and (min-width: 768px) {
+
+    .grid_index {
+        grid-template-rows: 50% 25% 25%;
+        grid-template-columns: 100%;
+        }
 
     .grid_home {
         display: grid;
@@ -311,45 +406,22 @@ footer {
                             "pie_de_pagina";
         grid-template-rows: auto auto auto auto auto;
         grid-template-columns:auto;   
+    } 
+    
+    .grid_registro {
+        display: grid;
+        grid-template-areas:"encabezado"
+                            "barraNav"
+                            "recuperarPassword"
+                            "pie_de_pagina";
+        grid-template-rows: 10% 7% 43% 40%;
+        grid-template-columns:auto;
     }
-    
-    
-    /* ORDENES DIRECTAS */
-    
-    
-    header {
-        grid-area: encabezado;
-        flex-direction: row;
-        align-items: center;
-        font-family: 'Sofia Sans', sans-serif;  
-    }
-    
-    nav {
-        grid-area: barraNav;
-    }
-    
-    form {
-        text-align: center;
-        padding-top: 5%;
-        padding-bottom: 7%;
-        background-image: linear-gradient(to top, rgb(255, 255, 255),rgb(107, 172, 209)  );
-    }
-    form h2{
-        padding-bottom: 5%
-    }
-    form ul a {
-        padding:10px;
-    }
-    
-    footer {
-        grid-area: pie_de_pagina;
-        background-image: linear-gradient(to top, rgb(255, 255, 255),rgb(107, 172, 209)  ); 
-    }
-    
-    
-    
-    
-    
+
+
+
+
+
     /* ID */
     
     #sponsors {
@@ -360,6 +432,9 @@ footer {
         font-size: 120%;
     }
     
+    #navegacion {
+        grid-area: barraNav;
+    }
     
     
     
@@ -368,21 +443,6 @@ footer {
 
     .sizeIndex {
         width: 100%;
-        padding-top: 50%;
-        padding-bottom: 50%;
-    }
-
-    .areaButton{
-        grid-area: boton;
-        text-align: center;
-        background-color: rgb(107, 172, 209) ;
-        padding-bottom: 20%;     
-    }
-    
-    .botonIndex {
-        width: 30%;
-        height: 90%;
-        font-size: 50%;
     }
     
     .sizeHome {
@@ -445,9 +505,18 @@ footer {
     }
     
     .sizeIndex {
-        width: 80%;
-        padding-top:30%;
-        padding-bottom: 30%;
+        width: 100%;
+        padding-top:40%;
+        padding-bottom:40%;
+    }
+
+    .sizeInput {
+        text-align: center;
+        width: 25%;
+    }
+
+    .sizeFooter {
+        font-size: 100%;
     }
     
     
@@ -455,13 +524,8 @@ footer {
     
     /* PADDINGS */
     
-    .paddingB {
-        padding-bottom: 40px;
-    }
-    .paddingT {
-        padding-top: 40px;
-    }
-    
+
+
     .paddingTH{
         padding-top: 3%;
     }
@@ -470,22 +534,22 @@ footer {
         padding-top: 10%;
         font-size: 80%;
         font-family: 'Sofia Sans', sans-serif;
+        text-align: center;
     }
     
+    .paddingForm {
+        padding-top: 2%;
+    }
     
-    
+
+
+
     
     /* BUTTONS */
     
     
     .navegacion li a:hover {
         color: rgb(255, 255, 255);
-    }
-    
-    .botonInicio { 
-        font-size: 28px;
-        display: flex;
-        justify-content: center;
     }
     
     .botonInicio:hover {
@@ -518,8 +582,7 @@ footer {
     
     
     
-    
-    /* ESTILOS Y COLORES */
+    /* COLORES */
     
     .colorRojo{
         color:rgb(190, 5, 5);
@@ -539,11 +602,32 @@ footer {
         background-image: linear-gradient(to bottom,rgb(255, 255, 255),rgb(107, 172, 209)  );
     }
     
-    .centrarLogo{
-        display: flex;
-        justify-content: center;
+
+
+
+
+    /* FONTS */
+
+    .fontFooter {
+        font-family: 'Yellowtail', cursive;
+        font-size: 150%;
     }
-    
+
+    .fontInicio {
+        font-family: 'Jost', sans-serif;
+         font-size: 300%;
+    }
+
+    .subrayado {
+        text-decoration: underline 1px black;
+    }
+
+
+
+    /* AREAS GRID */
+
+
+
     .navegacion {
         display: flex;
         justify-content:space-around;
@@ -555,6 +639,16 @@ footer {
         font-size: 22px;
     }
     
+    .formIniciarSesion {
+        grid-area: formulario;
+        text-align: center;
+        background-color: rgb(107, 172, 209) ;
+        font-family: 'Jost', sans-serif;
+        font-size: 90%;
+        padding-top: 15%;
+        padding-bottom: 5%;
+        
+    }
     .contenidoInicio {
         grid-area: contenido_inicio;
         padding: 15%;
@@ -567,25 +661,33 @@ footer {
         justify-content: center;
         text-align: center;
         height: 20%;
-        padding-top: 15%;
-        padding-bottom: 10%;
-        font-size: 110%;
+        padding-top: 10%;
+        padding-bottom: 5%;
+        font-size: 90%;
         
     }
     
-    .fontInicio {
-        font-family: 'Jost', sans-serif;
-         font-size: 300%;
+    .footerIndex {
+        grid-area: redes;
+        background-color: rgb(107, 172, 209);
     }
-    
-    .fontFooter {
-        font-family: 'Yellowtail', cursive;
+
+    .textoIniciarSesion {
+        padding: 10%;
         font-size: 150%;
+        font-family: 'Jost', sans-serif;
     }
 }
 
 
+
+
+
+
+
 /* Vista Desktop */
+
+
 
 @media only screen and (min-width: 1024px) {
 
@@ -600,40 +702,9 @@ footer {
         grid-template-columns:auto;   
     }
     
-    
-    /* ORDENES DIRECTAS */
-    
-    
-    header {
-        grid-area: encabezado;
-        flex-direction: row;
-        align-items: center;
-        font-family: 'Sofia Sans', sans-serif;  
+    .grid_iniciarSesion {
+        grid-template-rows: 7% 7% 56% 30%;
     }
-    
-    nav {
-        grid-area: barraNav;
-    }
-    
-    form {
-        text-align: center;
-        padding-top: 5%;
-        padding-bottom: 7%;
-        background-image: linear-gradient(to top, rgb(255, 255, 255),rgb(107, 172, 209)  );
-    }
-    form h2{
-        padding-bottom: 5%
-    }
-    form ul a {
-        padding:10px;
-    }
-    
-    footer {
-        grid-area: pie_de_pagina;
-        background-image: linear-gradient(to top, rgb(255, 255, 255),rgb(107, 172, 209)  ); 
-    }
-    
-    
     
     
     
@@ -647,29 +718,21 @@ footer {
         font-size: 100%;
     }
     
+    #footerArea {
+        grid-area: pie_de_pagina;
+        background-image: linear-gradient(to top, rgb(255, 255, 255),rgb(107, 172, 209)  );
+        padding: 10%;
+    }
     
     
     
     
     /* SIZES */
 
+
     .sizeIndex {
         width: 100%;
-        padding-top: 50%;
-        padding-bottom: 50%;
-    }
-
-    .areaButton{
-        grid-area: boton;
-        text-align: center;
-        background-color: rgb(107, 172, 209) ;
-        padding-bottom: 20%;     
-    }
-    
-    .botonIndex {
-        width: 30%;
-        height: 90%;
-        font-size: 50%;
+        padding:7%
     }
     
     .sizeHome {
@@ -730,6 +793,10 @@ footer {
     .sizeFotoSponsor3:hover {
         width: 26%;
     }
+
+    .sizeFooter {
+        font-size: 120%;
+    }
     
     
     
@@ -737,21 +804,18 @@ footer {
     
     /* PADDINGS */
     
-    .paddingB {
-        padding-bottom: 40px;
-    }
-    .paddingT {
-        padding-top: 40px;
-    }
-    
     .paddingTH{
         padding-top: 3%;
     }
     
     .paddingFU {
-        padding-top: 10%;
-        font-size: 80%;
+        padding-top: 15%;
         font-family: 'Sofia Sans', sans-serif;
+        text-align: center;
+    }
+
+    .paddingForm {
+        padding-top: 2%;
     }
     
     
@@ -762,16 +826,6 @@ footer {
     
     .navegacion li a:hover {
         color: rgb(255, 255, 255);
-    }
-    
-    .botonInicio { 
-        font-size: 28px;
-        display: flex;
-        justify-content: center;
-    }
-    
-    .botonInicio:hover {
-        background-color: rgb(49, 53, 53);
     }
     
     .botonIngresar {
@@ -799,8 +853,6 @@ footer {
     
     
     
-    
-    
     /* ESTILOS Y COLORES */
     
     .colorRojo{
@@ -821,11 +873,12 @@ footer {
         background-image: linear-gradient(to bottom,rgb(255, 255, 255),rgb(107, 172, 209)  );
     }
     
-    .centrarLogo{
+    .logoIndex {
         display: flex;
-        justify-content: center;
+        width: 100%;
+        padding: 20%;
     }
-    
+
     .navegacion {
         display: flex;
         justify-content:space-around;
@@ -845,24 +898,31 @@ footer {
         font-family: 'Sofia Sans', sans-serif;
     }
     
+    .footerIndex {
+        grid-area: redes;
+        background-color: rgb(107, 172, 209);
+    }
+
     .footerF {
         justify-content: center;
         text-align: center;
         height: 20%;
-        padding-top: 15%;
-        padding-bottom: 10%;
+        padding: 10%;
         font-size: 100%;
-        
     }
-    
-    .fontInicio {
-        font-family: 'Jost', sans-serif;
-         font-size: 300%;
-    }
-    
+
     .fontFooter {
         font-family: 'Yellowtail', cursive;
         font-size: 150%;
+    }
+
+    .formIniciarSesion {
+        grid-area: formulario;
+        text-align: center;
+        background-color: rgb(107, 172, 209) ;
+        font-family: 'Jost', sans-serif;
+        font-size: 100%;
+        padding: 10%;
     }
 }
 

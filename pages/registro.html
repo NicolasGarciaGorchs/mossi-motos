@@ -34,108 +34,109 @@
     <link rel="stylesheet" href="../css/style.css" />
 </head>
   <body>
-    <header class="fondo">
-      <a class="centrarLogo" href="./home.html"><img class="sizeLogoNav" src="../assets/diseños/editadobn.svg"></a>
-  </header>
-  <nav class="navegacion">
-      <ul class="nav">
-          <li class="nav-item">
-              <a href="./iniciarsesion.html" class="nav-link sizeMenu" aria-current="page">Inicia Sesión</a>
-          </li>
-          <li class="nav-item">
-              <a href="./turnosonline.html" class="nav-link sizeMenu" href="#">Turnos Online</a>
-          </li>
-          <li class="nav-item">
-              <a href="./productos.html" class="nav-link sizeMenu" href="#">Productos</a>
-          </li>
-          <li class="nav-item">
-              <a href="./sucursales.html" class="nav-link sizeMenu">Sucursales</a>
-          </li>
-      </ul>
-  </nav>
-    <form class="text-center paddingTurnos">
-        <div class="paddingForm subrayado">
+    <div class="grid_registro">
+      <header class="areaH fondo">
+        <a class="centrarLogo" href="./home.html"><img class="sizeLogoNav" src="../assets/diseños/editadobn.svg"></a>
+    </header>
+    <nav id="navegacion" class="navegacion">
+        <ul class="nav">
+            <li class="nav-item">
+                <a href="./iniciarsesion.html" class="nav-link sizeMenu" aria-current="page">Inicia Sesión</a>
+            </li>
+            <li class="nav-item">
+                <a href="./turnosonline.html" class="nav-link sizeMenu" href="#">Turnos Online</a>
+            </li>
+            <li class="nav-item">
+                <a href="./productos.html" class="nav-link sizeMenu" href="#">Productos</a>
+            </li>
+            <li class="nav-item">
+                <a href="./sucursales.html" class="nav-link sizeMenu">Sucursales</a>
+            </li>
+        </ul>
+    </nav>
+    <form class="formRegistro">
+        <div class="paddingFormR subrayado">
             <h2>REGISTRATE</h2>
         </div>
         <div class="paddingFormTexto">
           ¡Creá tu cuenta y disfrutá de todos los beneficios de nuestra comunidad!
         </div>
-        <div class="paddingForm">
+        <div class="paddingFormR">
           <label for="">Usuario</label>
         </div>
-        <div class="paddingForm">
-          <input class="sizeInput text-center" size="28px" type="text" />
+        <div class="paddingFormR">
+          <input class="sizeInput" size="28px" type="text" />
         </div>
-        <div class="paddingForm">
+        <div class="paddingFormR">
           <label for="">Contraseña</label>
         </div>
-        <div class="paddingForm">
-          <input class="sizeInput text-center" size="28px" type="password" />
-        </div>
+        <div class="paddingFormR">
+          <input class="sizeInput" size="28px" type="text" />
         <div class="paddingForm">
           <label for="">Repetí contraseña</label>
         </div>
-        <div class="paddingForm">
-          <input class="sizeInput text-center" size="28px" type="password" />
-      <div class="paddingForm">
+        <div class="paddingFormR">
+          <input class="sizeInput" size="28px" type="password" />
+      <div class="paddingFormR">
           <label for="">Nombre</label>
         </div>
-        <div class="paddingForm">
-          <input class="sizeInput text-center" size="28px" type="text" />
-      <div class="paddingForm">
+        <div class="paddingFormR">
+          <input class="sizeInput" size="28px" type="text" />
+      <div class="paddingFormR">
           <label for="">Apellido</label>
         </div>
-        <div class="paddingForm">
-          <input class="sizeInput text-center" size="28px" type="text" />
-      <div class="paddingForm">
+        <div class="paddingFormR">
+          <input class="sizeInput" size="28px" type="text" />
+      <div class="paddingFormR">
               <label for="">Sexo</label>
       </div>
-      <div class="paddingForm">
+      <div class="paddingFormR">
               <select name="Sexo">
                   <option value="Masculino">M</option>
                   <option value="Femenino">F</option>
                   <option value="Otro">Otro</option>
               </select>
       </div>
-      <div class="paddingForm">
+      <div class="paddingFormR">
               <label for="">Fecha de Nacimiento</label>
       </div>
-      <div class="paddingForm">
+      <div class="paddingFormR">
               <input size="28%" type="date">
       </div>
-      <div class="paddingForm">
+      <div class="paddingFormR">
           <label for="">E-Mail</label>
         </div>
-        <div class="paddingForm">
-          <input class="sizeInput text-center" size="28px" type="text" />
+        <div class="paddingFormR">
+          <input class="sizeInput" size="28px" type="text" />
         </div>
-        <div class="paddingForm">
+        <div class="paddingFormR">
           <label for="">Repetí E-Mail</label>
         </div>
-        <div class="paddingForm">
-          <input class="sizeInput text-center" size="28px" type="text" />
+        <div class="paddingFormR">
+          <input class="sizeInput" size="28px" type="text" />
       </div>
-        <div class="text-center sizeBotonReg">
-          <button type="button" class="btn botonStyle">Enviar</button>
-        </div>
+      <div class="paddingFormR">
+        <button type="button" class="btn btn-dark botonIniciarSesion">Enviar</button>
+      </div>
     </form>
-    <footer>
+    <footer id="footerArea">
       <div class="footerF">
           <p class="fontFooter">Seguinos en nuestras redes!</p>
           <a href="https://web.whatsapp.com" target="_blank" rel="noopener noreferrer"><i
-                  class="fa-brands fa-whatsapp colorNegro fa-3x"></i></a>
+                  class="fa-brands fa-whatsapp colorNegro fa-2x"></i></a>
 
           <a href="https://www.instagram.com/mossimotos" target="_blank" rel="noopener noreferrer"><i
-                  class="fa-brands fa-instagram colorNegro fa-3x"></i></a>
+                  class="fa-brands fa-instagram colorNegro fa-2x"></i></a>
 
           <a href="https://www.facebook.com/mossimotos" target="_blank" rel="noopener noreferrer"><i
-                  class="fa-brands fa-facebook colorNegro fa-50 fa-3x"></i></a>  
+                  class="fa-brands fa-facebook colorNegro fa-50 fa-2x"></i></a>
           <div class="paddingFU">
               <p>Mossi Motos</p>
               <p>Todos los derechos reservados © 2023</p>
           </div>
       </div>
   </footer>
+</div>
   <!--CDN BOOSTRAP-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
