@@ -2,15 +2,7 @@
     padding:0px;
     margin:0px;
     box-sizing:border-box;
-    text-decoration: none;
-    list-style-type: none;
-    color: black;
-    font-family: 'Sofia Sans', sans-serif;    
 }
-
-/* Vista Desktop */
-
-@media only screen and (min-width: 768px) {
 
 .grid_home {
     display: grid;
@@ -23,6 +15,15 @@
     grid-template-columns:auto;   
 }
 
+.grid_index {
+    display: grid;
+    grid-template-areas:"fotoCentral"
+                        "boton"
+                        "pie_de_pagina";
+    grid-template-rows: 50% 25% 25%;
+    grid-template-columns: 100%;
+}
+
 
 /* ORDENES DIRECTAS */
 
@@ -31,6 +32,7 @@ header {
     grid-area: encabezado;
     flex-direction: row;
     align-items: center;
+    font-family: 'Sofia Sans', sans-serif;  
 }
 
 nav {
@@ -41,6 +43,7 @@ form {
     text-align: center;
     padding-top: 5%;
     padding-bottom: 7%;
+    background-image: linear-gradient(to top, rgb(255, 255, 255),rgb(107, 172, 209)  );
 }
 form h2{
     padding-bottom: 5%
@@ -51,7 +54,7 @@ form ul a {
 
 footer {
     grid-area: pie_de_pagina;
-    background-image: linear-gradient(to top, rgb(255, 255, 255),rgb(107, 172, 209)  );    
+    background-image: linear-gradient(to top, rgb(255, 255, 255),rgb(107, 172, 209)  ); 
 }
 
 
@@ -61,31 +64,43 @@ footer {
 /* ID */
 
 #sponsors {
+    font-family: 'Sofia Sans', sans-serif;
     grid-area: sponsors;
     text-align: center;
     background-color: rgb(107, 172, 209) ;
+    font-size: 60%;
 }
 
+#fotoCentral {
+    grid-area: fotoCentral;
+    background-image: linear-gradient(to bottom, rgb(255, 255, 255),rgb(107, 172, 209)  ); 
+}
 
 
 
 
 /* SIZES */
 
-.sizeHome {
-    font-size: 280% ;
+.sizeIndex {
+    width: 100%;
+    padding-top: 50%;
+    padding-bottom: 50%;
 }
 
-.sizeImgNav {
-    width: 50%;
+.sizeHome {
+    font-size: 110% ;
+    font-family: 'Jost', sans-serif;
 }
 
 .sizeLogoNav {
-    width: 45%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .sizeLinkH {
     text-decoration: none;
+    font-family: 'Jost', sans-serif;
     color:black;
     font-size: 110%;
     transition: width 0.2s;
@@ -102,32 +117,52 @@ footer {
 }
 
 .sizeFotoSponsor1 {
-    width: 20%;
+    margin:2%;
+    width: 25%;
     transition: width 0.2s;
 }
 
 .sizeFotoSponsor1:hover {
-    width: 26%;
+    width: 28%;
 }
 
 .sizeFotoSponsor2 {
-    width: 15%;
+    margin:2%;
+    width: 20%;
     transition: width 0.2s;
 }
 
 .sizeFotoSponsor2:hover {
-    width: 20%;
+    width: 24%;
 }
 
 .sizeFotoSponsor3 {
-    width: 20%;
+    margin:2%;
+    width: 28%;
     transition: width 0.2s;
 }
 
 .sizeFotoSponsor3:hover {
-    width: 26%;
+    width: 32%;
 }
 
+.btn-dark:hover{
+    background-color:  rgb(255, 255, 255);
+    color:black
+}
+
+.areaButton{
+    grid-area: boton;
+    text-align: center;
+    background-color: rgb(107, 172, 209) ;
+    padding-bottom: 20%;     
+}
+
+.botonIndex {
+    width: 20%;
+    height: 30%;
+    font-size: 50%;
+}
 
 
 
@@ -148,6 +183,7 @@ footer {
 .paddingFU {
     padding-top: 10%;
     font-size: 80%;
+    font-family: 'Sofia Sans', sans-serif;
 }
 
 
@@ -159,20 +195,25 @@ footer {
 .navegacion li a:hover {
     color: rgb(255, 255, 255);
 }
+
 .botonInicio { 
     font-size: 28px;
     display: flex;
     justify-content: center;
 }
+
 .botonInicio:hover {
     background-color: rgb(49, 53, 53);
 }
+
 .botonIngresar {
     background-color: rgb(49, 53, 53);   
 }
+
 .botonIngresar:hover {
     background-color:rgb(20, 20, 20);
 }
+
 
 .fa-instagram:hover {
     background-color: rgb(255, 255, 255);
@@ -198,34 +239,39 @@ footer {
 .colorRojo{
     color:rgb(190, 5, 5);
 }
+
 .colorAzul{
     text-decoration: none;
     color:rgb(27, 27, 207);
+}
+
+.colorNegro {
+    color:black;
+    margin: 1%;
 }
 
 .fondo {
     background-image: linear-gradient(to bottom,rgb(255, 255, 255),rgb(107, 172, 209)  );
 }
 
-.fotoHeader {
+.centrarLogo{
     display: flex;
-    justify-content:space-around;
-    align-items:center;
-    background-image: linear-gradient(to bottom,rgb(255, 255, 255),rgb(107, 172, 209)  );
+    justify-content: center;
 }
 
 .navegacion {
     display: flex;
-    justify-content:space-around;
-    align-items:center;
+    justify-content: center;
+    font-family: 'Sofia Sans', sans-serif;  
+    color: black; 
     background-color: rgb(107, 172, 209);
     width: 100%;
-    font-size: 22px;
+    font-size: 50%;
 }
 
 .contenidoInicio {
     grid-area: contenido_inicio;
-    padding: 15%;
+    padding: 20%;
     background-color: rgb(107, 172, 209) ;
     text-align: center;
     font-family: 'Sofia Sans', sans-serif;
@@ -234,85 +280,611 @@ footer {
 .footerF {
     justify-content: center;
     text-align: center;
-    height: 20%;
     padding-top: 15%;
     padding-bottom: 10%;
-    font-size: 100%;
+    font-size: 60%;
     
+}
+
+.fontInicio {
+    font-family: 'Jost', sans-serif;
+    font-size: 125%;
 }
 
 .fontFooter {
     font-family: 'Yellowtail', cursive;
     font-size: 150%;
 }
-}
 
 
 
+/* Vista Tablet */
 
+@media only screen and (min-width: 768px) {
 
-/* VISTA MOBILE */
-
-
-
-@media screen and (max-width: 767px) {
-    
     .grid_home {
         display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: 5% auto auto auto 5%;
-        grid-template-rows: 5vh auto auto auto 5vh;
-        grid-template-areas:"logo_centro"
-                            "encabezado"
-                            "contenido_principal"
+        grid-template-areas:"encabezado"
+                            "barraNav"
+                            "contenido_inicio"
                             "sponsors"
-                            "pie_de_pagina"
+                            "pie_de_pagina";
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-columns:auto;   
     }
+    
+    
+    /* ORDENES DIRECTAS */
+    
+    
     header {
-        display: flex;
+        grid-area: encabezado;
+        flex-direction: row;
         align-items: center;
-        grid-area:encabezado;
-        background-image: linear-gradient(to bottom,rgb(255, 255, 255),rgb(107, 172, 209)  );
-        
+        font-family: 'Sofia Sans', sans-serif;  
     }
-    header div img {
-        grid-area: logo_centro;  
+    
+    nav {
+        grid-area: barraNav;
     }
-    .fondo {
-        width: 70%;
-        background-image: linear-gradient(to bottom,rgb(255, 255, 255),rgb(107, 172, 209)  );
+    
+    form {
+        text-align: center;
+        padding-top: 5%;
+        padding-bottom: 7%;
+        background-image: linear-gradient(to top, rgb(255, 255, 255),rgb(107, 172, 209)  );
     }
-    .imgNav {
-        width: 90%;
-        height: 90%;
+    form h2{
+        padding-bottom: 5%
     }
-    .paddingB {
-        padding-bottom: 10px;
+    form ul a {
+        padding:10px;
     }
-    .navegacion {
-        display: flex;
-        width: 100%;
-        font-size: 7px;
-        justify-content: space-around;
+    
+    footer {
+        grid-area: pie_de_pagina;
+        background-image: linear-gradient(to top, rgb(255, 255, 255),rgb(107, 172, 209)  ); 
     }
+    
+    
+    
+    
+    
+    /* ID */
+    
     #sponsors {
-        font-size: 10px;
-        size: 10%;
+        font-family: 'Sofia Sans', sans-serif;
+        grid-area: sponsors;
+        text-align: center;
+        background-color: rgb(107, 172, 209) ;
+        font-size: 120%;
     }
-    section {
-        font-size: 20px;
-        padding: 60px;
-    }
-    .fotosIndex{
-        width: 85px;
-        height: 30px;
+    
+    
+    
+    
+    
+    /* SIZES */
+
+    .sizeIndex {
+        width: 100%;
+        padding-top: 50%;
+        padding-bottom: 50%;
     }
 
-    footer {
-        padding-top: 5%;
+    .areaButton{
+        grid-area: boton;
+        text-align: center;
+        background-color: rgb(107, 172, 209) ;
+        padding-bottom: 20%;     
     }
-    footer ul {
-        padding: 2%;
-        font-size: 10px;
+    
+    .botonIndex {
+        width: 30%;
+        height: 90%;
+        font-size: 50%;
+    }
+    
+    .sizeHome {
+        font-size: 280% ;
+        font-family: 'Jost', sans-serif;
+    }
+    
+    .sizeLogoNav {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .sizeLinkH {
+        text-decoration: none;
+        font-family: 'Jost', sans-serif;
+        color:black;
+        font-size: 110%;
+        transition: width 0.2s;
+    }
+    
+    .sizeLinkH:hover {
+        font-size: 115%;
+    }
+    
+    .sizeMenu {
+        font-size: 110%;
+        text-decoration: none;
+        color: black;
+    }
+    
+    .sizeFotoSponsor1 {
+        margin:1%;
+        width: 25%;
+        transition: width 0.2s;
+    }
+    
+    .sizeFotoSponsor1:hover {
+        width: 30%;
+    }
+    
+    .sizeFotoSponsor2 {
+        margin:1%;
+        width: 20%;
+        transition: width 0.2s;
+    }
+    
+    .sizeFotoSponsor2:hover {
+        width: 25%;
+    }
+    
+    .sizeFotoSponsor3 {
+        margin:1%;
+        width: 25%;
+        transition: width 0.2s;
+    }
+    
+    .sizeFotoSponsor3:hover {
+        width: 30%;
+    }
+    
+    .sizeIndex {
+        width: 80%;
+        padding-top:30%;
+        padding-bottom: 30%;
+    }
+    
+    
+    
+    
+    /* PADDINGS */
+    
+    .paddingB {
+        padding-bottom: 40px;
+    }
+    .paddingT {
+        padding-top: 40px;
+    }
+    
+    .paddingTH{
+        padding-top: 3%;
+    }
+    
+    .paddingFU {
+        padding-top: 10%;
+        font-size: 80%;
+        font-family: 'Sofia Sans', sans-serif;
+    }
+    
+    
+    
+    
+    /* BUTTONS */
+    
+    
+    .navegacion li a:hover {
+        color: rgb(255, 255, 255);
+    }
+    
+    .botonInicio { 
+        font-size: 28px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .botonInicio:hover {
+        background-color: rgb(49, 53, 53);
+    }
+    
+    .botonIngresar {
+        background-color: rgb(49, 53, 53);   
+    }
+    
+    .botonIngresar:hover {
+        background-color:rgb(20, 20, 20);
+    }
+    
+    .fa-instagram:hover {
+        background-color: rgb(255, 255, 255);
+        border-radius: 100%;
+    }
+    
+    .fa-whatsapp:hover {
+        background-color: rgb(255, 255, 255);
+        border-radius: 100%;
+    }
+    
+    .fa-facebook:hover {
+        background-color: rgb(255, 255, 255);
+        border-radius: 100%;
+    }
+    
+    
+    
+    
+    
+    /* ESTILOS Y COLORES */
+    
+    .colorRojo{
+        color:rgb(190, 5, 5);
+    }
+    
+    .colorAzul{
+        text-decoration: none;
+        color:rgb(27, 27, 207);
+    }
+    
+    .colorNegro{
+        color:black;
+        margin:0.5%;
+    }
+    
+    .fondo {
+        background-image: linear-gradient(to bottom,rgb(255, 255, 255),rgb(107, 172, 209)  );
+    }
+    
+    .centrarLogo{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .navegacion {
+        display: flex;
+        justify-content:space-around;
+        align-items:center;
+        font-family: 'Sofia Sans', sans-serif;  
+        color: black; 
+        background-color: rgb(107, 172, 209);
+        width: 100%;
+        font-size: 22px;
+    }
+    
+    .contenidoInicio {
+        grid-area: contenido_inicio;
+        padding: 15%;
+        background-color: rgb(107, 172, 209) ;
+        text-align: center;
+        font-family: 'Sofia Sans', sans-serif;
+    }
+    
+    .footerF {
+        justify-content: center;
+        text-align: center;
+        height: 20%;
+        padding-top: 15%;
+        padding-bottom: 10%;
+        font-size: 110%;
+        
+    }
+    
+    .fontInicio {
+        font-family: 'Jost', sans-serif;
+         font-size: 300%;
+    }
+    
+    .fontFooter {
+        font-family: 'Yellowtail', cursive;
+        font-size: 150%;
     }
 }
+
+
+/* Vista Desktop */
+
+@media only screen and (min-width: 1024px) {
+
+    .grid_home {
+        display: grid;
+        grid-template-areas:"encabezado"
+                            "barraNav"
+                            "contenido_inicio"
+                            "sponsors"
+                            "pie_de_pagina";
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-columns:auto;   
+    }
+    
+    
+    /* ORDENES DIRECTAS */
+    
+    
+    header {
+        grid-area: encabezado;
+        flex-direction: row;
+        align-items: center;
+        font-family: 'Sofia Sans', sans-serif;  
+    }
+    
+    nav {
+        grid-area: barraNav;
+    }
+    
+    form {
+        text-align: center;
+        padding-top: 5%;
+        padding-bottom: 7%;
+        background-image: linear-gradient(to top, rgb(255, 255, 255),rgb(107, 172, 209)  );
+    }
+    form h2{
+        padding-bottom: 5%
+    }
+    form ul a {
+        padding:10px;
+    }
+    
+    footer {
+        grid-area: pie_de_pagina;
+        background-image: linear-gradient(to top, rgb(255, 255, 255),rgb(107, 172, 209)  ); 
+    }
+    
+    
+    
+    
+    
+    /* ID */
+    
+    #sponsors {
+        font-family: 'Sofia Sans', sans-serif;
+        grid-area: sponsors;
+        text-align: center;
+        background-color: rgb(107, 172, 209) ;
+        font-size: 100%;
+    }
+    
+    
+    
+    
+    
+    /* SIZES */
+
+    .sizeIndex {
+        width: 100%;
+        padding-top: 50%;
+        padding-bottom: 50%;
+    }
+
+    .areaButton{
+        grid-area: boton;
+        text-align: center;
+        background-color: rgb(107, 172, 209) ;
+        padding-bottom: 20%;     
+    }
+    
+    .botonIndex {
+        width: 30%;
+        height: 90%;
+        font-size: 50%;
+    }
+    
+    .sizeHome {
+        font-size: 280% ;
+        font-family: 'Jost', sans-serif;
+    }
+    
+    .sizeLogoNav {
+        width: 45%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .sizeLinkH {
+        text-decoration: none;
+        font-family: 'Jost', sans-serif;
+        color:black;
+        font-size: 110%;
+        transition: width 0.2s;
+    }
+    
+    .sizeLinkH:hover {
+        font-size: 115%;
+    }
+    
+    .sizeMenu {
+        font-size: 110%;
+        text-decoration: none;
+        color: black;
+    }
+    
+    .sizeFotoSponsor1 {
+        margin:1%;
+        width: 20%;
+        transition: width 0.2s;
+    }
+    
+    .sizeFotoSponsor1:hover {
+        width: 26%;
+    }
+    
+    .sizeFotoSponsor2 {
+        margin:1%;
+        width: 15%;
+        transition: width 0.2s;
+    }
+    
+    .sizeFotoSponsor2:hover {
+        width: 20%;
+    }
+    
+    .sizeFotoSponsor3 {
+        margin:1%;
+        width: 20%;
+        transition: width 0.2s;
+    }
+    
+    .sizeFotoSponsor3:hover {
+        width: 26%;
+    }
+    
+    
+    
+    
+    
+    /* PADDINGS */
+    
+    .paddingB {
+        padding-bottom: 40px;
+    }
+    .paddingT {
+        padding-top: 40px;
+    }
+    
+    .paddingTH{
+        padding-top: 3%;
+    }
+    
+    .paddingFU {
+        padding-top: 10%;
+        font-size: 80%;
+        font-family: 'Sofia Sans', sans-serif;
+    }
+    
+    
+    
+    
+    /* BUTTONS */
+    
+    
+    .navegacion li a:hover {
+        color: rgb(255, 255, 255);
+    }
+    
+    .botonInicio { 
+        font-size: 28px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .botonInicio:hover {
+        background-color: rgb(49, 53, 53);
+    }
+    
+    .botonIngresar {
+        background-color: rgb(49, 53, 53);   
+    }
+    
+    .botonIngresar:hover {
+        background-color:rgb(20, 20, 20);
+    }
+    
+    .fa-instagram:hover {
+        background-color: rgb(255, 255, 255);
+        border-radius: 100%;
+    }
+    
+    .fa-whatsapp:hover {
+        background-color: rgb(255, 255, 255);
+        border-radius: 100%;
+    }
+    
+    .fa-facebook:hover {
+        background-color: rgb(255, 255, 255);
+        border-radius: 100%;
+    }
+    
+    
+    
+    
+    
+    /* ESTILOS Y COLORES */
+    
+    .colorRojo{
+        color:rgb(190, 5, 5);
+    }
+    
+    .colorAzul{
+        text-decoration: none;
+        color:rgb(27, 27, 207);
+    }
+    
+    .colorNegro{
+        color:black;
+        margin:0.5%;
+    }
+    
+    .fondo {
+        background-image: linear-gradient(to bottom,rgb(255, 255, 255),rgb(107, 172, 209)  );
+    }
+    
+    .centrarLogo{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .navegacion {
+        display: flex;
+        justify-content:space-around;
+        align-items:center;
+        font-family: 'Sofia Sans', sans-serif;  
+        color: black; 
+        background-color: rgb(107, 172, 209);
+        width: 100%;
+        font-size: 22px;
+    }
+    
+    .contenidoInicio {
+        grid-area: contenido_inicio;
+        padding: 15%;
+        background-color: rgb(107, 172, 209) ;
+        text-align: center;
+        font-family: 'Sofia Sans', sans-serif;
+    }
+    
+    .footerF {
+        justify-content: center;
+        text-align: center;
+        height: 20%;
+        padding-top: 15%;
+        padding-bottom: 10%;
+        font-size: 100%;
+        
+    }
+    
+    .fontInicio {
+        font-family: 'Jost', sans-serif;
+         font-size: 300%;
+    }
+    
+    .fontFooter {
+        font-family: 'Yellowtail', cursive;
+        font-size: 150%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
