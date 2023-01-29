@@ -42,7 +42,7 @@
                         "barraNav"
                         "recuperarPassword"
                         "pie_de_pagina";
-    grid-template-rows: 10% 7% 43% 40%;
+    grid-template-rows: 11% 4% 40% 40%;
     grid-template-columns:auto;
 }
 
@@ -50,10 +50,10 @@
     display: grid;
     grid-template-areas:"encabezado"
                         "barraNav"
-                        "formularioR"
+                        "registro"
                         "pie_de_pagina";
-    grid-template-rows: 10% 7% 53% 30%;
-    grid-template-columns:auto;
+    grid-template-rows: 8% 4% 53% 30%;
+    grid-template-columns:100%;
 }
 
 
@@ -130,6 +130,11 @@
 .sizeInput {
     text-align: center;
     width: 30%;
+}
+
+.sizeInputRP {
+    text-align: center;
+    width: 50%;
 }
 
 .sizeFotoSponsor1 {
@@ -231,14 +236,18 @@
 
 .botonIniciarSesion {
     width: 15%;
-    font-size: 90%;
-}
-
-.botonRecuperarPassword {
-    width: 10%;
     font-size: 80%;
 }
 
+.botonRegistro {
+    width: 15%;
+    font-size: 90%;
+}
+
+.botonRecuperar {
+    width: 15%;
+    font-size: 50%;
+}
 
 
 
@@ -286,6 +295,11 @@
     text-decoration: underline 1px black;
 }
 
+.subrayadoReg {
+    padding-top: 3%;
+    text-decoration: underline 1px black;
+}
+
 
 
 
@@ -316,7 +330,7 @@
 }
 
 .formRegistro {
-    grid-area: formularioR;
+    grid-area: registro;
     text-align: center;
     background-color: rgb(107, 172, 209) ;
     font-family: 'Jost', sans-serif;
@@ -368,6 +382,12 @@
     font-family: 'Jost', sans-serif;
 }
 
+.textoPagesRP {
+    padding: 8%;
+    font-size: 100%;
+    font-family: 'Jost', sans-serif;
+}
+
 .footerIndex {
     grid-area: redes;
     background-image: linear-gradient(to top, rgb(255, 255, 255),rgb(107, 172, 209)  );
@@ -412,13 +432,21 @@
         display: grid;
         grid-template-areas:"encabezado"
                             "barraNav"
-                            "recuperarPassword"
+                            "registro"
                             "pie_de_pagina";
         grid-template-rows: 10% 7% 43% 40%;
         grid-template-columns:auto;
     }
 
-
+    .grid_recuperarPassword {
+        display: grid;
+        grid-template-areas:"encabezado"
+                            "barraNav"
+                            "recuperarPassword"
+                            "pie_de_pagina";
+        grid-template-rows: 10% 7% 43% 40%;
+        grid-template-columns:auto;
+    }
 
 
 
@@ -515,6 +543,11 @@
         width: 25%;
     }
 
+    .sizeInputRP {
+        text-align: center;
+        width: 40%;
+    }
+
     .sizeFooter {
         font-size: 100%;
     }
@@ -541,6 +574,9 @@
         padding-top: 2%;
     }
     
+    .paddingFormR {
+        padding-top: 2%;
+    }
 
 
 
@@ -562,6 +598,11 @@
     
     .botonIngresar:hover {
         background-color:rgb(20, 20, 20);
+    }
+
+    .botonRecuperar {
+        width: 15%;
+        font-size: 80%;
     }
     
     .fa-instagram:hover {
@@ -615,7 +656,7 @@
 
     .fontInicio {
         font-family: 'Jost', sans-serif;
-         font-size: 300%;
+        font-size: 300%;
     }
 
     .subrayado {
@@ -691,21 +732,26 @@
 
 @media only screen and (min-width: 1024px) {
 
+    .grid_index {
+        grid-template-rows: 40% 30% 30%;
+    }
+
     .grid_home {
-        display: grid;
-        grid-template-areas:"encabezado"
-                            "barraNav"
-                            "contenido_inicio"
-                            "sponsors"
-                            "pie_de_pagina";
         grid-template-rows: auto auto auto auto auto;
-        grid-template-columns:auto;   
     }
     
     .grid_iniciarSesion {
-        grid-template-rows: 7% 7% 56% 30%;
+        grid-template-rows: 9.6% 1% 56% 30%;
     }
     
+    .grid_registro {
+        grid-template-rows: 7.5% 1% 53.05% 40%;
+        grid-template-columns: 100%;
+    }
+
+    .grid_recuperarPassword {
+        grid-template-rows: 11% 1% 48.2% 40%;
+    }
     
     
     /* ID */
@@ -724,7 +770,9 @@
         padding: 10%;
     }
     
-    
+    #navegacion {
+        grid-area: barraNav;
+    }
     
     
     /* SIZES */
@@ -794,6 +842,11 @@
         width: 26%;
     }
 
+    .sizeInputRP {
+        text-align: center;
+        width: 25%;
+    }
+
     .sizeFooter {
         font-size: 120%;
     }
@@ -818,6 +871,13 @@
         padding-top: 2%;
     }
     
+    .paddingFormR {
+        padding-top: 2%;
+    }
+
+    .paddingFormReg {
+        padding-bottom: 2%;
+    }
     
     
     
@@ -834,6 +894,16 @@
     
     .botonIngresar:hover {
         background-color:rgb(20, 20, 20);
+    }
+
+    .botonRecuperar {
+        width: 9%;
+        font-size: 80%;
+    }
+
+    .botonRegistro {
+        width: 10%;
+        font-size: 90%;
     }
     
     .fa-instagram:hover {
@@ -871,6 +941,11 @@
     
     .fondo {
         background-image: linear-gradient(to bottom,rgb(255, 255, 255),rgb(107, 172, 209)  );
+    }
+    
+    .subrayadoR {
+        text-decoration: underline 1px black;
+        padding-bottom: 3%;
     }
     
     .logoIndex {
@@ -924,10 +999,41 @@
         font-size: 100%;
         padding: 10%;
     }
+
+    .formRegistro {
+        grid-area: registro;
+        text-align: center;
+        width: 100%;
+        background-color: rgb(107, 172, 209) ;
+        font-family: 'Jost', sans-serif;
+        font-size: 100%;
+        padding-top: 10%;
+        padding-bottom: 10%;
+        
+    }
+
+    .areaH {
+        grid-area: encabezado;
+        flex-direction: row;
+        align-items: center;
+        font-family: 'Sofia Sans', sans-serif; 
+    }
+
+    .textoPagesR {
+        padding-top:5%;
+        padding-bottom: 6%;
+        font-size: 100%;
+        font-family: 'Jost', sans-serif;
+    }
+
+    .textoPagesRP {
+        padding-top:8%;
+        padding-bottom: 6%;
+        font-size: 100%;
+        font-family: 'Jost', sans-serif;
+    }
+
 }
-
-
-
 
 
 
