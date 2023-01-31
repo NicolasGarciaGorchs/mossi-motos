@@ -32,8 +32,8 @@
                         "barraNav"
                         "formulario"
                         "pie_de_pagina";
-    grid-template-rows: 10% 7% 53% 30%;
-    grid-template-columns:auto; 
+    grid-template-rows: 11% 7% 53% 30%;
+    grid-template-columns:100%; 
 }
 
 .grid_recuperarPassword {
@@ -43,7 +43,7 @@
                         "recuperarPassword"
                         "pie_de_pagina";
     grid-template-rows: 11% 4% 40% 40%;
-    grid-template-columns:auto;
+    grid-template-columns:100%;
 }
 
 .grid_registro {
@@ -52,9 +52,41 @@
                         "barraNav"
                         "registro"
                         "pie_de_pagina";
-    grid-template-rows: 8% 4% 53% 30%;
+    grid-template-rows: 8% 4% 58% 30%;
     grid-template-columns:100%;
 }
+
+.grid_turnos {
+    display: grid;
+    grid-template-areas:"encabezado"
+                        "barraNav"
+                        "turnos"
+                        "pie_de_pagina";
+    grid-template-rows: 8% 1% 56% 35%;
+    grid-template-columns: 100%;
+}
+
+.grid_productos {
+    display: grid;
+    grid-template-areas:"encabezado"
+                        "barraNav"
+                        "productos"
+                        "pie_de_pagina";
+    grid-template-rows: 15% 4% 46% 35%;
+    grid-template-columns: 100%;
+}
+
+.grid_sucursales {
+    display: grid;
+    grid-template-areas:"encabezado"
+                        "barraNav"
+                        "sucursales"
+                        "pie_de_pagina";
+    grid-template-rows: 8% 1% 56% 35%;
+    grid-template-columns: 100%;
+}
+
+
 
 
 
@@ -84,7 +116,9 @@
     padding-top: 20%;
 }
 
-
+#productos {
+    grid-area: productos;
+}
 
 
 
@@ -303,9 +337,16 @@
 
 
 
-/* AREAS GRID */
+/* AREAS GRID  Y VARIOS*/
 
 
+
+.areaH {
+    grid-area: encabezado;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'Sofia Sans', sans-serif; 
+}
 
 .formIniciarSesion {
     grid-area: formulario;
@@ -340,6 +381,14 @@
     
 }
 
+.contenidoInicio {
+    grid-area: contenido_inicio;
+    padding: 10%;
+    background-color: rgb(107, 172, 209) ;
+    text-align: center;
+    font-family: 'Sofia Sans', sans-serif;
+}
+
 .navegacion {
     display: flex;
     justify-content: center;
@@ -350,24 +399,18 @@
     font-size: 52%;
 }
 
-.contenidoInicio {
-    grid-area: contenido_inicio;
-    padding: 10%;
-    background-color: rgb(107, 172, 209) ;
-    text-align: center;
-    font-family: 'Sofia Sans', sans-serif;
-}
-
 .centrarLogo{
     display: flex;
     justify-content: center;
 }
 
-.areaH {
-    grid-area: encabezado;
-    flex-direction: row;
-    align-items: center;
-    font-family: 'Sofia Sans', sans-serif; 
+.productos {
+    font-family: 'Jost', sans-serif;
+    text-align: center;
+    background-color: rgb(107, 172, 209) ;
+    font-size: 100%;
+    padding: 15%;
+    padding-top: 30%;
 }
 
 .textoPages {
@@ -386,11 +429,6 @@
     padding: 8%;
     font-size: 100%;
     font-family: 'Jost', sans-serif;
-}
-
-.footerIndex {
-    grid-area: redes;
-    background-image: linear-gradient(to top, rgb(255, 255, 255),rgb(107, 172, 209)  );
 }
 
 .footerF {
@@ -418,37 +456,35 @@
         }
 
     .grid_home {
-        display: grid;
-        grid-template-areas:"encabezado"
-                            "barraNav"
-                            "contenido_inicio"
-                            "sponsors"
-                            "pie_de_pagina";
-        grid-template-rows: auto auto auto auto auto;
-        grid-template-columns:auto;   
+        grid-template-rows: 7.5% 1% 53.05% 40%;
+        grid-template-columns: 100%;   
     } 
     
+    
     .grid_registro {
-        display: grid;
-        grid-template-areas:"encabezado"
-                            "barraNav"
-                            "registro"
-                            "pie_de_pagina";
-        grid-template-rows: 10% 7% 43% 40%;
-        grid-template-columns:auto;
+        grid-template-rows: 7.5% 1% 53.05% 40%;
+        grid-template-columns: 100%;
     }
 
     .grid_recuperarPassword {
-        display: grid;
-        grid-template-areas:"encabezado"
-                            "barraNav"
-                            "recuperarPassword"
-                            "pie_de_pagina";
-        grid-template-rows: 10% 7% 43% 40%;
-        grid-template-columns:auto;
+        grid-template-rows: 7.5% 1% 53.05% 40%;
+        grid-template-columns: 100%;
     }
 
+    .grid_turnos {
+        grid-template-rows: 8% 1% 56% 35%;
+        grid-template-columns: 100%;
+    }
+    
+    .grid_productos {
+        grid-template-rows: 8% 1% 56% 35%;
+        grid-template-columns: 100%;
+    }
 
+    .grid_sucursales {
+        grid-template-rows: 8% 1% 56% 35%;
+        grid-template-columns: 100%;
+    }
 
     /* ID */
     
@@ -718,6 +754,14 @@
         font-size: 150%;
         font-family: 'Jost', sans-serif;
     }
+
+    .productos {
+        font-family: 'Sofia Sans', sans-serif;
+        text-align: center;
+        background-color: rgb(107, 172, 209) ;
+        font-size: 60%;
+        padding-top: 20%;
+    }
 }
 
 
@@ -737,11 +781,11 @@
     }
 
     .grid_home {
-        grid-template-rows: auto auto auto auto auto;
+        grid-template-rows:  8.32% 1% 28% 25% 30%;
     }
     
     .grid_iniciarSesion {
-        grid-template-rows: 9.6% 1% 56% 30%;
+        grid-template-rows: 9.90% 1% 56% 30%;
     }
     
     .grid_registro {
@@ -752,7 +796,21 @@
     .grid_recuperarPassword {
         grid-template-rows: 11% 1% 48.2% 40%;
     }
+
+    .grid_turnos {
+        grid-template-rows: 8% 1% 56% 35%;
+        grid-template-columns: 100%;
+    }
     
+    .grid_productos {
+        grid-template-rows: 8% 1% 56% 35%;
+        grid-template-columns: 100%;
+    }
+
+    .grid_sucursales {
+        grid-template-rows: 8% 1% 56% 35%;
+        grid-template-columns: 100%;
+    }
     
     /* ID */
     
@@ -1033,6 +1091,13 @@
         font-family: 'Jost', sans-serif;
     }
 
+    .productos {
+        font-family: 'Sofia Sans', sans-serif;
+        text-align: center;
+        background-color: rgb(107, 172, 209) ;
+        font-size: 60%;
+        padding-top: 20%;
+    }
 }
 
 
