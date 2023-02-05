@@ -1,0 +1,13 @@
+@mixin width ($ancho){
+    width: $ancho;
+}
+
+@mixin contenedor_grid ($columnas,$filas,$areas) {
+    display: grid;
+    grid-template-columns: $columnas;
+    grid-template-rows: $filas;
+    grid-template-areas: $areas;
+}
+
+/* SE INCLUYE @include contenedor_grid(auto, auto auto auto auto, "encabezado, principal, etc");
+  CON @extend se llama a la funcion que se necesita. EJ: @extend .contenedor_grid; */

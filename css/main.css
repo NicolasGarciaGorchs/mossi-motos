@@ -1,3 +1,5 @@
+/* SE INCLUYE @include contenedor_grid(auto, auto auto auto auto, "encabezado, principal, etc");
+  CON @extend se llama a la funcion que se necesita. EJ: @extend .contenedor_grid; */
 * {
   padding: 0px;
   margin: 0px;
@@ -143,6 +145,56 @@
 .footerIndex1 {
   grid-area: redes;
   background-color: rgb(107, 172, 209);
+}
+
+.navegacion {
+  display: flex;
+  justify-content: center;
+  font-family: "Sofia Sans", sans-serif;
+  color: black;
+  background-color: rgb(107, 172, 209);
+  width: 100%;
+  font-size: 52%;
+}
+
+.centrarLogo {
+  display: flex;
+  justify-content: center;
+}
+
+.productos {
+  font-family: "Jost", sans-serif;
+  text-align: center;
+  background-color: rgb(107, 172, 209);
+  font-size: 100%;
+  padding: 15%;
+  padding-top: 30%;
+}
+
+.textoPages {
+  padding: 10%;
+  font-size: 100%;
+  font-family: "Jost", sans-serif;
+}
+
+.textoPagesR {
+  padding: 8%;
+  font-size: 100%;
+  font-family: "Jost", sans-serif;
+}
+
+.textoPagesRP {
+  padding: 8%;
+  font-size: 100%;
+  font-family: "Jost", sans-serif;
+}
+
+.footerF {
+  justify-content: center;
+  text-align: center;
+  padding-top: 10%;
+  padding-bottom: 20%;
+  font-size: 75%;
 }
 
 .sizeIndex {
@@ -317,56 +369,6 @@
 .botonRecuperar {
   width: 15%;
   font-size: 50%;
-}
-
-.navegacion {
-  display: flex;
-  justify-content: center;
-  font-family: "Sofia Sans", sans-serif;
-  color: black;
-  background-color: rgb(107, 172, 209);
-  width: 100%;
-  font-size: 52%;
-}
-
-.centrarLogo {
-  display: flex;
-  justify-content: center;
-}
-
-.productos {
-  font-family: "Jost", sans-serif;
-  text-align: center;
-  background-color: rgb(107, 172, 209);
-  font-size: 100%;
-  padding: 15%;
-  padding-top: 30%;
-}
-
-.textoPages {
-  padding: 10%;
-  font-size: 100%;
-  font-family: "Jost", sans-serif;
-}
-
-.textoPagesR {
-  padding: 8%;
-  font-size: 100%;
-  font-family: "Jost", sans-serif;
-}
-
-.textoPagesRP {
-  padding: 8%;
-  font-size: 100%;
-  font-family: "Jost", sans-serif;
-}
-
-.footerF {
-  justify-content: center;
-  text-align: center;
-  padding-top: 10%;
-  padding-bottom: 20%;
-  font-size: 75%;
 }
 
 /* Vista TABLET */
