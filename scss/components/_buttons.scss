@@ -1,0 +1,42 @@
+
+.navegacion li a:hover {
+    background-color:map-get($paleta_de_colores , septimo);
+}
+
+.botonIngresar {
+    background-color:map-get($paleta_de_colores , octavo);   
+}
+
+.botonIngresar:hover {
+    background-color:map-get($paleta_de_colores , noveno);
+}
+
+.fa-instagram:hover {
+    background-color:map-get($paleta_de_colores , septimo);
+    border-radius: 100%;
+}
+
+.fa-whatsapp:hover {
+    background-color:map-get($paleta_de_colores , septimo);
+    border-radius: 100%;
+}
+
+.fa-facebook:hover {
+    background-color:map-get($paleta_de_colores , septimo);
+    border-radius: 100%;
+}
+
+.botonIniciarSesion {
+    width: 15%;
+    font-size: 80%;
+}
+
+.botonRegistro {
+    width: 15%;
+    font-size: 90%;
+}
+
+.botonRecuperar {
+    width: 15%;
+    font-size: 50%;
+}

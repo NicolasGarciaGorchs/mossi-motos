@@ -1,0 +1,49 @@
+/* COLORES */
+
+
+
+.fondo {
+    background-image: map-get($paleta_de_colores , primero);
+
+.colorRojo{
+    color: map-get($paleta_de_colores , cuarto);
+}
+
+.colorAzul{
+    text-decoration: none;
+    color: map-get($paleta_de_colores , quinto);
+}
+
+.colorNegro {
+    color: map-get($paleta_de_colores , tercero);
+    margin: 1%;
+}
+
+
+
+
+
+/* FONTS */
+
+
+
+.fontInicio {
+    font-family: 'Jost', sans-serif;
+    font-size: 125%;
+}
+
+.fontFooter {
+    font-family: 'Yellowtail', cursive;
+    font-size: 150%;
+}
+
+.subrayado {
+    text-decoration: underline 1px map-get($paleta_de_colores , tercero);
+}
+
+.subrayadoReg {
+    padding-top: 3%;
+    text-decoration: underline 1px map-get($paleta_de_colores , tercero);;
+}
+
+}

@@ -1,0 +1,20 @@
+$primero: linear-gradient(to bottom,rgb(255, 255, 255),rgb(107, 172, 209)  );
+$segundo: linear-gradient(to top, rgb(255, 255, 255), rgb(107, 172, 209));
+$tercero: black;
+$cuarto: rgb(190, 5, 5); 
+$quinto: rgb(27, 27, 207);
+$sexto: rgb(107, 172, 209);
+$septimo: rgb(255, 255, 255);
+$octavo:  rgb(49, 53, 53); 
+$noveno:  rgb(20, 20, 20);
+
+$paleta_de_colores:(
+    primero: $primero,
+    segundo: $segundo,
+    tercero : $tercero,
+    cuarto: $cuarto,
+    quinto: $quinto,
+    sexto: $sexto,
+    septimo: $septimo,
+    octavo: $octavo
+);

@@ -1,0 +1,51 @@
+
+.navegacion {
+    display: flex;
+    justify-content: center;
+    font-family: 'Sofia Sans', sans-serif;  
+    color: map-get($paleta_de_colores , tercero);
+    background-color: map-get($paleta_de_colores , sexto);
+    width: 100%;
+    font-size: 52%;
+}
+
+.centrarLogo{
+    display: flex;
+    justify-content: center;
+}
+
+.productos {
+    font-family: 'Jost', sans-serif;
+    text-align: center;
+    background-color: map-get($paleta_de_colores , sexto);
+    font-size: 100%;
+    padding: 15%;
+    padding-top: 30%;
+}
+
+.textoPages {
+    padding: 10%;
+    font-size: 100%;
+    font-family: 'Jost', sans-serif;
+}
+
+.textoPagesR {
+    padding: 8%;
+    font-size: 100%;
+    font-family: 'Jost', sans-serif;
+}
+
+.textoPagesRP {
+    padding: 8%;
+    font-size: 100%;
+    font-family: 'Jost', sans-serif;
+}
+
+.footerF {
+    justify-content: center;
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 20%;
+    font-size: 75%;
+    
+}

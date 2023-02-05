@@ -1,0 +1,171 @@
+.grid_index {
+    display: grid;
+    grid-template-areas:"fotoCentral"
+                        "redes"
+                        "pie_de_pagina";
+    grid-template-rows: 40% 30% 30%;
+    grid-template-columns: 100%;
+}
+
+.grid_home {
+    display: grid;
+    grid-template-areas:"encabezado"
+                        "barraNav"
+                        "contenido_inicio"
+                        "sponsors"
+                        "pie_de_pagina";
+    grid-template-rows: 10% 7% 33% 20% 30%;
+    grid-template-columns:auto;   
+}
+
+.grid_iniciarSesion {
+    display: grid;
+    grid-template-areas:"encabezado"
+                        "barraNav"
+                        "formulario"
+                        "pie_de_pagina";
+    grid-template-rows: 11% 7% 53% 30%;
+    grid-template-columns:100%; 
+}
+
+.grid_recuperarPassword {
+    display: grid;
+    grid-template-areas:"encabezado"
+                        "barraNav"
+                        "recuperarPassword"
+                        "pie_de_pagina";
+    grid-template-rows: 11% 4% 40% 40%;
+    grid-template-columns:100%;
+}
+
+.grid_registro {
+    display: grid;
+    grid-template-areas:"encabezado"
+                        "barraNav"
+                        "registro"
+                        "pie_de_pagina";
+    grid-template-rows: 8% 4% 58% 30%;
+    grid-template-columns:100%;
+}
+
+.grid_turnos {
+    display: grid;
+    grid-template-areas:"encabezado"
+                        "barraNav"
+                        "turnos"
+                        "pie_de_pagina";
+    grid-template-rows: 8% 1% 56% 35%;
+    grid-template-columns: 100%;
+}
+
+.grid_productos {
+    display: grid;
+    grid-template-areas:"encabezado"
+                        "barraNav"
+                        "productos"
+                        "pie_de_pagina";
+    grid-template-rows: 15% 4% 46% 35%;
+    grid-template-columns: 100%;
+}
+
+.grid_sucursales {
+    display: grid;
+    grid-template-areas:"encabezado"
+                        "barraNav"
+                        "sucursales"
+                        "pie_de_pagina";
+    grid-template-rows: 8% 1% 56% 35%;
+    grid-template-columns: 100%;
+}
+
+
+/* ID */
+
+#sponsors {
+    font-family: 'Sofia Sans', sans-serif;
+    grid-area: sponsors;
+    text-align: center;
+    background-color:map-get($paleta_de_colores , sexto);
+    font-size: 60%;
+    padding-top: 20%;
+}
+
+#fotoCentral {
+    grid-area: fotoCentral;
+    background-image: map-get($paleta_de_colores , primero);
+}
+
+#navegacion {
+    grid-area: barraNav;
+}
+
+#footerArea {
+    grid-area: pie_de_pagina;
+    background-image: map-get($paleta_de_colores , segundo);
+    padding-top: 20%;
+}
+
+#productos {
+    grid-area: productos;
+}
+
+
+/* AREAS GRID */
+
+.areaH {
+    grid-area: encabezado;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'Sofia Sans', sans-serif; 
+}
+
+.formIniciarSesion {
+    grid-area: formulario;
+    text-align: center;
+    background-color:map-get($paleta_de_colores , sexto);
+    font-family: 'Jost', sans-serif;
+    font-size: 65%;
+    padding-top: 15%;
+    padding-bottom: 10%;
+    
+}
+
+.formRecuperarPassword {
+    grid-area: recuperarPassword;
+    text-align: center;
+    background-color:map-get($paleta_de_colores , sexto);
+    font-family: 'Jost', sans-serif;
+    font-size: 100%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    
+}
+
+.formRegistro {
+    grid-area: registro;
+    text-align: center;
+    background-color:map-get($paleta_de_colores , sexto);
+    font-family: 'Jost', sans-serif;
+    font-size: 70%;
+    padding-top: 15%;
+    padding-bottom: 10%;
+    
+}
+
+.contenidoInicio {
+    grid-area: contenido_inicio;
+    padding: 10%;
+    background-color:map-get($paleta_de_colores , sexto);
+    text-align: center;
+    font-family: 'Sofia Sans', sans-serif;
+}
+
+.footerIndex2 {
+    grid-area: pie_de_pagina;
+    background-image: map-get($paleta_de_colores , segundo);
+}
+
+.footerIndex1 {
+    grid-area: redes;
+    background-color:map-get($paleta_de_colores , sexto);
+}

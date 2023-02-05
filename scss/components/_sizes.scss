@@ -1,0 +1,79 @@
+
+.sizeIndex {
+    width: 90%;
+    padding-bottom: 45%;
+    padding-top: 45%;
+}
+
+.sizeHome {
+    font-size: 110% ;
+    font-family: 'Jost', sans-serif;
+}
+
+.sizeLogoNav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.sizeLinkH {
+    text-decoration: none;
+    font-family: 'Jost', sans-serif;
+    color: map-get($paleta_de_colores , tercero);
+    font-size: 110%;
+    transition: width 0.2s;
+}
+
+.sizeLinkH:hover {
+    font-size: 115%;
+}
+
+.sizeMenu {
+    font-size: 110%;
+    text-decoration: none;
+    color: map-get($paleta_de_colores , tercero);
+}
+
+.sizeInput {
+    text-align: center;
+    width: 30%;
+}
+
+.sizeInputRP {
+    text-align: center;
+    width: 50%;
+}
+
+.sizeFotoSponsor1 {
+    margin:2%;
+    width: 25%;
+    transition: width 0.2s;
+}
+
+.sizeFotoSponsor1:hover {
+    width: 28%;
+}
+
+.sizeFotoSponsor2 {
+    margin:2%;
+    width: 20%;
+    transition: width 0.2s;
+}
+
+.sizeFotoSponsor2:hover {
+    width: 24%;
+}
+
+.sizeFotoSponsor3 {
+    margin:2%;
+    width: 28%;
+    transition: width 0.2s;
+}
+
+.sizeFotoSponsor3:hover {
+    width: 32%;
+}
+
+.sizeFooter {
+    font-size: 70%;
+}
