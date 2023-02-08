@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home - Mossi Motos</title>
+  <title>Registro | Mossi Motos</title>
   <!--LINK ICONO-->
   <link rel="shortcut icon"
     href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6lc0UtVj73nwB7RwZxZ2LiNURFNwbOXDiy0136ZuDaZIyI1K02luizik6I7xJCGTuSuM&usqp=CAU"
@@ -36,30 +36,37 @@
 
 <body>
   <div class="grid_registro">
-    <header class="areaH fondo">
-      <a class="centrarLogo" href="./home.html"><img class="sizeLogoNav" src="../assets/diseños/editadobn.svg"></a>
+    <header class="areaH">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary colorNavBar">
+          <div class="container-fluid">
+              <a href="./home.html"><img class="sizeLogoNav" src="../assets/diseños/editadobn.svg" alt="Logo Mossi Motos"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+              </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="sizeNavBar styleNav navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                      <a class="nav-link" href="./iniciarsesion.html">Ingresar</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="./turnosonline.html">Turnos</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="./productos.html">Productos</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="./sucursales.html">Sucursales</a>
+                  </li>
+              </ul>
+          </div>
+          </div>
+      </nav>
   </header>
-  <nav id="navegacion" class="navegacion">
-      <ul class="nav">
-          <li class="nav-item">
-              <a href="./iniciarsesion.html" class="nav-link sizeMenu" aria-current="page">Inicia Sesión</a>
-          </li>
-          <li class="nav-item">
-              <a href="./turnosonline.html" class="nav-link sizeMenu" href="#">Turnos Online</a>
-          </li>
-          <li class="nav-item">
-              <a href="./productos.html" class="nav-link sizeMenu" href="#">Productos</a>
-          </li>
-          <li class="nav-item">
-              <a href="./sucursales.html" class="nav-link sizeMenu">Sucursales</a>
-          </li>
-      </ul>
-  </nav>
     <form class="formRegistro">
       <div class="subrayado">
-        <h4>REGISTRATE</h4>
+        <h2>REGISTRATE</h2>
       </div>
-      <div class="textoPagesR">
+      <div class="textoPages">
         ¡Creá tu cuenta y disfrutá de todos los beneficios de nuestra comunidad!
       </div>
       <div class="paddingFormR">
@@ -122,22 +129,21 @@
     </form>
     <footer id="footerArea">
       <div class="footerF">
-        <p class="fontFooter">Seguinos en nuestras redes!</p>
-        <a href="https://web.whatsapp.com" target="_blank" rel="noopener noreferrer"><i
-            class="fa-brands fa-whatsapp colorNegro fa-2x"></i></a>
+          <p class="fontFooter">Seguinos en nuestras redes!</p>
+          <a href="https://web.whatsapp.com" target="_blank" rel="noopener noreferrer"><i
+                  class="fa-brands fa-whatsapp colorNegro fa-2x"></i></a>
 
-        <a href="https://www.instagram.com/mossimotos" target="_blank" rel="noopener noreferrer"><i
-            class="fa-brands fa-instagram colorNegro fa-2x"></i></a>
+          <a href="https://www.instagram.com/mossimotos" target="_blank" rel="noopener noreferrer"><i
+                  class="fa-brands fa-instagram colorNegro fa-2x"></i></a>
 
-        <a href="https://www.facebook.com/mossimotos" target="_blank" rel="noopener noreferrer"><i
-            class="fa-brands fa-facebook colorNegro fa-50 fa-2x"></i></a>
-        <div class="paddingFU">
-          <p>Mossi Motos</p>
-          <p>Todos los derechos reservados © 2023</p>
-        </div>
+          <a href="https://www.facebook.com/mossimotos" target="_blank" rel="noopener noreferrer"><i
+                  class="fa-brands fa-facebook colorNegro fa-50 fa-2x"></i></a>
+          <div class="paddingFU">
+              <p>Mossi Motos</p>
+              <p>Todos los derechos reservados © 2023</p>
+          </div>
       </div>
-    </footer>
-  </div>
+  </footer>
   <!--CDN BOOSTRAP-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"

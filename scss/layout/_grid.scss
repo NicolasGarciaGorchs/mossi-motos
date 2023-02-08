@@ -10,71 +10,64 @@
 .grid_home {
     display: grid;
     grid-template-areas:"encabezado"
-                        "barraNav"
                         "contenido_inicio"
                         "sponsors"
                         "pie_de_pagina";
-    grid-template-rows: 10% 7% 33% 20% 30%;
+    grid-template-rows: 10% 33% 20% 30%;
     grid-template-columns:auto;   
 }
 
 .grid_iniciarSesion {
     display: grid;
     grid-template-areas:"encabezado"
-                        "barraNav"
                         "formulario"
                         "pie_de_pagina";
-    grid-template-rows: 11% 7% 53% 30%;
+    grid-template-rows: 11% 53% 30%;
     grid-template-columns:100%; 
 }
 
 .grid_recuperarPassword {
     display: grid;
     grid-template-areas:"encabezado"
-                        "barraNav"
-                        "recuperarPassword"
+                        "recuperar"
                         "pie_de_pagina";
-    grid-template-rows: 11% 4% 40% 40%;
+    grid-template-rows: 11% 40% 40%;
     grid-template-columns:100%;
 }
 
 .grid_registro {
     display: grid;
     grid-template-areas:"encabezado"
-                        "barraNav"
                         "registro"
                         "pie_de_pagina";
-    grid-template-rows: 8% 4% 58% 30%;
+    grid-template-rows: 8% 58% 30%;
     grid-template-columns:100%;
 }
 
 .grid_turnos {
     display: grid;
     grid-template-areas:"encabezado"
-                        "barraNav"
                         "turnos"
                         "pie_de_pagina";
-    grid-template-rows: 8% 1% 56% 35%;
+    grid-template-rows: 8% 56% 35%;
     grid-template-columns: 100%;
 }
 
 .grid_productos {
     display: grid;
     grid-template-areas:"encabezado"
-                        "barraNav"
                         "productos"
                         "pie_de_pagina";
-    grid-template-rows: 15% 4% 46% 35%;
+    grid-template-rows: 15% 46% 35%;
     grid-template-columns: 100%;
 }
 
 .grid_sucursales {
     display: grid;
     grid-template-areas:"encabezado"
-                        "barraNav"
                         "sucursales"
                         "pie_de_pagina";
-    grid-template-rows: 8% 1% 56% 35%;
+    grid-template-rows: 8% 56% 35%;
     grid-template-columns: 100%;
 }
 
@@ -95,9 +88,6 @@
     background-image: map-get($paleta_de_colores , primero);
 }
 
-#navegacion {
-    grid-area: barraNav;
-}
 
 #footerArea {
     grid-area: pie_de_pagina;
@@ -131,15 +121,16 @@
 }
 
 .formRecuperarPassword {
-    grid-area: recuperarPassword;
+    grid-area: recuperar;
     text-align: center;
-    background-color:map-get($paleta_de_colores , sexto);
+    background-color: rgb(107, 172, 209) ;
     font-family: 'Jost', sans-serif;
-    font-size: 100%;
-    padding-top: 10%;
+    font-size: 65%;
+    padding-top: 15%;
     padding-bottom: 10%;
     
 }
+
 
 .formRegistro {
     grid-area: registro;

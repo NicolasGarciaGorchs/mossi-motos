@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home - Mossi Motos</title>
+    <title>Productos | Mossi Motos</title>
     <!--LINK ICONO-->
     <link rel="shortcut icon"
         href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6lc0UtVj73nwB7RwZxZ2LiNURFNwbOXDiy0136ZuDaZIyI1K02luizik6I7xJCGTuSuM&usqp=CAU"
@@ -33,41 +33,46 @@
     <!--LINK CSS-->
     <link rel="stylesheet" href="../css/main.css" />
 </head>
-    <div class="grid_productos">
     <body>
-        <header class="areaH fondo">
-            <a class="centrarLogo" href="./home.html"><img class="sizeLogoNav" src="../assets/diseños/editadobn.svg"></a>
+    <div class="grid_productos">
+        <header class="areaH">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary colorNavBar">
+                <div class="container-fluid">
+                    <a href="./home.html"><img class="sizeLogoNav" src="../assets/diseños/editadobn.svg" alt="Logo Mossi Motos"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="sizeNavBar styleNav navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./iniciarsesion.html">Ingresar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./turnosonline.html">Turnos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./sucursales.html">Sucursales</a>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+            </nav>
         </header>
-        <nav id="navegacion" class="navegacion">
-            <ul class="nav">
-                <li class="nav-item">
-                    <a href="./iniciarsesion.html" class="nav-link sizeMenu" aria-current="page">Inicia Sesión</a>
-                </li>
-                <li class="nav-item">
-                    <a href="./turnosonline.html" class="nav-link sizeMenu" href="#">Turnos Online</a>
-                </li>
-                <li class="nav-item">
-                    <a href="./productos.html" class="nav-link sizeMenu" href="#">Productos</a>
-                </li>
-                <li class="nav-item">
-                    <a href="./sucursales.html" class="nav-link sizeMenu">Sucursales</a>
-                </li>
-            </ul>
-        </nav>
-        <main id="productos" class="productos">
+        <main id="productos" class="productos fondoTurnos">
           <div class="subrayado">
             <h2>PRODUCTOS</h2>
           </div>
-            <div class="textoPages">
+            <div class="textoPagesR">
               ¡Encontrá todo lo que buscas en nuestra tienda online!
             </div>
-            <div>
-                <h6>Envíos a todo el país y en 24hs. en Zona CABA y GBA</h6>
+            <div class="textoPagesR">
+                Envíos a todo el país y en 24hs. en Zona CABA y GBA
             </div>
-            <div>
-                <h6>
-                Ventas Minoristas y Mayoristas
-                </h6>    
+            <div class="textoPagesR">
+                Ventas Minoristas y Mayoristas    
             </div>
         </main>
         <footer id="footerArea">

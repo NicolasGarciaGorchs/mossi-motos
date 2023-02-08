@@ -15,50 +15,50 @@
 
 .grid_home {
   display: grid;
-  grid-template-areas: "encabezado" "barraNav" "contenido_inicio" "sponsors" "pie_de_pagina";
-  grid-template-rows: 10% 7% 33% 20% 30%;
+  grid-template-areas: "encabezado" "contenido_inicio" "sponsors" "pie_de_pagina";
+  grid-template-rows: 10% 33% 20% 30%;
   grid-template-columns: auto;
 }
 
 .grid_iniciarSesion {
   display: grid;
-  grid-template-areas: "encabezado" "barraNav" "formulario" "pie_de_pagina";
-  grid-template-rows: 11% 7% 53% 30%;
+  grid-template-areas: "encabezado" "formulario" "pie_de_pagina";
+  grid-template-rows: 11% 53% 30%;
   grid-template-columns: 100%;
 }
 
 .grid_recuperarPassword {
   display: grid;
-  grid-template-areas: "encabezado" "barraNav" "recuperarPassword" "pie_de_pagina";
-  grid-template-rows: 11% 4% 40% 40%;
+  grid-template-areas: "encabezado" "recuperar" "pie_de_pagina";
+  grid-template-rows: 11% 40% 40%;
   grid-template-columns: 100%;
 }
 
 .grid_registro {
   display: grid;
-  grid-template-areas: "encabezado" "barraNav" "registro" "pie_de_pagina";
-  grid-template-rows: 8% 4% 58% 30%;
+  grid-template-areas: "encabezado" "registro" "pie_de_pagina";
+  grid-template-rows: 8% 58% 30%;
   grid-template-columns: 100%;
 }
 
 .grid_turnos {
   display: grid;
-  grid-template-areas: "encabezado" "barraNav" "turnos" "pie_de_pagina";
-  grid-template-rows: 8% 1% 56% 35%;
+  grid-template-areas: "encabezado" "turnos" "pie_de_pagina";
+  grid-template-rows: 8% 56% 35%;
   grid-template-columns: 100%;
 }
 
 .grid_productos {
   display: grid;
-  grid-template-areas: "encabezado" "barraNav" "productos" "pie_de_pagina";
-  grid-template-rows: 15% 4% 46% 35%;
+  grid-template-areas: "encabezado" "productos" "pie_de_pagina";
+  grid-template-rows: 15% 46% 35%;
   grid-template-columns: 100%;
 }
 
 .grid_sucursales {
   display: grid;
-  grid-template-areas: "encabezado" "barraNav" "sucursales" "pie_de_pagina";
-  grid-template-rows: 8% 1% 56% 35%;
+  grid-template-areas: "encabezado" "sucursales" "pie_de_pagina";
+  grid-template-rows: 8% 56% 35%;
   grid-template-columns: 100%;
 }
 
@@ -75,10 +75,6 @@
 #fotoCentral {
   grid-area: fotoCentral;
   background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(107, 172, 209));
-}
-
-#navegacion {
-  grid-area: barraNav;
 }
 
 #footerArea {
@@ -110,12 +106,12 @@
 }
 
 .formRecuperarPassword {
-  grid-area: recuperarPassword;
+  grid-area: recuperar;
   text-align: center;
   background-color: rgb(107, 172, 209);
   font-family: "Jost", sans-serif;
-  font-size: 100%;
-  padding-top: 10%;
+  font-size: 65%;
+  padding-top: 15%;
   padding-bottom: 10%;
 }
 
@@ -147,16 +143,6 @@
   background-color: rgb(107, 172, 209);
 }
 
-.navegacion {
-  display: flex;
-  justify-content: center;
-  font-family: "Sofia Sans", sans-serif;
-  color: black;
-  background-color: rgb(107, 172, 209);
-  width: 100%;
-  font-size: 52%;
-}
-
 .centrarLogo {
   display: flex;
   justify-content: center;
@@ -168,23 +154,10 @@
   background-color: rgb(107, 172, 209);
   font-size: 100%;
   padding: 15%;
-  padding-top: 30%;
 }
 
 .textoPages {
   padding: 10%;
-  font-size: 100%;
-  font-family: "Jost", sans-serif;
-}
-
-.textoPagesR {
-  padding: 8%;
-  font-size: 100%;
-  font-family: "Jost", sans-serif;
-}
-
-.textoPagesRP {
-  padding: 8%;
   font-size: 100%;
   font-family: "Jost", sans-serif;
 }
@@ -234,12 +207,7 @@
 
 .sizeInput {
   text-align: center;
-  width: 30%;
-}
-
-.sizeInputRP {
-  text-align: center;
-  width: 50%;
+  width: 40%;
 }
 
 .sizeFotoSponsor1 {
@@ -272,42 +240,70 @@
   width: 32%;
 }
 
+.sizeTurnos {
+  font-size: 150%;
+  padding-top: 3%;
+}
+
+.sizetSucursales {
+  font-size: 150%;
+}
+
+.sizeTurnos1 {
+  padding-top: 5%;
+  font-size: 150%;
+}
+
 .sizeFooter {
   font-size: 70%;
 }
 
 /* COLORES */
-.fondo {
+.colorNavBar {
   background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(107, 172, 209));
-  /* FONTS */
 }
-.fondo .colorRojo {
+
+.colorRojo {
   color: rgb(190, 5, 5);
 }
-.fondo .colorAzul {
+
+.colorAzul {
   text-decoration: none;
   color: rgb(27, 27, 207);
 }
-.fondo .colorNegro {
+
+.colorNegro {
   color: black;
   margin: 1%;
 }
-.fondo .fontInicio {
+
+.sinDetalles {
+  text-decoration: none;
+  color: black;
+  transition: size 0.2s;
+}
+
+/* FONTS */
+.fontInicio {
   font-family: "Jost", sans-serif;
   font-size: 125%;
 }
-.fondo .fontFooter {
+
+.fontFooter {
   font-family: "Yellowtail", cursive;
   font-size: 150%;
 }
-.fondo .subrayado {
+
+.subrayado {
   -webkit-text-decoration: underline 1px black;
           text-decoration: underline 1px black;
 }
-.fondo .subrayadoReg {
-  padding-top: 3%;
-  -webkit-text-decoration: underline 1px black;
-          text-decoration: underline 1px black;
+
+.fondoTurnos {
+  background-color: rgb(107, 172, 209);
+  font-family: "Jost", sans-serif;
+  text-align: center;
+  padding: 10%;
 }
 
 .paddingTH {
@@ -323,10 +319,6 @@
 
 .paddingForm {
   padding-top: 3%;
-}
-
-.paddingFormRP {
-  padding-top: 2%;
 }
 
 .paddingFormR {
@@ -378,27 +370,27 @@
     grid-template-columns: 100%;
   }
   .grid_home {
-    grid-template-rows: 10.05% 1% 33% 20% 30%;
+    grid-template-rows: 10.05% 33% 20% 30%;
     grid-template-columns: 100%;
   }
   .grid_registro {
-    grid-template-rows: 14% 1% 53.05% 40%;
+    grid-template-rows: 14% 53.05% 40%;
     grid-template-columns: 100%;
   }
   .grid_recuperarPassword {
-    grid-template-rows: 14.22% 2% 53.05% 40%;
+    grid-template-rows: 14.22% 53.05% 40%;
     grid-template-columns: 100%;
   }
   .grid_turnos {
-    grid-template-rows: 8% 1% 56% 35%;
+    grid-template-rows: 8% 56% 35%;
     grid-template-columns: 100%;
   }
   .grid_productos {
-    grid-template-rows: 8% 1% 56% 35%;
+    grid-template-rows: 8% 56% 35%;
     grid-template-columns: 100%;
   }
   .grid_sucursales {
-    grid-template-rows: 8% 1% 56% 35%;
+    grid-template-rows: 8% 56% 35%;
     grid-template-columns: 100%;
   }
   /* ID */
@@ -408,9 +400,6 @@
     text-align: center;
     background-color: rgb(107, 172, 209);
     font-size: 120%;
-  }
-  #navegacion {
-    grid-area: barraNav;
   }
   /* SIZES */
   .sizeIndex {
@@ -540,7 +529,7 @@
     color: black;
     margin: 0.5%;
   }
-  .fondo {
+  .colorNavBar {
     background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(107, 172, 209));
   }
   /* FONTS */
@@ -634,29 +623,33 @@
     grid-template-rows: 40% 30% 30%;
   }
   .grid_home {
-    grid-template-rows: 8.32% 1% 28% 25% 30%;
+    grid-template-areas: "encabezado" "contenido_inicio" "sponsors" "pie_de_pagina";
+    grid-template-rows: 7% 22% 29% 30%;
   }
   .grid_iniciarSesion {
-    grid-template-rows: 9.9% 1% 56% 30%;
+    grid-template-areas: "encabezado" "formulario" "pie_de_pagina";
+    grid-template-rows: 7% 56% 30%;
   }
   .grid_registro {
-    grid-template-rows: 7.5% 1% 53.05% 40%;
-    grid-template-columns: 100%;
+    grid-template-areas: "encabezado" "registro" "pie_de_pagina";
+    grid-template-rows: 6% 70% 30%;
   }
   .grid_recuperarPassword {
-    grid-template-rows: 11% 1% 48.2% 40%;
+    grid-template-areas: "encabezado" "recuperar" "pie_de_pagina";
+    grid-template-rows: 6% 50% 40%;
+    grid-template-columns: 100%;
   }
   .grid_turnos {
-    grid-template-rows: 8% 1% 56% 35%;
-    grid-template-columns: 100%;
+    grid-template-areas: "encabezado" "turnos" "pie_de_pagina";
+    grid-template-rows: 8% 56% 25%;
   }
   .grid_productos {
-    grid-template-rows: 8% 1% 56% 35%;
-    grid-template-columns: 100%;
+    grid-template-areas: "encabezado" "productos" "pie_de_pagina";
+    grid-template-rows: 8% 56% 35%;
   }
   .grid_sucursales {
-    grid-template-rows: 8% 1% 56% 35%;
-    grid-template-columns: 100%;
+    grid-template-areas: "encabezado" "sucursales" "pie_de_pagina";
+    grid-template-rows: 8% 56% 35%;
   }
   /* ID */
   #sponsors {
@@ -664,15 +657,15 @@
     grid-area: sponsors;
     text-align: center;
     background-color: rgb(107, 172, 209);
-    font-size: 100%;
+    font-size: 150%;
   }
   #footerArea {
     grid-area: pie_de_pagina;
     background-image: linear-gradient(to top, rgb(255, 255, 255), rgb(107, 172, 209));
-    padding: 10%;
+    padding: 8%;
   }
-  #navegacion {
-    grid-area: barraNav;
+  #productos {
+    grid-area: productos;
   }
   /* SIZES */
   .sizeIndex {
@@ -684,9 +677,17 @@
     font-family: "Jost", sans-serif;
   }
   .sizeLogoNav {
-    width: 45%;
-    display: flex;
+    width: 50%;
     justify-content: center;
+  }
+  .sizeA {
+    width: 100%;
+  }
+  .sizeNavBar {
+    font-size: 250%;
+  }
+  .colorNavBar {
+    background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(107, 172, 209));
   }
   .sizeLinkH {
     text-decoration: none;
@@ -739,9 +740,10 @@
     padding-top: 3%;
   }
   .paddingFU {
-    padding-top: 15%;
+    padding-top: 10%;
     font-family: "Sofia Sans", sans-serif;
     text-align: center;
+    font-size: 100%;
   }
   .paddingForm {
     padding-top: 2%;
@@ -753,14 +755,14 @@
     padding-bottom: 2%;
   }
   /* BUTTONS */
-  .navegacion li a:hover {
+  .sizeNavBar li a:hover {
     color: rgb(255, 255, 255);
   }
   .botonIngresar {
     background-color: rgb(49, 53, 53);
   }
   .botonIngresar:hover {
-    background-color: rgb(20, 20, 20);
+    background-color: black;
   }
   .botonRecuperar {
     width: 9%;
@@ -794,6 +796,9 @@
     color: black;
     margin: 0.5%;
   }
+  .styleNav {
+    font-size: 200%;
+  }
   .fondo {
     background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(107, 172, 209));
   }
@@ -806,16 +811,6 @@
     display: flex;
     width: 100%;
     padding: 20%;
-  }
-  .navegacion {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-family: "Sofia Sans", sans-serif;
-    color: black;
-    background-color: rgb(107, 172, 209);
-    width: 100%;
-    font-size: 22px;
   }
   .contenidoInicio {
     grid-area: contenido_inicio;
@@ -836,54 +831,69 @@
     justify-content: center;
     text-align: center;
     height: 20%;
-    padding: 10%;
     font-size: 100%;
   }
   .fontFooter {
     font-family: "Yellowtail", cursive;
-    font-size: 150%;
+    font-size: 200%;
   }
   .formIniciarSesion {
     grid-area: formulario;
     text-align: center;
     background-color: rgb(107, 172, 209);
     font-family: "Jost", sans-serif;
-    font-size: 100%;
+    font-size: 150%;
     padding: 10%;
   }
-  .formRegistro {
-    grid-area: registro;
-    text-align: center;
-    width: 100%;
-    background-color: rgb(107, 172, 209);
-    font-family: "Jost", sans-serif;
-    font-size: 100%;
-    padding-top: 10%;
-    padding-bottom: 10%;
-  }
-  .areaH {
-    grid-area: encabezado;
-    flex-direction: row;
-    align-items: center;
-    font-family: "Sofia Sans", sans-serif;
-  }
-  .textoPagesR {
-    padding-top: 5%;
-    padding-bottom: 6%;
-    font-size: 100%;
-    font-family: "Jost", sans-serif;
-  }
-  .textoPagesRP {
-    padding-top: 8%;
-    padding-bottom: 6%;
-    font-size: 100%;
-    font-family: "Jost", sans-serif;
-  }
-  .productos {
-    font-family: "Sofia Sans", sans-serif;
-    text-align: center;
-    background-color: rgb(107, 172, 209);
-    font-size: 60%;
-    padding-top: 20%;
-  }
+}
+.formRegistro {
+  grid-area: registro;
+  text-align: center;
+  width: 100%;
+  background-color: rgb(107, 172, 209);
+  font-family: "Jost", sans-serif;
+  font-size: 150%;
+  padding-top: 10%;
+  padding-bottom: 15%;
+}
+
+.formRecuperarPassword {
+  grid-area: recuperar;
+  font-size: 150%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+.recuperar {
+  grid-area: recuperar;
+  text-align: center;
+  background-color: rgb(107, 172, 209);
+  font-family: "Jost", sans-serif;
+}
+
+.productos {
+  font-family: "Sofia Sans", sans-serif;
+  text-align: center;
+  background-color: rgb(107, 172, 209);
+  font-size: 120%;
+  padding: 10%;
+}
+
+.areaH {
+  grid-area: encabezado;
+  align-items: center;
+}
+
+.textoPagesR {
+  padding-top: 5%;
+  padding-bottom: 2%;
+  font-size: 120%;
+  font-family: "Jost", sans-serif;
+}
+
+.textoPagesRP {
+  padding-top: 8%;
+  padding-bottom: 6%;
+  font-size: 100%;
+  font-family: "Jost", sans-serif;
 }/*# sourceMappingURL=main.css.map */

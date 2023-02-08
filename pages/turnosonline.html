@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home - Mossi Motos</title>
+    <title>Turnos Online | Mossi Motos</title>
     <!--LINK ICONO-->
     <link rel="shortcut icon"
         href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6lc0UtVj73nwB7RwZxZ2LiNURFNwbOXDiy0136ZuDaZIyI1K02luizik6I7xJCGTuSuM&usqp=CAU"
@@ -33,43 +33,47 @@
     <!--LINK CSS-->
     <link rel="stylesheet" href="../css/main.css" />
 </head>
-    <body class="fondo">
-      <header class="fondo">
-        <a class="centrarLogo" href="./home.html"><img class="sizeLogoNav" src="../assets/diseños/editadobn.svg"></a>
+    <body>
+      <header class="areaH">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary colorNavBar">
+            <div class="container-fluid">
+                <a href="./home.html"><img class="sizeLogoNav" src="../assets/diseños/editadobn.svg" alt="Logo Mossi Motos"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="sizeNavBar styleNav navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./iniciarsesion.html">Ingresar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./turnosonline.html">Turnos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./sucursales.html">Sucursales</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
     </header>
-    <nav class="navegacion">
-        <ul class="nav">
-            <li class="nav-item">
-                <a href="./iniciarsesion.html" class="nav-link sizeMenu" aria-current="page">Inicia Sesión</a>
-            </li>
-            <li class="nav-item">
-                <a href="./turnosonline.html" class="nav-link sizeMenu" href="#">Turnos Online</a>
-            </li>
-            <li class="nav-item">
-                <a href="./productos.html" class="nav-link sizeMenu" href="#">Productos</a>
-            </li>
-            <li class="nav-item">
-                <a href="./sucursales.html" class="nav-link sizeMenu">Sucursales</a>
-            </li>
-        </ul>
-    </nav>
-        <main>
+        <main class="fondoTurnos">
           <div class="subrayado">
             <h2>TURNOS ONLINE</h2>
           </div>
           <div class="sizeTurnos1">
             La forma más organizada y personalizada para reparar tu moto!
           </div>
-          <div class="sizeTurnos2">
+          <div class="sizeTurnos1">
             Con este nuevo método de organización logramos llevar nuestro servicio a otro nivel.
             La personalización de éste al momento de reservar permite al usuario la posibilidad de 
             especificar sus problemas al detalle.
           </div>
-          <div class="sizeTurnos3">
-            <a  class="sizeLinkT" href="./registro.html">CREÁ TU CUENTA,</a> VALIDÁ TUS DATOS, SUBÍ FOTOS DE TU MOTO Y SUMATE A LA EXCLUSIVA COMUNIDAD DE MOSSI MOTOS
-          </div>
-          <div>
-            <img class="sizeFotoTurnos" src="https://talleractual.com/images/contenido/news-2020-08-20/MA%202020-08-20%20TALLER%20MECANICO%20PARA%20MOTOS%20UNA%20IDEA%20UNA%20PASION%20UNA%20PROFESION%201.jpg">
+          <div class="sizeTurnos1">
+            <a  class="sinDetalles" href="./registro.html">CREÁ TU CUENTA,</a> VALIDÁ TUS DATOS, SUBÍ FOTOS DE TU MOTO Y SUMATE A LA EXCLUSIVA COMUNIDAD DE MOSSI MOTOS
           </div>
         </main>
         <footer id="footerArea">

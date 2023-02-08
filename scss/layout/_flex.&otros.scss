@@ -1,14 +1,3 @@
-
-.navegacion {
-    display: flex;
-    justify-content: center;
-    font-family: 'Sofia Sans', sans-serif;  
-    color: map-get($paleta_de_colores , tercero);
-    background-color: map-get($paleta_de_colores , sexto);
-    width: 100%;
-    font-size: 52%;
-}
-
 .centrarLogo{
     display: flex;
     justify-content: center;
@@ -20,7 +9,6 @@
     background-color: map-get($paleta_de_colores , sexto);
     font-size: 100%;
     padding: 15%;
-    padding-top: 30%;
 }
 
 .textoPages {
@@ -29,17 +17,7 @@
     font-family: 'Jost', sans-serif;
 }
 
-.textoPagesR {
-    padding: 8%;
-    font-size: 100%;
-    font-family: 'Jost', sans-serif;
-}
 
-.textoPagesRP {
-    padding: 8%;
-    font-size: 100%;
-    font-family: 'Jost', sans-serif;
-}
 
 .footerF {
     justify-content: center;

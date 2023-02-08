@@ -2,8 +2,9 @@
 
 
 
-.fondo {
-    background-image: map-get($paleta_de_colores , primero);
+.colorNavBar{
+    background-image: map-get($paleta_de_colores , primero );
+}
 
 .colorRojo{
     color: map-get($paleta_de_colores , cuarto);
@@ -19,7 +20,11 @@
     margin: 1%;
 }
 
-
+.sinDetalles {
+    text-decoration: none;
+    color: map-get($paleta_de_colores, tercero );
+    transition: size 0.2s;
+}
 
 
 
@@ -41,9 +46,10 @@
     text-decoration: underline 1px map-get($paleta_de_colores , tercero);
 }
 
-.subrayadoReg {
-    padding-top: 3%;
-    text-decoration: underline 1px map-get($paleta_de_colores , tercero);;
+.fondoTurnos {
+    background-color:map-get($paleta_de_colores , sexto);
+    font-family: 'Jost', sans-serif;
+    text-align: center;
+    padding: 10%;
 }
 
-}
