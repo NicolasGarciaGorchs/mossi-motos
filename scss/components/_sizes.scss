@@ -10,12 +10,6 @@
     font-family: 'Jost', sans-serif;
 }
 
-.sizeLogoNav {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
 .sizeLinkH {
     text-decoration: none;
     font-family: 'Jost', sans-serif;
@@ -26,12 +20,6 @@
 
 .sizeLinkH:hover {
     font-size: 115%;
-}
-
-.sizeMenu {
-    font-size: 110%;
-    text-decoration: none;
-    color: map-get($paleta_de_colores , tercero);
 }
 
 .sizeInput {
@@ -74,10 +62,6 @@
     padding-top: 3%;
 }
 
-.sizetSucursales {
-    font-size: 150%;
-}
-
 .sizeTurnos1 {
     padding-top: 5%;
     font-size: 150%;
@@ -87,3 +71,11 @@
     font-size: 70%;
 }
 
+.sizeLogo {
+    width: 100%;
+}
+
+.fontsize_Nav {
+    font-size: 90%;
+    color: map-get($paleta_de_colores, tercero);
+}

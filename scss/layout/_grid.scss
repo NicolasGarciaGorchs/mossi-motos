@@ -102,11 +102,8 @@
 
 /* AREAS GRID */
 
-.areaH {
+.encabezado {
     grid-area: encabezado;
-    flex-direction: row;
-    align-items: center;
-    font-family: 'Sofia Sans', sans-serif; 
 }
 
 .formIniciarSesion {
@@ -141,6 +138,10 @@
     padding-top: 15%;
     padding-bottom: 10%;
     
+}
+
+.sucursales{
+    grid-area: sucursales;
 }
 
 .contenidoInicio {

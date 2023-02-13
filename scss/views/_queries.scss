@@ -415,6 +415,11 @@
     /* SIZES */
 
 
+    .fontsize_Nav {
+        font-size: 140%;
+    }
+
+    
     .sizeIndex {
         width: 100%;
         padding:7%
@@ -437,6 +442,8 @@
     }
     .colorNavBar{
         background-image: map-get($paleta_de_colores , primero );
+        display: flex;
+        justify-content: center;
     }
     .sizeLinkH {
         text-decoration: none;
@@ -697,3 +704,7 @@
     }
 
     
+
+    .sucursales{
+        grid-area: sucursales;
+    }

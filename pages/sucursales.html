@@ -33,65 +33,73 @@
     <!--LINK CSS-->
     <link rel="stylesheet" href="../css/main.css" />
 </head>
-    <body class="fondo">
-        <header class="areaH">
-            <nav class="navbar navbar-expand-lg bg-body-tertiary colorNavBar">
-                <div class="container-fluid">
-                    <a href="./home.html"><img class="sizeLogoNav" src="../assets/diseños/editadobn.svg" alt="Logo Mossi Motos"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="sizeNavBar styleNav navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="./iniciarsesion.html">Ingresar</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./turnosonline.html">Turnos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./productos.html">Productos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./sucursales.html">Sucursales</a>
-                        </li>
-                    </ul>
+<div>
+    <body class="fondo grid_sucursales">
+      <!-- NAVBAR -->
+        <header class="colorNavBar encabezado">
+          <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark text-bg-black">
+                <div>
+                  <a class="navbar-brand" href="home.html">
+                    <img class="sizeLogo" src="../assets/diseños/editadobn.svg" alt="MossiMotosLogo">
+                  </a>
                 </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                  </button>
+                <div class="collapse navbar-collapse nav_bar" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto ">
+                    <li class="nav-item">
+                      <a class="nav-link fontsize_Nav" href="./iniciarsesion.html">Ingresar</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link fontsize_Nav" href="./turnosonline.html">Turnos</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link fontsize_Nav" href="./productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link fontsize_Nav" href="./sucursales.html">Sucursales</a>
+                    </li>
+                  </ul>
                 </div>
+              </div>
             </nav>
-        </header>
-        <main class="container-fluid fondoTurnos">
+          </header> 
+      <!-- CONTENIDO SUCURSALES -->       
+        <main class="container-fluid fondoTurnos sucursales">
           <div class="subrayado">
             <h2>SUCURSALES</h2>
           </div>
-          <div class="sizeTurnos">
+          <div class="sizeSucursales">
               ¡Encontranos en nuestros locales!
             </div>
-            <section class="sizeTurnos">
-            <div class="sizeTurnos subrayado">
+            <section class="sizeSucursales">
+            <div class="sizeSucursales subrayado">
                 Casa Central
             </div>
-             <div class="sizeTurnos">
+             <div class="sizeSucursales1">
               <p>Piovano 3323 - Moreno Norte</p>
               <p>Whatsapp: 1138619773</p>
               <p>Horarios: Lunes a Viernes de 8 a 18hs.</p>
               <p>Email: contacto.mossimotos@gmail.com</p>
              </div>
-              <iframe  class= "sizeTurnos" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1380.020224110376!2d-58.798129840133356!3d-34.648142795051854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbaaad6d154ba3925!2sMossi%20Motos!5e0!3m2!1ses-419!2sar!4v1674533409519!5m2!1ses-419!2sar" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <iframe  class= "sizeTurnos" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1380.020224110376!2d-58.798129840133356!3d-34.648142795051854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbaaad6d154ba3925!2sMossi%20Motos!5e0!3m2!1ses-419!2sar!4v1674533409519!5m2!1ses-419!2sar" width="220" height="220" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </section>
-            <section class="sizeTurnos">
-            <div class="subrayado sizeTurnos1">
+            <section class="sizeSucursales">
+            <div class="subrayado sizeSucursales1">
               Sucursal Moreno Sur
             </div>
-           <div class="">
+           <div class="sizeSucursales1">
             <p>Larrea 2616 - Moreno Sur</p>
             <p>Whatsapp: 2374034170</p>
             <p>Horarios: Lunes a Viernes de 8 a 18hs.</p>
             <p>Email: contacto.mossimotos@gmail.com</p>
            </div>
-            <iframe class= "sizeTurnos" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.889004891234!2d-58.79420918519321!3d-34.65750596785227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc94f9ab96a6d5%3A0x159b90808b65a!2sLarrea%202616%2C%20B1744ILR%20Moreno%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1674533722335!5m2!1ses-419!2sar" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe class= "sizeSucursales" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.889004891234!2d-58.79420918519321!3d-34.65750596785227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc94f9ab96a6d5%3A0x159b90808b65a!2sLarrea%202616%2C%20B1744ILR%20Moreno%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1674533722335!5m2!1ses-419!2sar" width="220" height="220" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </section>  
         </main>
+      <!-- FOOTER -->
         <footer id="footerArea">
             <div class="footerF">
                 <p class="fontFooter">Seguinos en nuestras redes!</p>
@@ -114,4 +122,5 @@
           integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
           crossorigin="anonymous"></script>
 </body>
+</div>
 </html>

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -33,35 +32,40 @@
   <!--LINK CSS-->
   <link rel="stylesheet" href="../css/main.css" />
 </head>
-
-<body>
-  <div class="grid_registro">
-    <header class="areaH">
-      <nav class="navbar navbar-expand-lg bg-body-tertiary colorNavBar">
-          <div class="container-fluid">
-              <a href="./home.html"><img class="sizeLogoNav" src="../assets/diseños/editadobn.svg" alt="Logo Mossi Motos"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<div>
+<body class="grid_registro">
+    <!-- NAVBAR -->
+    <header class="colorNavBar encabezado">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark text-bg-black">
+            <div>
+              <a class="navbar-brand" href="home.html">
+                <img class="sizeLogo" src="../assets/diseños/editadobn.svg" alt="MossiMotosLogo">
+              </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
               </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="sizeNavBar styleNav navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                      <a class="nav-link" href="./iniciarsesion.html">Ingresar</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="./turnosonline.html">Turnos</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="./productos.html">Productos</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="./sucursales.html">Sucursales</a>
-                  </li>
+            <div class="collapse navbar-collapse nav_bar" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto ">
+                <li class="nav-item">
+                  <a class="nav-link fontsize_Nav" href="./iniciarsesion.html">Ingresar</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fontsize_Nav" href="./turnosonline.html">Turnos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fontsize_Nav" href="./productos.html">Productos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fontsize_Nav" href="./sucursales.html">Sucursales</a>
+                </li>
               </ul>
+            </div>
           </div>
-          </div>
-      </nav>
-  </header>
+        </nav>
+      </header>
+      <!-- FORMULARIO REGISTRO -->
     <form class="formRegistro">
       <div class="subrayado">
         <h2>REGISTRATE</h2>
@@ -127,6 +131,7 @@
                 <button type="button" class="btn btn-dark botonRegistro">Enviar</button>
               </div>
     </form>
+      <!-- FOOTER -->
     <footer id="footerArea">
       <div class="footerF">
           <p class="fontFooter">Seguinos en nuestras redes!</p>
@@ -149,5 +154,5 @@
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>
 </body>
-
+</div>
 </html>
