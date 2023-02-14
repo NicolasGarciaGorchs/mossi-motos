@@ -13,7 +13,7 @@
                         "contenido_inicio"
                         "sponsors"
                         "pie_de_pagina";
-    grid-template-rows: 10% 33% 20% 30%;
+    grid-template-rows: 10% 30% 20% 30%;
     grid-template-columns:auto;   
 }
 
@@ -22,7 +22,7 @@
     grid-template-areas:"encabezado"
                         "formulario"
                         "pie_de_pagina";
-    grid-template-rows: 11% 53% 30%;
+    grid-template-rows: 11% 50% 30%;
     grid-template-columns:100%; 
 }
 
@@ -31,7 +31,7 @@
     grid-template-areas:"encabezado"
                         "recuperar"
                         "pie_de_pagina";
-    grid-template-rows: 11% 40% 40%;
+    grid-template-rows: 10% 55% 40%;
     grid-template-columns:100%;
 }
 
@@ -40,7 +40,7 @@
     grid-template-areas:"encabezado"
                         "registro"
                         "pie_de_pagina";
-    grid-template-rows: 8% 58% 30%;
+    grid-template-rows: 10% 50% 30%;
     grid-template-columns:100%;
 }
 
@@ -71,16 +71,16 @@
     grid-template-columns: 100%;
 }
 
-
 /* ID */
+
 
 #sponsors {
     font-family: 'Sofia Sans', sans-serif;
     grid-area: sponsors;
-    text-align: center;
     background-color:map-get($paleta_de_colores , sexto);
+    text-align: center;
     font-size: 60%;
-    padding-top: 20%;
+    padding-top: 1%;
 }
 
 #fotoCentral {
@@ -92,7 +92,7 @@
 #footerArea {
     grid-area: pie_de_pagina;
     background-image: map-get($paleta_de_colores , segundo);
-    padding-top: 20%;
+    padding-top: 10%;
 }
 
 #productos {
@@ -120,12 +120,10 @@
 .formRecuperarPassword {
     grid-area: recuperar;
     text-align: center;
-    background-color: rgb(107, 172, 209) ;
+    background-color: map-get($paleta_de_colores , sexto);
     font-family: 'Jost', sans-serif;
-    font-size: 65%;
     padding-top: 15%;
     padding-bottom: 10%;
-    
 }
 
 
@@ -154,7 +152,7 @@
 
 .footerIndex2 {
     grid-area: pie_de_pagina;
-    background-image: map-get($paleta_de_colores , segundo);
+    background-color:map-get($paleta_de_colores , segundo);
 }
 
 .footerIndex1 {

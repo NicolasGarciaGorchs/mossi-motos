@@ -16,28 +16,28 @@
 .grid_home {
   display: grid;
   grid-template-areas: "encabezado" "contenido_inicio" "sponsors" "pie_de_pagina";
-  grid-template-rows: 10% 33% 20% 30%;
+  grid-template-rows: 10% 30% 20% 30%;
   grid-template-columns: auto;
 }
 
 .grid_iniciarSesion {
   display: grid;
   grid-template-areas: "encabezado" "formulario" "pie_de_pagina";
-  grid-template-rows: 11% 53% 30%;
+  grid-template-rows: 11% 50% 30%;
   grid-template-columns: 100%;
 }
 
 .grid_recuperarPassword {
   display: grid;
   grid-template-areas: "encabezado" "recuperar" "pie_de_pagina";
-  grid-template-rows: 11% 40% 40%;
+  grid-template-rows: 10% 55% 40%;
   grid-template-columns: 100%;
 }
 
 .grid_registro {
   display: grid;
   grid-template-areas: "encabezado" "registro" "pie_de_pagina";
-  grid-template-rows: 8% 58% 30%;
+  grid-template-rows: 10% 50% 30%;
   grid-template-columns: 100%;
 }
 
@@ -66,21 +66,21 @@
 #sponsors {
   font-family: "Sofia Sans", sans-serif;
   grid-area: sponsors;
+  background-color: rgb(255, 197, 5);
   text-align: center;
-  background-color: rgb(107, 172, 209);
   font-size: 60%;
-  padding-top: 20%;
+  padding-top: 1%;
 }
 
 #fotoCentral {
   grid-area: fotoCentral;
-  background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(107, 172, 209));
+  background-image: linear-gradient(to bottom, rgb(250, 150, 0), rgb(255, 197, 5));
 }
 
 #footerArea {
   grid-area: pie_de_pagina;
-  background-image: linear-gradient(to top, rgb(255, 255, 255), rgb(107, 172, 209));
-  padding-top: 20%;
+  background-image: linear-gradient(to top, rgb(250, 150, 0), rgb(255, 197, 5));
+  padding-top: 10%;
 }
 
 #productos {
@@ -95,7 +95,7 @@
 .formIniciarSesion {
   grid-area: formulario;
   text-align: center;
-  background-color: rgb(107, 172, 209);
+  background-color: rgb(255, 197, 5);
   font-family: "Jost", sans-serif;
   font-size: 65%;
   padding-top: 15%;
@@ -105,9 +105,8 @@
 .formRecuperarPassword {
   grid-area: recuperar;
   text-align: center;
-  background-color: rgb(107, 172, 209);
+  background-color: rgb(255, 197, 5);
   font-family: "Jost", sans-serif;
-  font-size: 65%;
   padding-top: 15%;
   padding-bottom: 10%;
 }
@@ -115,7 +114,7 @@
 .formRegistro {
   grid-area: registro;
   text-align: center;
-  background-color: rgb(107, 172, 209);
+  background-color: rgb(255, 197, 5);
   font-family: "Jost", sans-serif;
   font-size: 70%;
   padding-top: 15%;
@@ -129,19 +128,19 @@
 .contenidoInicio {
   grid-area: contenido_inicio;
   padding: 10%;
-  background-color: rgb(107, 172, 209);
+  background-color: rgb(255, 197, 5);
   text-align: center;
   font-family: "Sofia Sans", sans-serif;
 }
 
 .footerIndex2 {
   grid-area: pie_de_pagina;
-  background-image: linear-gradient(to top, rgb(255, 255, 255), rgb(107, 172, 209));
+  background-color: linear-gradient(to top, rgb(250, 150, 0), rgb(255, 197, 5));
 }
 
 .footerIndex1 {
   grid-area: redes;
-  background-color: rgb(107, 172, 209);
+  background-color: rgb(255, 197, 5);
 }
 
 .centrarLogo {
@@ -152,7 +151,7 @@
 .productos {
   font-family: "Jost", sans-serif;
   text-align: center;
-  background-color: rgb(107, 172, 209);
+  background-color: rgb(255, 197, 5);
   font-size: 100%;
   padding: 15%;
 }
@@ -161,6 +160,26 @@
   padding: 10%;
   font-size: 100%;
   font-family: "Jost", sans-serif;
+}
+
+.textoPagesR {
+  padding: 10%;
+  font-size: 75%;
+  font-family: "Jost", sans-serif;
+}
+
+.textoPagesReg {
+  padding: 10%;
+  font-size: 100%;
+  font-family: "Jost", sans-serif;
+}
+
+.ingresar_email {
+  font-size: 100%;
+}
+
+.text_registro {
+  font-size: 100%;
 }
 
 .footerF {
@@ -196,7 +215,13 @@
 
 .sizeInput {
   text-align: center;
-  width: 40%;
+  width: 75%;
+}
+
+.sizeInputRP {
+  text-align: center;
+  width: 50%;
+  padding: 0%;
 }
 
 .sizeFotoSponsor1 {
@@ -244,17 +269,12 @@
 }
 
 .sizeLogo {
-  width: 100%;
-}
-
-.fontsize_Nav {
-  font-size: 90%;
-  color: black;
+  width: 40%;
 }
 
 /* COLORES */
 .colorNavBar {
-  background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(107, 172, 209));
+  background-image: linear-gradient(to bottom, rgb(250, 150, 0), rgb(255, 197, 5));
 }
 
 .colorRojo {
@@ -281,11 +301,6 @@
   width: 100%;
 }
 
-.nav_bar {
-  width: 100%;
-  font-family: "Jost", sans-serif;
-}
-
 /* FONTS */
 .fontInicio {
   font-family: "Jost", sans-serif;
@@ -303,14 +318,20 @@
 }
 
 .fondoTurnos {
-  background-color: rgb(107, 172, 209);
+  background-color: rgb(255, 197, 5);
   font-family: "Jost", sans-serif;
   text-align: center;
   padding: 10%;
 }
 
+.fontsize_Nav {
+  font-size: 90%;
+  color: black;
+  font-family: "Jost", sans-serif;
+}
+
 .paddingTH {
-  padding-top: 5%;
+  padding-top: 3%;
 }
 
 .paddingFU {
@@ -321,11 +342,16 @@
 }
 
 .paddingForm {
-  padding-top: 3%;
+  padding-top: 7%;
 }
 
-.paddingFormR {
-  padding-top: 2%;
+.padding_registro {
+  padding-top: 5%;
+}
+
+.padding_turnos {
+  padding-top: 9%;
+  size: 1px;
 }
 
 .navegacion li a:hover {
@@ -357,12 +383,12 @@
 }
 
 .botonRegistro {
-  width: 15%;
-  font-size: 90%;
+  width: 20%;
+  font-size: 80%;
 }
 
 .botonRecuperar {
-  width: 15%;
+  width: 20%;
   font-size: 50%;
 }
 
@@ -377,7 +403,7 @@
     grid-template-columns: 100%;
   }
   .grid_registro {
-    grid-template-rows: 14% 53.05% 40%;
+    grid-template-rows: 14% 20% 10%;
     grid-template-columns: 100%;
   }
   .grid_recuperarPassword {
@@ -401,7 +427,8 @@
     font-family: "Sofia Sans", sans-serif;
     grid-area: sponsors;
     text-align: center;
-    background-color: rgb(107, 172, 209);
+    background-color: rgb(255, 197, 5);
+    padding-top: 1%;
     font-size: 120%;
   }
   /* SIZES */
@@ -467,7 +494,8 @@
   }
   .sizeInputRP {
     text-align: center;
-    width: 40%;
+    width: 30%;
+    padding: 1%;
   }
   .sizeFooter {
     font-size: 100%;
@@ -491,6 +519,9 @@
   .paddingFormRP {
     padding-top: 8%;
   }
+  .padding_registro {
+    padding-top: 5%;
+  }
   /* BUTTONS */
   .navegacion li a:hover {
     color: rgb(255, 255, 255);
@@ -505,8 +536,8 @@
     background-color: rgb(20, 20, 20);
   }
   .botonRecuperar {
-    width: 15%;
-    font-size: 80%;
+    width: 10%;
+    font-size: 120%;
   }
   .fa-instagram:hover {
     background-color: rgb(255, 255, 255);
@@ -533,7 +564,7 @@
     margin: 0.5%;
   }
   .colorNavBar {
-    background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(107, 172, 209));
+    background-image: linear-gradient(to bottom, rgb(250, 150, 0), rgb(255, 197, 5));
   }
   /* FONTS */
   .fontFooter {
@@ -554,6 +585,27 @@
     padding-bottom: 2%;
     padding-top: 11%;
   }
+  .textoPages {
+    padding: 10%;
+    font-size: 120%;
+    font-family: "Jost", sans-serif;
+  }
+  .textoPagesR {
+    padding: 10%;
+    font-size: 200%;
+    font-family: "Jost", sans-serif;
+  }
+  .textoPagesReg {
+    padding: 9.5%;
+    font-size: 150%;
+    font-family: "Jost", sans-serif;
+  }
+  .ingresar_email {
+    font-size: 200%;
+  }
+  .text_registro {
+    font-size: 130%;
+  }
   /* AREAS GRID */
   .navegacion {
     display: flex;
@@ -561,14 +613,14 @@
     align-items: center;
     font-family: "Sofia Sans", sans-serif;
     color: black;
-    background-color: rgb(107, 172, 209);
+    background-color: rgb(255, 197, 5);
     width: 100%;
     font-size: 22px;
   }
   .formIniciarSesion {
     grid-area: formulario;
     text-align: center;
-    background-color: rgb(107, 172, 209);
+    background-color: rgb(255, 197, 5);
     font-family: "Jost", sans-serif;
     font-size: 90%;
     padding-top: 15%;
@@ -577,7 +629,7 @@
   .contenidoInicio {
     grid-area: contenido_inicio;
     padding: 15%;
-    background-color: rgb(107, 172, 209);
+    background-color: rgb(255, 197, 5);
     text-align: center;
     font-family: "Sofia Sans", sans-serif;
   }
@@ -589,35 +641,34 @@
     padding-bottom: 5%;
     font-size: 90%;
   }
-  .textoPagesRP {
-    padding-bottom: 5%;
-    font-size: 100%;
-    font-family: "Jost", sans-serif;
-  }
   .footerIndex {
     grid-area: redes;
     background-image: linear-gradient(to top, rgb(255, 255, 255), rgb(107, 172, 209));
   }
   .textoIniciarSesion {
     padding: 10%;
-    font-size: 150%;
+    font-size: 50%;
     font-family: "Jost", sans-serif;
   }
   .productos {
-    font-family: "Sofia Sans", sans-serif;
+    font-family: "Jost", sans-serif;
     text-align: center;
-    background-color: rgb(107, 172, 209);
+    background-color: rgb(255, 197, 5);
     font-size: 60%;
     padding-top: 20%;
   }
   .footerIndex1 {
     grid-area: redes;
-    background-color: rgb(107, 172, 209);
+    background-color: rgb(255, 197, 5);
   }
   .formRecuperarPassword {
-    font-size: 90%;
-    padding-top: 10%;
-    padding-bottom: 10%;
+    grid-area: recuperar;
+    text-align: center;
+    background-color: rgb(255, 197, 5);
+    font-family: "Jost", sans-serif;
+    font-size: 50%;
+    padding-top: 15%;
+    padding-bottom: 7%;
   }
 }
 /* VISTA DESKTOP */
@@ -659,12 +710,12 @@
     font-family: "Sofia Sans", sans-serif;
     grid-area: sponsors;
     text-align: center;
-    background-color: rgb(107, 172, 209);
+    background-color: rgb(255, 197, 5);
     font-size: 150%;
   }
   #footerArea {
     grid-area: pie_de_pagina;
-    background-image: linear-gradient(to top, rgb(255, 255, 255), rgb(107, 172, 209));
+    background-image: linear-gradient(to top, rgb(250, 150, 0), rgb(255, 197, 5));
     padding: 8%;
   }
   #productos {
@@ -674,6 +725,26 @@
   .fontsize_Nav {
     font-size: 140%;
   }
+  .navbar_medio {
+    flex-direction: column;
+    align-items: center;
+  }
+  .fotonav {
+    width: 100%;
+  }
+  .posicionfoto {
+    display: flex;
+    justify-content: center;
+  }
+  .sizeInputRP {
+    text-align: center;
+    width: 30%;
+  }
+  .textoPages {
+    padding: 5%;
+    font-size: 100%;
+    font-family: "Jost", sans-serif;
+  }
   .sizeIndex {
     width: 100%;
     padding: 7%;
@@ -682,18 +753,11 @@
     font-size: 280%;
     font-family: "Jost", sans-serif;
   }
-  .sizeLogoNav {
-    width: 50%;
-    justify-content: center;
-  }
-  .sizeA {
-    width: 100%;
-  }
-  .sizeNavBar {
-    font-size: 250%;
+  .sizeLogo {
+    width: 60%;
   }
   .colorNavBar {
-    background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(107, 172, 209));
+    background-image: linear-gradient(to bottom, rgb(250, 150, 0), rgb(255, 197, 5));
     display: flex;
     justify-content: center;
   }
@@ -711,6 +775,11 @@
     font-size: 110%;
     text-decoration: none;
     color: black;
+  }
+  .sizeInputRP {
+    text-align: center;
+    width: 30%;
+    padding: 0%;
   }
   .sizeFotoSponsor1 {
     margin: 1%;
@@ -736,10 +805,6 @@
   .sizeFotoSponsor3:hover {
     width: 26%;
   }
-  .sizeInputRP {
-    text-align: center;
-    width: 25%;
-  }
   .sizeFooter {
     font-size: 120%;
   }
@@ -761,6 +826,9 @@
   }
   .paddingFormReg {
     padding-bottom: 2%;
+  }
+  .padding_registro {
+    padding-top: 2%;
   }
   /* BUTTONS */
   .sizeNavBar li a:hover {
@@ -804,12 +872,6 @@
     color: black;
     margin: 0.5%;
   }
-  .styleNav {
-    font-size: 200%;
-  }
-  .fondo {
-    background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(107, 172, 209));
-  }
   .subrayadoR {
     -webkit-text-decoration: underline 1px black;
             text-decoration: underline 1px black;
@@ -823,17 +885,17 @@
   .contenidoInicio {
     grid-area: contenido_inicio;
     padding: 15%;
-    background-color: rgb(107, 172, 209);
+    background-color: rgb(255, 197, 5);
     text-align: center;
     font-family: "Sofia Sans", sans-serif;
   }
   .footerIndex1 {
     grid-area: redes;
-    background-color: rgb(107, 172, 209);
+    background-color: rgb(255, 197, 5);
   }
   .footerIndex2 {
     grid-area: pie_de_pagina;
-    background-image: linear-gradient(to top, rgb(255, 255, 255), rgb(107, 172, 209));
+    background-image: linear-gradient(to top, rgb(250, 150, 0), rgb(255, 197, 5));
   }
   .footerF {
     justify-content: center;
@@ -848,64 +910,57 @@
   .formIniciarSesion {
     grid-area: formulario;
     text-align: center;
-    background-color: rgb(107, 172, 209);
+    background-color: rgb(255, 197, 5);
     font-family: "Jost", sans-serif;
     font-size: 150%;
     padding: 10%;
   }
-}
-.formRegistro {
-  grid-area: registro;
-  text-align: center;
-  width: 100%;
-  background-color: rgb(107, 172, 209);
-  font-family: "Jost", sans-serif;
-  font-size: 150%;
-  padding-top: 10%;
-  padding-bottom: 15%;
-}
-
-.formRecuperarPassword {
-  grid-area: recuperar;
-  font-size: 150%;
-  padding-top: 10%;
-  padding-bottom: 10%;
-}
-
-.recuperar {
-  grid-area: recuperar;
-  text-align: center;
-  background-color: rgb(107, 172, 209);
-  font-family: "Jost", sans-serif;
-}
-
-.productos {
-  font-family: "Sofia Sans", sans-serif;
-  text-align: center;
-  background-color: rgb(107, 172, 209);
-  font-size: 120%;
-  padding: 10%;
-}
-
-.areaH {
-  grid-area: encabezado;
-  align-items: center;
-}
-
-.textoPagesR {
-  padding-top: 5%;
-  padding-bottom: 2%;
-  font-size: 120%;
-  font-family: "Jost", sans-serif;
-}
-
-.textoPagesRP {
-  padding-top: 8%;
-  padding-bottom: 6%;
-  font-size: 100%;
-  font-family: "Jost", sans-serif;
-}
-
-.sucursales {
-  grid-area: sucursales;
+  .formRegistro {
+    grid-area: registro;
+    text-align: center;
+    width: 100%;
+    background-color: rgb(255, 197, 5);
+    font-family: "Jost", sans-serif;
+    font-size: 150%;
+    padding-top: 10%;
+    padding-bottom: 15%;
+  }
+  .formRecuperarPassword {
+    grid-area: recuperar;
+    font-size: 150%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+  .recuperar {
+    grid-area: recuperar;
+    text-align: center;
+    background-color: rgb(107, 172, 209);
+    font-family: "Jost", sans-serif;
+  }
+  .productos {
+    font-family: "Sofia Sans", sans-serif;
+    text-align: center;
+    background-color: rgb(255, 197, 5);
+    font-size: 120%;
+    padding: 10%;
+  }
+  .textoPagesR {
+    padding: 4%;
+    font-size: 100%;
+    font-family: "Jost", sans-serif;
+  }
+  .textoPagesReg {
+    padding: 4%;
+    font-size: 100%;
+    font-family: "Jost", sans-serif;
+  }
+  .ingresar_email {
+    font-size: 100%;
+  }
+  .text_registro {
+    font-size: 100%;
+  }
+  .sucursales {
+    grid-area: sucursales;
+  }
 }/*# sourceMappingURL=main.css.map */

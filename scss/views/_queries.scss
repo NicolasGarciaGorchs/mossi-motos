@@ -16,7 +16,7 @@
     
     
     .grid_registro {
-        grid-template-rows: 14% 53.05% 40%;
+        grid-template-rows: 14% 20% 10%;
         grid-template-columns: 100%;
     }
 
@@ -47,6 +47,7 @@
         grid-area: sponsors;
         text-align: center;
         background-color:map-get($paleta_de_colores , sexto);
+        padding-top: 1%;
         font-size: 120%;
     }
     
@@ -130,7 +131,8 @@
 
     .sizeInputRP {
         text-align: center;
-        width: 40%;
+        width: 30%;
+        padding: 1%;
     }
 
     .sizeFooter {
@@ -167,7 +169,9 @@
         padding-top: 8%;
     }
 
-
+    .padding_registro {
+        padding-top: 5%;
+    }
     
     /* BUTTONS */
     
@@ -189,8 +193,8 @@
     }
 
     .botonRecuperar {
-        width: 15%;
-        font-size: 80%;
+        width: 10%;
+        font-size: 120%;
     }
     
     .fa-instagram:hover {
@@ -257,7 +261,33 @@
         padding-top: 11%;
     }
 
+    .textoPages {
+        padding: 10%;
+        font-size: 120%;
+        font-family: 'Jost', sans-serif;
+    }
+    
+    .textoPagesR {
+        padding: 10%;
+        font-size: 200%;
+        font-family: 'Jost', sans-serif;
+    }
+    
+    .textoPagesReg {
+        padding: 9.5%;
+        font-size: 150%;
+        font-family: 'Jost', sans-serif;
+    }
 
+    .ingresar_email {
+        font-size: 200%;
+    }
+
+    .text_registro {
+        font-size: 130%;
+    }
+
+    
 
 /* AREAS GRID */
 
@@ -302,11 +332,6 @@
         
     }
 
-    .textoPagesRP {
-        padding-bottom: 5%;
-        font-size: 100%;
-        font-family: 'Jost', sans-serif;
-    }
     
     .footerIndex {
         grid-area: redes;
@@ -315,12 +340,12 @@
 
     .textoIniciarSesion {
         padding: 10%;
-        font-size: 150%;
+        font-size: 50%;
         font-family: 'Jost', sans-serif;
     }
 
     .productos {
-        font-family: 'Sofia Sans', sans-serif;
+        font-family: 'Jost', sans-serif;
         text-align: center;
         background-color:map-get($paleta_de_colores , sexto);
         font-size: 60%;
@@ -333,9 +358,13 @@
     }
 
     .formRecuperarPassword {
-        font-size: 90%;
-        padding-top: 10%;
-        padding-bottom: 10%;
+        grid-area: recuperar;
+        text-align: center;
+        background-color: map-get($paleta_de_colores , sexto);
+        font-family: 'Jost', sans-serif;
+        font-size: 50%;
+        padding-top: 15%;
+        padding-bottom: 7%;
         
     }
     
@@ -412,6 +441,7 @@
         grid-area: productos;
     }
 
+
     /* SIZES */
 
 
@@ -419,6 +449,30 @@
         font-size: 140%;
     }
 
+    .navbar_medio{
+        flex-direction: column;   
+        align-items: center;
+    }
+
+    .fotonav {
+        width: 100%;
+    }
+
+    .posicionfoto{
+        display: flex;
+        justify-content: center;
+    }
+
+    .sizeInputRP {
+        text-align: center;
+        width: 30%;
+    }
+
+    .textoPages {
+        padding: 5%;
+        font-size: 100%;
+        font-family: 'Jost', sans-serif;
+    }
     
     .sizeIndex {
         width: 100%;
@@ -429,17 +483,11 @@
         font-size: 280% ;
         font-family: 'Jost', sans-serif;
     }
-    
-    .sizeLogoNav {
-        width: 50%;
-        justify-content: center;
+
+    .sizeLogo {
+        width: 60%;
     }
-    .sizeA {
-        width: 100%;
-    }
-    .sizeNavBar {
-        font-size: 250%;
-    }
+
     .colorNavBar{
         background-image: map-get($paleta_de_colores , primero );
         display: flex;
@@ -463,6 +511,12 @@
         color:map-get($paleta_de_colores , tercero);
     }
     
+    .sizeInputRP {
+        text-align: center;
+        width: 30%;
+        padding: 0%;
+    }
+
     .sizeFotoSponsor1 {
         margin:1%;
         width: 20%;
@@ -493,16 +547,9 @@
         width: 26%;
     }
 
-    .sizeInputRP {
-        text-align: center;
-        width: 25%;
-    }
-
     .sizeFooter {
         font-size: 120%;
     }
-    
-    
     
     
     
@@ -531,7 +578,10 @@
         padding-bottom: 2%;
     }
     
-    
+    .padding_registro {
+        padding-top: 2%;
+    }
+
     /* BUTTONS */
     
     
@@ -590,14 +640,6 @@
         margin:0.5%;
     }
     
-    .styleNav {
-        font-size: 200%;
-    }   
-
-    .fondo {
-        background-image: map-get($paleta_de_colores, primero );
-    }
-    
     .subrayadoR {
         text-decoration: underline 1px map-get($paleta_de_colores , tercero);
         padding-bottom: 3%;
@@ -647,7 +689,6 @@
         font-size: 150%;
         padding: 10%;
     }
-    }
 
     .formRegistro {
         grid-area: registro;
@@ -684,27 +725,31 @@
         padding: 10%;
     }
 
-    .areaH {
-        grid-area: encabezado;
-        align-items: center; 
-    }
-
     .textoPagesR {
-        padding-top:5%;
-        padding-bottom: 2%;
-        font-size: 120%;
-        font-family: 'Jost', sans-serif;
-    }
-
-    .textoPagesRP {
-        padding-top:8%;
-        padding-bottom: 6%;
+        padding: 4%;
         font-size: 100%;
         font-family: 'Jost', sans-serif;
     }
 
-    
+    .textoPagesReg {
+        padding: 4%;
+        font-size: 100%;
+        font-family: 'Jost', sans-serif;
+    }
+
+    .ingresar_email {
+        font-size: 100%;
+    }
+
+    .text_registro {
+        font-size: 100%;
+    }
 
     .sucursales{
         grid-area: sucursales;
     }
+
+
+}
+
+

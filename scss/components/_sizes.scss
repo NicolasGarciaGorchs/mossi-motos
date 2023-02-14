@@ -24,7 +24,13 @@
 
 .sizeInput {
     text-align: center;
-    width: 40%;
+    width: 75%;
+}
+
+.sizeInputRP {
+    text-align: center;
+    width: 50%;
+    padding: 0%;
 }
 
 .sizeFotoSponsor1 {
@@ -72,10 +78,5 @@
 }
 
 .sizeLogo {
-    width: 100%;
-}
-
-.fontsize_Nav {
-    font-size: 90%;
-    color: map-get($paleta_de_colores, tercero);
+    width: 40%;
 }

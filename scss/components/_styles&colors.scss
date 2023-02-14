@@ -3,7 +3,7 @@
 
 
 .colorNavBar{
-    background-image: map-get($paleta_de_colores , primero );
+    background-image: map-get($paleta_de_colores , primero);
 }
 
 .colorRojo{
@@ -31,11 +31,6 @@
 }
 
 
-.nav_bar {
-    width: 100%;
-    font-family: 'Jost', sans-serif;
-}
-
 /* FONTS */
 
 
@@ -61,3 +56,8 @@
     padding: 10%;
 }
 
+.fontsize_Nav {
+    font-size: 90%;
+    color: map-get($paleta_de_colores, tercero);
+    font-family: 'Jost', sans-serif;
+}
