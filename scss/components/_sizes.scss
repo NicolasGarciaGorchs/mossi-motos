@@ -24,12 +24,18 @@
 
 .sizeInput {
     text-align: center;
-    width: 75%;
+    width: 40%;
+}
+
+.sizeinputReg {
+    text-align: center;
+    width: 40%;
 }
 
 .sizeInputRP {
+    font-size: 80%;
     text-align: center;
-    width: 50%;
+    width: 70%;
     padding: 0%;
 }
 
@@ -64,13 +70,14 @@
 }
 
 .sizeTurnos {
-    font-size: 150%;
-    padding-top: 3%;
+    font-size: 80%;
+    padding-top: 10%;
+    padding-bottom: 9%;
 }
 
 .sizeTurnos1 {
     padding-top: 5%;
-    font-size: 150%;
+    font-size: 60%;
 }
 
 .sizeFooter {
@@ -79,4 +86,17 @@
 
 .sizeLogo {
     width: 40%;
+}
+
+.size_mapa {
+    width: 70%;
+}
+
+.size_sucursales {
+    font-size: 50%;
+}
+
+.size_fotoTurnos {
+    padding-top: 7%;
+    width: 80%;
 }

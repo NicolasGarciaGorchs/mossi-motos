@@ -67,7 +67,7 @@
     grid-template-areas:"encabezado"
                         "sucursales"
                         "pie_de_pagina";
-    grid-template-rows: 8% 56% 35%;
+    grid-template-rows: 15% 50% 35%;
     grid-template-columns: 100%;
 }
 
@@ -87,7 +87,6 @@
     grid-area: fotoCentral;
     background-image: map-get($paleta_de_colores , primero);
 }
-
 
 #footerArea {
     grid-area: pie_de_pagina;
@@ -125,7 +124,6 @@
     padding-top: 15%;
     padding-bottom: 10%;
 }
-
 
 .formRegistro {
     grid-area: registro;

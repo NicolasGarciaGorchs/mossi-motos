@@ -1,4 +1,7 @@
-/* Vista TABLET */
+
+
+
+/* VISTA TABLET */
 
 
 
@@ -7,13 +10,12 @@
     .grid_index {
         grid-template-rows: 50% 25% 25%;
         grid-template-columns: 100%;
-        }
+    }
 
     .grid_home {
         grid-template-rows: 10.05% 33% 20% 30%;
         grid-template-columns: 100%;   
     } 
-    
     
     .grid_registro {
         grid-template-rows: 14% 20% 10%;
@@ -26,7 +28,7 @@
     }
 
     .grid_turnos {
-        grid-template-rows: 8% 56% 35%;
+        grid-template-rows: 10% 56% 35%;
         grid-template-columns: 100%;
     }
     
@@ -40,6 +42,7 @@
         grid-template-columns: 100%;
     }
 
+
     /* ID */
     
     #sponsors {
@@ -50,7 +53,6 @@
         padding-top: 1%;
         font-size: 120%;
     }
-    
     
     
     /* SIZES */
@@ -126,21 +128,52 @@
 
     .sizeInput {
         text-align: center;
-        width: 25%;
+        width: 30%;
     }
 
     .sizeInputRP {
         text-align: center;
+        width: 35%;
+        padding: 0%;
+        font-size: 200%;
+        
+    }
+
+    .sizeinputReg {
+        text-align: center;
         width: 30%;
-        padding: 1%;
+        padding:0.3%;
+
     }
 
     .sizeFooter {
         font-size: 100%;
     }
+
+    .size_fotoTurnos {
+        padding-top: 9%;
+        width: 70%;
+    }
+
+    .sizeTurnos {
+        font-size: 100%;
+        padding-top: 13%;
+        padding-bottom: 10%;
+    }
     
+    .sizeTurnos1 {
+        padding-top: 5%;
+        font-size: 80%;
+    }
     
+    .size_mapa {
+        width: 30%;
+    }
     
+    .size_sucursales {
+        font-size: 80%;
+    }
+
     
     /* PADDINGS */
     
@@ -173,6 +206,23 @@
         padding-top: 5%;
     }
     
+    .padding_sucursales{
+        padding-top: 5%;
+        padding-bottom: 4%;
+    }
+    
+    .padding_sucursales_titulo{
+        font-size: 90%;
+        padding-top: 7%;
+    }
+    
+    .texto_sucursales {
+        font-size: 110%;
+        padding-bottom: 8%;
+        padding-top:12.5%;
+    }
+
+
     /* BUTTONS */
     
     
@@ -212,8 +262,11 @@
         border-radius: 100%;
     }
     
-    
-    
+    .botonRegistro {
+        width: 15%;
+        font-size: 70%;
+    }
+
     
     /* COLORES */
     
@@ -274,7 +327,8 @@
     }
     
     .textoPagesReg {
-        padding: 9.5%;
+        padding: 10%;
+        padding-bottom: 5%;
         font-size: 150%;
         font-family: 'Jost', sans-serif;
     }
@@ -285,6 +339,7 @@
 
     .text_registro {
         font-size: 130%;
+        padding-top: 1.9%;
     }
 
     
@@ -304,6 +359,10 @@
         font-size: 22px;
     }
     
+    .sucursales{
+        grid-area: sucursales;
+    }
+    
     .formIniciarSesion {
         grid-area: formulario;
         text-align: center;
@@ -314,6 +373,7 @@
         padding-bottom: 5%;
         
     }
+
     .contenidoInicio {
         grid-area: contenido_inicio;
         padding: 15%;
@@ -332,7 +392,6 @@
         
     }
 
-    
     .footerIndex {
         grid-area: redes;
         background-image: linear-gradient(to top,rgb(255, 255, 255),rgb(107, 172, 209) );
@@ -372,8 +431,6 @@
 
 
 
-
-
 /* VISTA DESKTOP */
 
 
@@ -405,7 +462,6 @@
         grid-template-columns: 100%;
     }
 
-
     .grid_turnos {
         grid-template-areas: "encabezado" "turnos" "pie_de_pagina";
         grid-template-rows: 8% 56% 25%;
@@ -421,8 +477,10 @@
         grid-template-rows: 8% 56% 35%;
     }
     
-    /* ID */
+
+    /* ID Y AREAS GRID*/
     
+
     #sponsors {
         font-family: 'Sofia Sans', sans-serif;
         grid-area: sponsors;
@@ -439,6 +497,11 @@
 
     #productos {
         grid-area: productos;
+    }
+
+    .sucursales{
+        grid-area: sucursales;
+        padding-top: 10%;
     }
 
 
@@ -461,11 +524,6 @@
     .posicionfoto{
         display: flex;
         justify-content: center;
-    }
-
-    .sizeInputRP {
-        text-align: center;
-        width: 30%;
     }
 
     .textoPages {
@@ -493,6 +551,7 @@
         display: flex;
         justify-content: center;
     }
+
     .sizeLinkH {
         text-decoration: none;
         font-family: 'Jost', sans-serif;
@@ -512,8 +571,20 @@
     }
     
     .sizeInputRP {
+        font-size: 100%;
         text-align: center;
-        width: 30%;
+        width: 25%;
+        padding: 0%;
+    }
+
+    .sizeInput {
+        text-align: center;
+        width: 25%;
+    }
+
+    .sizeinputReg {
+        text-align: center;
+        width: 20%;
         padding: 0%;
     }
 
@@ -551,10 +622,34 @@
         font-size: 120%;
     }
     
+    .size_mapa {
+        width: 30%;
+    }
     
+    .size_sucursales {
+        font-size: 150%;
+    }
+
+    .size_fotoTurnos {
+        padding-top: 7%;
+        width: 40%;
+    }
+
+    .sizeTurnos {
+        font-size: 140%;
+        padding-top: 5%;
+        padding-bottom: 3%;
+    }
     
+    .sizeTurnos1 {
+        padding-top: 5%;
+        font-size: 130%;
+    }
+
+
     /* PADDINGS */
     
+
     .paddingTH{
         padding-top: 3%;
     }
@@ -579,9 +674,27 @@
     }
     
     .padding_registro {
-        padding-top: 2%;
+        padding-top: 2.6%;
     }
 
+    .padding_sucursales{
+        padding-top: 5%;
+        padding-bottom: 4%;
+    }
+    
+    .padding_sucursales_titulo{
+        font-size: 120%;
+        padding-top: 5%;
+    }
+    
+    
+    .texto_sucursales {
+        font-size: 150%;
+        padding-bottom: 2%;
+        padding-top:5%;
+    }
+
+    
     /* BUTTONS */
     
     
@@ -604,7 +717,7 @@
 
     .botonRegistro {
         width: 10%;
-        font-size: 90%;
+        font-size: 80%;
     }
     
     .fa-instagram:hover {
@@ -623,9 +736,9 @@
     }
     
     
-    
     /* ESTILOS Y COLORES */
     
+
     .colorRojo{
         color:map-get($paleta_de_colores , cuarto);
     }
@@ -733,6 +846,7 @@
 
     .textoPagesReg {
         padding: 4%;
+        padding-bottom: 1%;
         font-size: 100%;
         font-family: 'Jost', sans-serif;
     }
@@ -742,14 +856,13 @@
     }
 
     .text_registro {
+        padding-top: 2%;
         font-size: 100%;
     }
 
     .sucursales{
         grid-area: sucursales;
     }
-
-
 }
 
 
