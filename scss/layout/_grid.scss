@@ -96,6 +96,8 @@
 
 #productos {
     grid-area: productos;
+    font-family: 'Jost', sans-serif;
+    background-color: map-get($paleta_de_colores , sexto);
 }
 
 

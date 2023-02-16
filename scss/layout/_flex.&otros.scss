@@ -4,9 +4,7 @@
 }
 
 .productos {
-    font-family: 'Jost', sans-serif;
     text-align: center;
-    background-color: map-get($paleta_de_colores , sexto);
     font-size: 100%;
     padding: 15%;
 }
@@ -20,8 +18,19 @@
 .textoPagesR {
     padding: 10%;
     font-size: 75%;
-    font-family: 'Jost', sans-serif;
 }
+
+.texto_productos {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-size: 120%;
+}
+
+.textoProductos {
+    padding-top: 3%;
+    font-size: 100%;
+}
+
 
 .textoPagesReg {
     padding-top: 10%;

@@ -85,6 +85,8 @@
 
 #productos {
   grid-area: productos;
+  font-family: "Jost", sans-serif;
+  background-color: rgb(255, 197, 5);
 }
 
 /* AREAS GRID */
@@ -149,9 +151,7 @@
 }
 
 .productos {
-  font-family: "Jost", sans-serif;
   text-align: center;
-  background-color: rgb(255, 197, 5);
   font-size: 100%;
   padding: 15%;
 }
@@ -165,7 +165,17 @@
 .textoPagesR {
   padding: 10%;
   font-size: 75%;
-  font-family: "Jost", sans-serif;
+}
+
+.texto_productos {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  font-size: 120%;
+}
+
+.textoProductos {
+  padding-top: 3%;
+  font-size: 100%;
 }
 
 .textoPagesReg {
@@ -736,11 +746,18 @@
     font-family: "Jost", sans-serif;
   }
   .productos {
-    font-family: "Jost", sans-serif;
     text-align: center;
-    background-color: rgb(255, 197, 5);
     font-size: 60%;
     padding-top: 20%;
+  }
+  .texto_productos {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-size: 120%;
+  }
+  .textoProductos {
+    padding-top: 3%;
+    font-size: 100%;
   }
   .footerIndex1 {
     grid-area: redes;
@@ -1065,11 +1082,18 @@
     font-family: "Jost", sans-serif;
   }
   .productos {
-    font-family: "Sofia Sans", sans-serif;
     text-align: center;
-    background-color: rgb(255, 197, 5);
+    font-size: 60%;
+    padding-top: 20%;
+  }
+  .texto_productos {
+    padding-top: 5%;
+    padding-bottom: 5%;
     font-size: 120%;
-    padding: 10%;
+  }
+  .textoProductos {
+    padding-top: 3%;
+    font-size: 100%;
   }
   .textoPagesR {
     padding: 4%;

@@ -404,11 +404,20 @@
     }
 
     .productos {
-        font-family: 'Jost', sans-serif;
         text-align: center;
-        background-color:map-get($paleta_de_colores , sexto);
         font-size: 60%;
         padding-top: 20%;
+    }
+
+    .texto_productos {
+        padding-top: 5%;
+        padding-bottom: 5%;
+        font-size: 120%;
+    }
+    
+    .textoProductos {
+        padding-top: 3%;
+        font-size: 100%;
     }
 
     .footerIndex1 {
@@ -427,6 +436,7 @@
         
     }
     
+
 }
 
 
@@ -831,11 +841,20 @@
     }
 
     .productos {
-        font-family: 'Sofia Sans', sans-serif;
         text-align: center;
-        background-color:map-get($paleta_de_colores , sexto);
+        font-size: 60%;
+        padding-top: 20%;
+    }
+
+    .texto_productos {
+        padding-top: 5%;
+        padding-bottom: 5%;
         font-size: 120%;
-        padding: 10%;
+    }
+    
+    .textoProductos {
+        padding-top: 3%;
+        font-size: 100%;
     }
 
     .textoPagesR {
