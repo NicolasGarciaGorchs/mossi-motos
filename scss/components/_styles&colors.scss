@@ -23,7 +23,10 @@
 .sinDetalles {
     text-decoration: none;
     color: map-get($paleta_de_colores, tercero );
-    transition: size 0.2s;
+}
+
+.sinDetalles:hover {
+    color:map-get($paleta_de_colores, septimo )
 }
 
 .sizeLogo {

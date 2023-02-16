@@ -6,13 +6,6 @@
   box-sizing: border-box;
 }
 
-.grid_index {
-  display: grid;
-  grid-template-areas: "fotoCentral" "redes" "pie_de_pagina";
-  grid-template-rows: 40% 30% 30%;
-  grid-template-columns: 100%;
-}
-
 .grid_home {
   display: grid;
   grid-template-areas: "encabezado" "contenido_inicio" "sponsors" "pie_de_pagina";
@@ -119,8 +112,7 @@
   background-color: rgb(255, 197, 5);
   font-family: "Jost", sans-serif;
   font-size: 70%;
-  padding-top: 15%;
-  padding-bottom: 10%;
+  padding-top: 10%;
 }
 
 .sucursales {
@@ -135,16 +127,6 @@
   font-family: "Sofia Sans", sans-serif;
 }
 
-.footerIndex2 {
-  grid-area: pie_de_pagina;
-  background-color: linear-gradient(to top, rgb(250, 150, 0), rgb(255, 197, 5));
-}
-
-.footerIndex1 {
-  grid-area: redes;
-  background-color: rgb(255, 197, 5);
-}
-
 .centrarLogo {
   display: flex;
   justify-content: center;
@@ -153,7 +135,7 @@
 .productos {
   text-align: center;
   font-size: 100%;
-  padding: 15%;
+  padding-top: 10%;
 }
 
 .textoPages {
@@ -168,14 +150,16 @@
 }
 
 .texto_productos {
-  padding-top: 5%;
-  padding-bottom: 5%;
-  font-size: 120%;
+  padding: 8%;
+  padding-top: 8%;
+  padding-bottom: 11.3%;
+  font-size: 80%;
 }
 
 .textoProductos {
-  padding-top: 3%;
-  font-size: 100%;
+  padding: 8%;
+  padding-top: 0.1%;
+  font-size: 60%;
 }
 
 .textoPagesReg {
@@ -191,6 +175,10 @@
 
 .text_registro {
   font-size: 90%;
+  padding-top: 4%;
+}
+
+.text_registro_boton {
   padding-top: 4%;
 }
 
@@ -304,6 +292,12 @@
   width: 80%;
 }
 
+.size_fotoProductos {
+  padding-top: 7%;
+  width: 60%;
+  border-radius: 100%;
+}
+
 /* COLORES */
 .colorNavBar {
   background-image: linear-gradient(to bottom, rgb(250, 150, 0), rgb(255, 197, 5));
@@ -326,7 +320,10 @@
 .sinDetalles {
   text-decoration: none;
   color: black;
-  transition: size 0.2s;
+}
+
+.sinDetalles:hover {
+  color: rgb(255, 255, 255);
 }
 
 .sizeLogo {
@@ -442,16 +439,12 @@
 
 /* VISTA TABLET */
 @media only screen and (min-width: 768px) {
-  .grid_index {
-    grid-template-rows: 50% 25% 25%;
-    grid-template-columns: 100%;
-  }
   .grid_home {
     grid-template-rows: 10.05% 33% 20% 30%;
     grid-template-columns: 100%;
   }
   .grid_registro {
-    grid-template-rows: 14% 20% 10%;
+    grid-template-rows: 10% 50% 30%;
     grid-template-columns: 100%;
   }
   .grid_recuperarPassword {
@@ -549,7 +542,7 @@
   .sizeinputReg {
     text-align: center;
     width: 30%;
-    padding: 0.3%;
+    padding: 0%;
   }
   .sizeFooter {
     font-size: 100%;
@@ -557,6 +550,10 @@
   .size_fotoTurnos {
     padding-top: 9%;
     width: 70%;
+  }
+  .size_fotoProductos {
+    padding-top: 5%;
+    width: 50%;
   }
   .sizeTurnos {
     font-size: 100%;
@@ -686,7 +683,7 @@
     font-family: "Jost", sans-serif;
   }
   .textoPagesReg {
-    padding: 10%;
+    padding-top: 10.5%;
     padding-bottom: 5%;
     font-size: 150%;
     font-family: "Jost", sans-serif;
@@ -745,19 +742,28 @@
     font-size: 50%;
     font-family: "Jost", sans-serif;
   }
+  .formRegistro {
+    grid-area: registro;
+    text-align: center;
+    background-color: rgb(255, 197, 5);
+    font-family: "Jost", sans-serif;
+    font-size: 70%;
+    padding-bottom: 15%;
+    padding-top: 10%;
+  }
   .productos {
     text-align: center;
     font-size: 60%;
-    padding-top: 20%;
+    padding-top: 10%;
   }
   .texto_productos {
-    padding-top: 5%;
-    padding-bottom: 5%;
-    font-size: 120%;
+    padding-top: 10.3%;
+    padding-bottom: 11.5%;
+    font-size: 170%;
   }
   .textoProductos {
-    padding-top: 3%;
-    font-size: 100%;
+    padding: 0.5%;
+    font-size: 140%;
   }
   .footerIndex1 {
     grid-area: redes;
@@ -775,9 +781,6 @@
 }
 /* VISTA DESKTOP */
 @media only screen and (min-width: 1024px) {
-  .grid_index {
-    grid-template-rows: 40% 30% 30%;
-  }
   .grid_home {
     grid-template-areas: "encabezado" "contenido_inicio" "sponsors" "pie_de_pagina";
     grid-template-rows: 7% 22% 29% 30%;
@@ -788,7 +791,7 @@
   }
   .grid_registro {
     grid-template-areas: "encabezado" "registro" "pie_de_pagina";
-    grid-template-rows: 6% 70% 30%;
+    grid-template-rows: 5% 50% 30%;
   }
   .grid_recuperarPassword {
     grid-template-areas: "encabezado" "recuperar" "pie_de_pagina";
@@ -917,9 +920,6 @@
   .sizeFotoSponsor3:hover {
     width: 26%;
   }
-  .sizeFooter {
-    font-size: 120%;
-  }
   .size_mapa {
     width: 30%;
   }
@@ -938,6 +938,10 @@
   .sizeTurnos1 {
     padding-top: 5%;
     font-size: 130%;
+  }
+  .size_fotoProductos {
+    padding-top: 5%;
+    width: 25%;
   }
   /* PADDINGS */
   .paddingTH {
@@ -1033,18 +1037,10 @@
     text-align: center;
     font-family: "Sofia Sans", sans-serif;
   }
-  .footerIndex1 {
-    grid-area: redes;
-    background-color: rgb(255, 197, 5);
-  }
-  .footerIndex2 {
-    grid-area: pie_de_pagina;
-    background-image: linear-gradient(to top, rgb(250, 150, 0), rgb(255, 197, 5));
-  }
   .footerF {
     justify-content: center;
     text-align: center;
-    height: 20%;
+    height: 100%;
     font-size: 100%;
   }
   .fontFooter {
@@ -1062,12 +1058,10 @@
   .formRegistro {
     grid-area: registro;
     text-align: center;
-    width: 100%;
     background-color: rgb(255, 197, 5);
     font-family: "Jost", sans-serif;
     font-size: 150%;
     padding-top: 10%;
-    padding-bottom: 15%;
   }
   .formRecuperarPassword {
     grid-area: recuperar;
@@ -1084,16 +1078,16 @@
   .productos {
     text-align: center;
     font-size: 60%;
-    padding-top: 20%;
+    padding-top: 10%;
   }
   .texto_productos {
-    padding-top: 5%;
-    padding-bottom: 5%;
-    font-size: 120%;
+    padding-top: 4%;
+    padding-bottom: 5.4%;
+    font-size: 230%;
   }
   .textoProductos {
-    padding-top: 3%;
-    font-size: 100%;
+    padding-top: 1%;
+    font-size: 200%;
   }
   .textoPagesR {
     padding: 4%;

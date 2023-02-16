@@ -1,12 +1,3 @@
-.grid_index {
-    display: grid;
-    grid-template-areas:"fotoCentral"
-                        "redes"
-                        "pie_de_pagina";
-    grid-template-rows: 40% 30% 30%;
-    grid-template-columns: 100%;
-}
-
 .grid_home {
     display: grid;
     grid-template-areas:"encabezado"
@@ -133,9 +124,7 @@
     background-color:map-get($paleta_de_colores , sexto);
     font-family: 'Jost', sans-serif;
     font-size: 70%;
-    padding-top: 15%;
-    padding-bottom: 10%;
-    
+    padding-top: 10%;
 }
 
 .sucursales{
@@ -148,14 +137,4 @@
     background-color:map-get($paleta_de_colores , sexto);
     text-align: center;
     font-family: 'Sofia Sans', sans-serif;
-}
-
-.footerIndex2 {
-    grid-area: pie_de_pagina;
-    background-color:map-get($paleta_de_colores , segundo);
-}
-
-.footerIndex1 {
-    grid-area: redes;
-    background-color:map-get($paleta_de_colores , sexto);
 }
