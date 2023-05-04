@@ -1,121 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="keywords" content="motos, taller de motos, moreno, mossi, repuestos, custom, reparaciones"/>
-    <meta name="description" content="Bienvenidos a mossi motos, donde trabajamos para satisfacer a nuestros clientes"/>
-    <title>Inicio | Mossi Motos</title>
-    <!--LINK ICONO-->
-    <link rel="shortcut icon"
-        href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6lc0UtVj73nwB7RwZxZ2LiNURFNwbOXDiy0136ZuDaZIyI1K02luizik6I7xJCGTuSuM&usqp=CAU"
-        type="image/x-icon" />
-    <!--LINK AWESOME-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!--LINK GOOGLE FONTS-->
-    <!--SOFIA SANS-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@700&display=swap"
-      rel="stylesheet"
-    />
-    <!-- YELLOWTAIL -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
-    <!-- JOST -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@600&display=swap" rel="stylesheet">
-    <!--CDN BOOSTRAP-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
-    <!--LINK CSS-->
-    <link rel="stylesheet" href="./css/main.css" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="keywords"
+    content="motos, taller de motos, moreno, mossi, repuestos, custom, reparaciones, iniciar sesion, logeate" />
+  <meta name="description" content="Inicia sesion para acceder a todo nuestro contenido" />
+  <title>Iniciar Sesión | Mossi Motos</title>
+  <!--LINK ICONO-->
+  <link rel="shortcut icon"
+    href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6lc0UtVj73nwB7RwZxZ2LiNURFNwbOXDiy0136ZuDaZIyI1K02luizik6I7xJCGTuSuM&usqp=CAU"
+    type="image/x-icon" />
+  <!--LINK AWESOME-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--LINK GOOGLE FONTS-->
+  <!--SOFIA SANS-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@700&display=swap" rel="stylesheet" />
+  <!-- YELLOWTAIL -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet" />
+  <!-- JOST -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@600&display=swap" rel="stylesheet" />
+  <!--CDN BOOSTRAP-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+  <!--CDN TOASTIFY-->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <!--CDN SWEET ALERT-->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <!--LINK CSS-->
+  <link rel="stylesheet" href="../css/main.css" />
+  <link rel="stylesheet" href="../css/logear.css" />
 </head>
-<div>
-    <body class="grid_home">
-        <!-- NAVBAR -->
-      <header class="colorNavBar encabezado">
-        <div class="container">
-          <div>
-            <a class="navbar-brand posicionfoto" href="./index.html">
-              <img class="sizeLogo" src="./assets/diseños/editadobn.svg" alt="MossiMotosLogo"/>
-            </a>
-          </div>
-          <nav class="navbar navbar_medio navbar-expand-lg navbar-dark text-bg-black">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-              <div class="collapse navbar-collapse nav_bar" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto ">
-                  <li class="nav-item">
-                    <a class="nav-link fontsize_Nav" href="./pages/iniciarsesion.html">Ingresar</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link fontsize_Nav" href="./pages/turnosonline.html">Turnos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link fontsize_Nav" href="./pages/productos.html">Productos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link fontsize_Nav" href="./pages/sucursales.html">Sucursales</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-        </header>
-        <!--CONTENIDO PRINCIPAL-->
-        <main class="contenidoInicio">
-            <h2 class="sizeHome">
-                Nuestro principal objetivo es tu satisfacción a la hora de contratar
-                nuestros servicios o comprar cualquier producto de la extensa
-                propuesta que tenemos para vos!
-            </h2>
-            <h1 class="fontInicio">
-                <a class="sizeLinkH" href="./pages/registro.html">CREÁ TU CUENTA</a> Y VIVÍ
-                TU MEJOR EXPERIENCIA CON MOSSI MOTOS
-            </h1>
-        </main>
-        <!-- SECCION SPONSORS-->
-        <section id="sponsors">
-            <div>Powered by</div>
-            <div class="paddingTH">
-                <a href="https://www.instagram.com/circuitequipmentargentina/?hl=es" target="_blank"
-                    rel="noopener noreferrer"><img class="sizeFotoSponsor1" src="./assets/marcas/circuit.png" alt="logo_circuit"/></a>
-                <a href="https://www.didchain.com/" target="_blank" rel="noopener noreferrer"><img
-                        class="sizeFotoSponsor2" src="./assets/marcas/did.png" alt="logo_did"/></a>
-                <a href="https://www.castrol.com/es_ar/argentina/home.html" target="_blank"
-                    rel="noopener noreferrer"><img class="sizeFotoSponsor3" src="./assets/marcas/castrol.png" alt="logo_castrol"/></a>
-            </div>
-        </section>
-        <!-- FOOTER -->
-        <footer id="footerArea">
-            <div class="footerF">
-                <p class="fontFooter">Seguinos en nuestras redes!</p>
-                <a href="https://web.whatsapp.com" target="_blank" rel="noopener noreferrer"><i
-                        class="fa-brands fa-whatsapp colorNegro fa-2x"></i></a>
 
-                <a href="https://www.instagram.com/mossimotos" target="_blank" rel="noopener noreferrer"><i
-                        class="fa-brands fa-instagram colorNegro fa-2x"></i></a>
 
-                <a href="https://www.facebook.com/mossimotos" target="_blank" rel="noopener noreferrer"><i
-                        class="fa-brands fa-facebook colorNegro fa-50 fa-2x"></i></a>
-                <div class="paddingFU">
-                    <p>Mossi Motos</p>
-                    <p>Todos los derechos reservados © 2023</p>
-                </div>
-            </div>
-        </footer>
-        <!--CDN BOOSTRAP-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-            crossorigin="anonymous"></script>
-    </body>
-</div>
+<body class="indexFondo grid_iniciarSesion">
+  <!-- NAVBAR -->
+  <header class="encabezado">
+    <div class="container">
+      <a class="navbar-brand posicionfoto" href="../index.html">
+        <img class="sizeLogo" src="../assets/diseños/diseñoblanco .png" alt="MossiMotosLogo">
+      </a>
+    </div>
+  </header>
+
+  <div class="colorBlanco textoPages">
+    <h1>¡INGRESÁ PARA ACCEDER A LOS BENEFICIOS DE NUESTRA COMUNIDAD!</h1>
+  </div>
+
+  <!-- FORMULARIO INICIAR SESION -->
+
+  <form class="form">
+    <input type="text" class="input" placeholder="Usuario" id="username" required>
+    <input type="password" class="input" placeholder="Contraseña" id="password" required>
+    <a class="recupCont" href="./pages/recuperar-password.html">Olvidé mi contraseña</a>
+    <button type="submit" value="Login" id='login-btn' required>Ingresar</button>
+    <div>
+      <div class="paddingForm">
+        <label>No tenés cuenta?</label>
+        <div>
+          <a class="" href="./pages/registro.html">Click Aquí</a>
+        </div>
+      </div>
+  </form>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footerIn">
+      <p class="fontFooter">Seguinos en nuestras redes!</p>
+      <a href="https://web.whatsapp.com" target="_blank" rel="noopener noreferrer"><i
+          class="fa-brands fa-whatsapp botonRedes1 fa-2x"></i></a>
+      <a href="https://www.instagram.com/mossimotos" target="_blank" rel="noopener noreferrer"><i
+          class="fa-brands fa-instagram botonRedes2 fa-2x"></i></a>
+      <a href="https://www.facebook.com/mossimotos" target="_blank" rel="noopener noreferrer"><i
+          class="fa-brands fa-facebook botonRedes3 fa-50 fa-2x"></i></a>
+      <div class="paddingFU">
+        <p>Mossi Motos</p>
+        <p>Todos los derechos reservados © 2023</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--CDN BOOSTRAP-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <script src="/js/login.js"></script>
+</body>
+
+
 </html>

@@ -48,6 +48,13 @@
   grid-template-columns: 100%;
 }
 
+.grid_carrito {
+  display: grid;
+  grid-template-areas: "encabezado" "carrito" "pie_de_pagina";
+  grid-template-rows: 15% 60% 35%;
+  grid-template-columns: 100%;
+}
+
 .grid_sucursales {
   display: grid;
   grid-template-areas: "encabezado" "sucursales" "pie_de_pagina";
@@ -1050,15 +1057,16 @@
   .formIniciarSesion {
     grid-area: formulario;
     text-align: center;
-    background-color: rgb(255, 197, 5);
+    color:white;
     font-family: "Jost", sans-serif;
     font-size: 150%;
     padding: 10%;
   }
+
   .formRegistro {
     grid-area: registro;
-    text-align: center;
     background-color: rgb(255, 197, 5);
+    text-align: center;
     font-family: "Jost", sans-serif;
     font-size: 150%;
     padding-top: 10%;
@@ -1109,5 +1117,22 @@
   }
   .sucursales {
     grid-area: sucursales;
+  }
+  /* colorNavBar */
+  
+  .indexFondo {
+    background-image: url(../assets/motos/sredit.png) ;
+  }
+
+  .colorBlancoIn { 
+    color: white;
+    font-size: 150%;
+  }
+
+  .colorBlanco { 
+    color: white;
+    font-size: 150%;
+    text-align: center;
+    font-family: "Jost", sans-serif;
   }
 }/*# sourceMappingURL=main.css.map */

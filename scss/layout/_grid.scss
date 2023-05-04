@@ -31,7 +31,7 @@
     grid-template-areas:"encabezado"
                         "registro"
                         "pie_de_pagina";
-    grid-template-rows: 10% 50% 30%;
+    grid-template-rows: 100% 100% 100%;
     grid-template-columns:100%;
 }
 
@@ -50,6 +50,15 @@
                         "productos"
                         "pie_de_pagina";
     grid-template-rows: 15% 46% 35%;
+    grid-template-columns: 100%;
+}
+
+.grid_carrito {
+    display: grid;
+    grid-template-areas:"encabezado"
+                        "carrito"
+                        "pie_de_pagina";
+    grid-template-rows: 15% 60% 35%;
     grid-template-columns: 100%;
 }
 
