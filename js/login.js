@@ -18,9 +18,9 @@ const findAndValidate = () => {
             background: '#ffffff',
             color: '#000000',
             confirmButtonColor: '#FFA500'
-        // }).then(function () {
-        //     window.location = "./pages/cascoseindumentaria.html";
-        //
+        }).then(function () {
+            window.location = "pages/home.html";
+        
         });
     } else {
         Swal.fire({

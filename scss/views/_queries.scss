@@ -49,6 +49,10 @@
         font-size: 120%;
     }
     
+    #footerI {
+        grid-area: pie_de_pagina;
+        padding-top: 1.5%;
+    }
     
     /* SIZES */
 
@@ -247,26 +251,12 @@
         font-size: 120%;
     }
     
-    .fa-instagram:hover {
-        background-color: rgb(255, 255, 255);
-        border-radius: 100%;
-    }
-    
-    .fa-whatsapp:hover {
-        background-color: rgb(255, 255, 255);
-        border-radius: 100%;
-    }
-    
-    .fa-facebook:hover {
-        background-color: rgb(255, 255, 255);
-        border-radius: 100%;
-    }
-    
     .botonRegistro {
         width: 15%;
         font-size: 70%;
     }
 
+    
     
     /* COLORES */
     
@@ -283,14 +273,6 @@
         color:map-get($paleta_de_colores , tercero);
         margin:0.5%;
     }
-    
-    .colorNavBar{
-        background-image: map-get($paleta_de_colores , primero );
-    }
-    
-
-
-
 
     /* FONTS */
 
@@ -459,18 +441,21 @@
 @media only screen and (min-width: 1024px) {
 
     .grid_home {
-        grid-template-areas: "encabezado" "contenido_inicio" "sponsors" "pie_de_pagina";
-        grid-template-rows: 7% 22% 29% 30%;
+        grid-template-areas: "encabezado" "contenido_inicio" "sponsors" "carousel" "pie_de_pagina";
+        grid-template-rows: 7% 22% 20% 28% 24%;
     }   
     
-    .grid_iniciarSesion {
-        grid-template-areas: "encabezado" "formulario" "pie_de_pagina";
-            grid-template-rows: 7% 56% 30%;
+    .grid_index {
+        grid-template-areas:"encabezado"
+                            "textoIndex"
+                            "formulario"
+                            "pie_de_pagina";
+        grid-template-rows: 11% 20% 50% 30%; 
     }
     
     .grid_registro {
         grid-template-areas: "encabezado" "registro" "pie_de_pagina";
-        grid-template-rows: 5% 50% 30%;
+        grid-template-rows: 10% 70% 28%;
     }
 
     .grid_recuperarPassword {
@@ -481,17 +466,17 @@
 
     .grid_turnos {
         grid-template-areas: "encabezado" "turnos" "pie_de_pagina";
-        grid-template-rows: 8% 56% 25%;
+        grid-template-rows: 5% 50% 25%;
     }
     
-    .grid_productos {
+    .grid_repuestos {
         grid-template-areas: "encabezado" "productos" "pie_de_pagina";
-        grid-template-rows: 8% 56% 35%;
+        grid-template-rows: 5% 83% 12.5%;
     }
 
     .grid_sucursales {
         grid-template-areas: "encabezado" "sucursales" "pie_de_pagina";
-        grid-template-rows: 8% 56% 35%;
+        grid-template-rows: 7% 50% 35%;
     }
     
 
@@ -502,14 +487,20 @@
         font-family: 'Sofia Sans', sans-serif;
         grid-area: sponsors;
         text-align: center;
-        background-color:map-get($paleta_de_colores , sexto);
         font-size: 150%;
+        background-color: rgb(12, 12, 12);
+        color:rgb(175, 174, 174);
     }
     
     #footerArea {
         grid-area: pie_de_pagina;
-        background-image: map-get($paleta_de_colores, segundo );
-        padding: 8%;
+        padding-top: 1%;
+        color:rgb(175, 174, 174);
+    }
+
+    #footerI {
+        grid-area: pie_de_pagina;
+        padding-top: 1.5%;
     }
 
     #productos {
@@ -521,6 +512,14 @@
         padding-top: 10%;
     }
 
+    .grid_index {
+        background-image: url(/assets/motos/sredit.png);
+    }
+
+    .fondoHome {
+        background-image: url(/assets/fondo/fondosr.png);
+        opacity: 92%;
+    }
 
     /* SIZES */
 
@@ -564,7 +563,6 @@
     }
 
     .colorNavBar{
-        background-image: map-get($paleta_de_colores , primero );
         display: flex;
         justify-content: center;
     }
@@ -649,14 +647,16 @@
     }
 
     .sizeTurnos {
-        font-size: 140%;
-        padding-top: 5%;
+        font-size: 180%;
+        padding-top: 1%;
         padding-bottom: 3%;
+        color:rgb(175, 174, 174);
     }
     
     .sizeTurnos1 {
         padding-top: 5%;
         font-size: 130%;
+        color:rgb(175, 174, 174);
     }
 
     .size_fotoProductos {
@@ -669,11 +669,11 @@
     
 
     .paddingTH{
-        padding-top: 3%;
+        padding-top: 1%;
     }
     
     .paddingFU {
-        padding-top: 10%;
+        padding-top: 7%;
         font-family: 'Sofia Sans', sans-serif;
         text-align: center;
         font-size: 100%;
@@ -698,18 +698,19 @@
     .padding_sucursales{
         padding-top: 5%;
         padding-bottom: 4%;
+        color:rgb(175, 174, 174);
     }
     
     .padding_sucursales_titulo{
         font-size: 120%;
-        padding-top: 5%;
+        padding-top: 9%;
     }
     
-    
     .texto_sucursales {
-        font-size: 150%;
-        padding-bottom: 2%;
-        padding-top:5%;
+        font-size: 180%;
+        padding-bottom: 7%;
+        padding-top: 0.5%;
+        color:rgb(175, 174, 174);
     }
 
     
@@ -739,20 +740,19 @@
     }
     
     .fa-instagram:hover {
-        background-color: map-get($paleta_de_colores, septimo );
+        background-color:map-get($paleta_de_colores , decimo);
         border-radius: 100%;
     }
     
     .fa-whatsapp:hover {
-        background-color: map-get($paleta_de_colores, septimo );
+        background-color:map-get($paleta_de_colores , onceavo);
         border-radius: 100%;
     }
     
     .fa-facebook:hover {
-        background-color: map-get($paleta_de_colores, septimo );
+        background-color:map-get($paleta_de_colores , doceavo);
         border-radius: 100%;
     }
-    
     
     /* ESTILOS Y COLORES */
     
@@ -775,6 +775,11 @@
         text-decoration: underline 1px map-get($paleta_de_colores , tercero);
         padding-bottom: 3%;
     }
+
+    .subrayado {
+        text-decoration: underline 1px rgb(175, 174, 174);
+        color:rgb(175, 174, 174);
+    }
     
     .logoIndex {
         display: flex;
@@ -785,36 +790,44 @@
     .contenidoInicio {
         grid-area: contenido_inicio;
         padding: 15%;
-        background-color:map-get($paleta_de_colores , sexto);
+        background-color: rgb(12, 12, 12);
         text-align: center;
         font-family: 'Sofia Sans', sans-serif;
+        color:rgb(175, 174, 174);
     }
+
 
     .footerF {
         justify-content: center;
         text-align: center;
-        height: 100%;
         font-size: 100%;
     }
 
-    .fontFooter {
+
+    .fontFooterI {
         font-family: 'Yellowtail', cursive;
         font-size: 200%;
     }
 
-    .formIniciarSesion {
+    .fontFooter {
+        font-family: 'Yellowtail', cursive;
+        font-size: 220%;
+        color:white;
+    }
+
+    .formIndex {
         grid-area: formulario;
         text-align: center;
-        background-color:map-get($paleta_de_colores , sexto);
-        font-family: 'Jost', sans-serif;
+        font-family: 'Sofia Sans', sans-serif;
         font-size: 150%;
-        padding: 10%;
+        padding-top: 4%;
+        padding-bottom: 1%;
     }
 
     .formRegistro {
         grid-area: registro;
         text-align: center;
-        background-color:map-get($paleta_de_colores , sexto);
+        background-color: rgb(12, 12, 12);
         font-family: 'Jost', sans-serif;
         font-size: 150%;
         padding-top: 10%;
@@ -822,10 +835,12 @@
     }
 
     .formRecuperarPassword {
+        background-color: rgb(12, 12, 12);
         grid-area: recuperar;
         font-size: 150%;
         padding-top: 10%;
         padding-bottom: 10%;
+        color:rgb(175, 174, 174);
     }
 
     .recuperar {
@@ -860,10 +875,11 @@
     }
 
     .textoPagesReg {
-        padding: 4%;
-        padding-bottom: 1%;
-        font-size: 100%;
+        padding-top:1%;
+        padding-bottom: 7%;
+        font-size: 120%;
         font-family: 'Jost', sans-serif;
+        color:rgb(175, 174, 174);
     }
 
     .ingresar_email {
@@ -873,11 +889,41 @@
     .text_registro {
         padding-top: 2%;
         font-size: 100%;
+        color:rgb(175, 174, 174);
     }
 
     .sucursales{
         grid-area: sucursales;
     }
+    
+    // NUEVO
+
+
+    .textoBlanco {
+        padding-top: 2%;
+        font-size: 300%;
+        color:map-get($paleta_de_colores , septimo );
+        font-family: 'Jost', sans-serif;
+    }
+
+    .carousel {
+        grid-area: carousel;
+        width: 50%;
+        height: 70%;
+    }
+
+    .carouselText {
+        display: flex;
+        justify-content: center;    
+    }
+    
+
+    .alinear{
+        background-color: rgb(12, 12, 12);
+        display: flex;
+        justify-content: center;
+    }
+
 }
 
 

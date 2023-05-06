@@ -74,7 +74,7 @@ const newUser = () => {
                 color: '#000000',
                 confirmButtonColor: '#FFA500'
             }).then(function () {
-                window.location = "";
+                window.location = "../pages/home.html";
             });
 
             const addNewUser = {

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,7 +7,7 @@
   <meta name="keywords"
     content="motos, taller de motos, moreno, mossi, repuestos, custom, reparaciones, iniciar sesion, logeate" />
   <meta name="description" content="Inicia sesion para acceder a todo nuestro contenido" />
-  <title>Iniciar Sesión | Mossi Motos</title>
+  <title>Inicio | Mossi Motos</title>
   <!--LINK ICONO-->
   <link rel="shortcut icon"
     href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6lc0UtVj73nwB7RwZxZ2LiNURFNwbOXDiy0136ZuDaZIyI1K02luizik6I7xJCGTuSuM&usqp=CAU"
@@ -41,62 +40,52 @@
   <link rel="stylesheet" href="../css/main.css" />
   <link rel="stylesheet" href="../css/logear.css" />
 </head>
-
-
-<body class="indexFondo grid_iniciarSesion">
+<body class="grid_index indexFondo">
   <!-- NAVBAR -->
   <header class="encabezado">
     <div class="container">
-      <a class="navbar-brand posicionfoto" href="../index.html">
-        <img class="sizeLogo" src="../assets/diseños/diseñoblanco .png" alt="MossiMotosLogo">
+      <a class="navbar-brand posicionfoto" href="./index.html">
+        <img class="sizeLogo" src="./assets/diseños/diseñoblanco.png" alt="MossiMotosLogo">
       </a>
     </div>
   </header>
-
-  <div class="colorBlanco textoPages">
-    <h1>¡INGRESÁ PARA ACCEDER A LOS BENEFICIOS DE NUESTRA COMUNIDAD!</h1>
+  <!-- TEXTO -->
+  <div class="textoIndex">
+    <p class="textoBlanco">¡INGRESÁ PARA ACCEDER A LOS BENEFICIOS DE NUESTRA COMUNIDAD!</p>
   </div>
-
   <!-- FORMULARIO INICIAR SESION -->
-
-  <form class="form">
+  <form class="form formIndex">
     <input type="text" class="input" placeholder="Usuario" id="username" required>
     <input type="password" class="input" placeholder="Contraseña" id="password" required>
     <a class="recupCont" href="./pages/recuperar-password.html">Olvidé mi contraseña</a>
     <button type="submit" value="Login" id='login-btn' required>Ingresar</button>
-    <div>
       <div class="paddingForm">
         <label>No tenés cuenta?</label>
         <div>
-          <a class="" href="./pages/registro.html">Click Aquí</a>
+          <a class="" href="./pages/registrate.html">Click Aquí</a>
         </div>
       </div>
   </form>
-
   <!-- FOOTER -->
-  <footer>
-    <div class="footerIn">
-      <p class="fontFooter">Seguinos en nuestras redes!</p>
+  <footer id="footerI">
+    <div class="footerF">
+      <p class="fontFooterI">Seguinos en nuestras redes!</p>
       <a href="https://web.whatsapp.com" target="_blank" rel="noopener noreferrer"><i
-          class="fa-brands fa-whatsapp botonRedes1 fa-2x"></i></a>
+          class="fa-brands fa-whatsapp fa-3x"></i></a>
       <a href="https://www.instagram.com/mossimotos" target="_blank" rel="noopener noreferrer"><i
-          class="fa-brands fa-instagram botonRedes2 fa-2x"></i></a>
+          class="fa-brands fa-instagram fa-3x"></i></a>
       <a href="https://www.facebook.com/mossimotos" target="_blank" rel="noopener noreferrer"><i
-          class="fa-brands fa-facebook botonRedes3 fa-50 fa-2x"></i></a>
-      <div class="paddingFU">
+          class="fa-brands fa-facebook fa-50 fa-3x"></i></a>
+      <div class="footerInx">
         <p>Mossi Motos</p>
         <p>Todos los derechos reservados © 2023</p>
       </div>
     </div>
   </footer>
-
-
   <!--CDN BOOSTRAP-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>
   <script src="/js/login.js"></script>
 </body>
-
-
 </html>

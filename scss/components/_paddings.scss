@@ -2,6 +2,10 @@
     padding-top: 3%;
 }
 
+.paddingPow {
+    padding-top: 5%;
+}
+
 .paddingFU {
     padding-top: 10%;
     font-size: 80%;
@@ -38,3 +42,11 @@
     padding-top:10%;
 }
 
+//nuevo
+
+.footerInx {
+    color:map-get($paleta_de_colores , septimo );
+    padding-top: 2%;
+    padding-bottom:2%;
+    font-family: 'Sofia Sans', sans-serif;
+}

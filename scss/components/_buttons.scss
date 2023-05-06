@@ -11,18 +11,30 @@
     background-color:map-get($paleta_de_colores , noveno);
 }
 
+.fa-instagram {
+    color:map-get($paleta_de_colores , septimo);
+}
+
+.fa-whatsapp {
+    color: map-get($paleta_de_colores , septimo);
+}
+
+.fa-facebook {
+    color:map-get($paleta_de_colores , septimo);
+}
+
 .fa-instagram:hover {
-    background-color:map-get($paleta_de_colores , septimo);
+    background-image:map-get($paleta_de_colores , decimo);
     border-radius: 100%;
 }
 
 .fa-whatsapp:hover {
-    background-color:map-get($paleta_de_colores , septimo);
+    background-color:map-get($paleta_de_colores , onceavo);
     border-radius: 100%;
 }
 
 .fa-facebook:hover {
-    background-color:map-get($paleta_de_colores , septimo);
+    color:map-get($paleta_de_colores , septimo);
     border-radius: 100%;
 }
 
@@ -40,3 +52,4 @@
     width: 20%;
     font-size: 50%;
 }
+

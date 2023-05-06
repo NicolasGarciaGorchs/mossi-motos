@@ -3,7 +3,7 @@
 
 
 .colorNavBar{
-    background-image: map-get($paleta_de_colores , primero);
+    background-color: rgb(12, 12, 12);
 }
 
 .colorRojo{
@@ -46,14 +46,22 @@
 .fontFooter {
     font-family: 'Yellowtail', cursive;
     font-size: 150%;
+    padding-bottom: 1%;
+    color: map-get($paleta_de_colores , septimo);
+}
+
+.fontFooterI {
+    font-family: 'Yellowtail', cursive;
+    font-size: 200%;
+    color: map-get($paleta_de_colores , septimo);
 }
 
 .subrayado {
-    text-decoration: underline 1px map-get($paleta_de_colores , tercero);
+    text-decoration: underline 1px map-get($paleta_de_colores , sexto);
 }
 
 .fondoTurnos {
-    background-color:map-get($paleta_de_colores , sexto);
+    background-color: rgb(12, 12, 12);
     font-family: 'Jost', sans-serif;
     text-align: center;
     padding: 10%;
@@ -61,6 +69,21 @@
 
 .fontsize_Nav {
     font-size: 90%;
-    color: map-get($paleta_de_colores, tercero);
+    color:rgb(175, 174, 174);
     font-family: 'Jost', sans-serif;
+}
+
+.fontsize_Nav:hover {
+    color: map-get($paleta_de_colores , sexto);
+}
+
+.textoIndex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textoBlanco {
+    font-size: 300%;
+    color:map-get($paleta_de_colores , septimo );
 }

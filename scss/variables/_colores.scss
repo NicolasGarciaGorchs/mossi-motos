@@ -3,10 +3,13 @@ $segundo: linear-gradient(to top, rgb(250, 150, 0), rgb(255, 197, 5));
 $tercero: black;
 $cuarto: rgb(190, 5, 5); 
 $quinto: rgb(27, 27, 207);
-$sexto: rgb(255, 197, 5);
+$sexto: rgb(255, 160, 70);
 $septimo: rgb(255, 255, 255);
 $octavo:  rgb(49, 53, 53); 
 $noveno:  rgb(20, 20, 20);
+$decimo: linear-gradient(to bottom, rgb(255, 0, 242), rgb(255, 197, 5));
+$onceavo :rgb(0, 255, 34);
+$doceavo: rgb(0, 68, 255);
 
 $paleta_de_colores:(
     primero: $primero,
@@ -16,5 +19,9 @@ $paleta_de_colores:(
     quinto: $quinto,
     sexto: $sexto,
     septimo: $septimo,
-    octavo: $octavo
+    octavo: $octavo,
+    noveno: $noveno,
+    decimo: $decimo,
+    onceavo: $onceavo,
+    doceavo: $doceavo
 );

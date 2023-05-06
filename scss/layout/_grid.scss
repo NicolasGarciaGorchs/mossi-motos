@@ -2,18 +2,20 @@
     display: grid;
     grid-template-areas:"encabezado"
                         "contenido_inicio"
+                        "carousel"
                         "sponsors"
                         "pie_de_pagina";
-    grid-template-rows: 10% 30% 20% 30%;
+    grid-template-rows: 10% 30% 20% 20% 30%;
     grid-template-columns:auto;   
 }
 
-.grid_iniciarSesion {
+.grid_index {
     display: grid;
     grid-template-areas:"encabezado"
+                        "textoIndex"
                         "formulario"
                         "pie_de_pagina";
-    grid-template-rows: 11% 50% 30%;
+    grid-template-rows: 11% 20% 50% 30%;
     grid-template-columns:100%; 
 }
 
@@ -44,7 +46,7 @@
     grid-template-columns: 100%;
 }
 
-.grid_productos {
+.grid_repuestos {
     display: grid;
     grid-template-areas:"encabezado"
                         "productos"
@@ -77,27 +79,30 @@
 #sponsors {
     font-family: 'Sofia Sans', sans-serif;
     grid-area: sponsors;
-    background-color:map-get($paleta_de_colores , sexto);
     text-align: center;
     font-size: 60%;
     padding-top: 1%;
+    background-color: rgb(12, 12, 12);
 }
 
 #fotoCentral {
     grid-area: fotoCentral;
-    background-image: map-get($paleta_de_colores , primero);
+}
+
+#footerI {
+    grid-area: pie_de_pagina;
+    padding-top: 1.5%;
 }
 
 #footerArea {
     grid-area: pie_de_pagina;
-    background-image: map-get($paleta_de_colores , segundo);
     padding-top: 10%;
+    background-color: rgb(12, 12, 12);
 }
 
 #productos {
     grid-area: productos;
     font-family: 'Jost', sans-serif;
-    background-color: map-get($paleta_de_colores , sexto);
 }
 
 
@@ -107,13 +112,11 @@
     grid-area: encabezado;
 }
 
-.formIniciarSesion {
+.formIndex {
     grid-area: formulario;
     text-align: center;
-    background-color:map-get($paleta_de_colores , sexto);
     font-family: 'Jost', sans-serif;
     font-size: 65%;
-    padding-top: 15%;
     padding-bottom: 10%;
     
 }
@@ -121,7 +124,7 @@
 .formRecuperarPassword {
     grid-area: recuperar;
     text-align: center;
-    background-color: map-get($paleta_de_colores , sexto);
+    background-color: rgb(80,80,80);
     font-family: 'Jost', sans-serif;
     padding-top: 15%;
     padding-bottom: 10%;
@@ -130,7 +133,7 @@
 .formRegistro {
     grid-area: registro;
     text-align: center;
-    background-color:map-get($paleta_de_colores , sexto);
+    background-color: rgb(80,80,80);
     font-family: 'Jost', sans-serif;
     font-size: 70%;
     padding-top: 10%;
@@ -143,7 +146,6 @@
 .contenidoInicio {
     grid-area: contenido_inicio;
     padding: 10%;
-    background-color:map-get($paleta_de_colores , sexto);
     text-align: center;
     font-family: 'Sofia Sans', sans-serif;
 }
