@@ -119,7 +119,7 @@
   text-align: center;
   background-color: rgb(80, 80, 80);
   font-family: "Jost", sans-serif;
-  font-size: 70%;
+  font-size: 65%;
   padding-top: 10%;
 }
 
@@ -402,14 +402,6 @@
   font-size: 80%;
   font-family: "Sofia Sans", sans-serif;
   text-align: center;
-}
-
-.paddingForm {
-  padding-top: 5%;
-}
-
-.padding_registro {
-  padding-top: 5%;
 }
 
 .padding_turnos {
@@ -837,11 +829,11 @@
   }
   .grid_registro {
     grid-template-areas: "encabezado" "registro" "pie_de_pagina";
-    grid-template-rows: 10% 70% 28%;
+    grid-template-rows: 11% 55% 48%;
   }
   .grid_recuperarPassword {
-    grid-template-areas: "encabezado" "recuperar" "pie_de_pagina";
-    grid-template-rows: 6% 50% 40%;
+    grid-template-areas: "encabezado" "texto" "recuperar" "pie_de_pagina";
+    grid-template-rows: 15% 18% 30% 50%;
     grid-template-columns: 100%;
   }
   .grid_turnos {
@@ -887,6 +879,14 @@
   .fondoHome {
     background-image: url(/assets/fondo/fondosr.png);
     opacity: 92%;
+  }
+  .textoRecup {
+    font-family: "Sofia Sans", sans-serif;
+    text-align: center;
+    font-size: 180%;
+    grid-area: texto;
+    background-color: rgb(12, 12, 12);
+    color: rgb(175, 174, 174);
   }
   /* SIZES */
   .fontsize_Nav {
@@ -1012,17 +1012,26 @@
     text-align: center;
     font-size: 100%;
   }
+  .paddingReg {
+    padding-bottom: 10%;
+    padding-top: 7%;
+    font-family: "Sofia Sans", sans-serif;
+    text-align: center;
+    font-size: 100%;
+  }
+  .paddingRec {
+    padding-top: 7%;
+    font-family: "Sofia Sans", sans-serif;
+    text-align: center;
+    font-size: 100%;
+    padding-bottom: 8%;
+  }
   .paddingForm {
     padding-top: 2%;
   }
   .paddingFormR {
-    padding-top: 2%;
-  }
-  .paddingFormReg {
-    padding-bottom: 2%;
-  }
-  .padding_registro {
-    padding-top: 2.6%;
+    width: 50%;
+    padding-top: 0.1%;
   }
   .padding_sucursales {
     padding-top: 5%;
@@ -1053,7 +1062,17 @@
     width: 9%;
     font-size: 80%;
   }
+  .botonRegistrar {
+    padding-top: 3%;
+    width: 100%;
+  }
   .botonRegistro {
+    background-color: orange;
+    width: 350%;
+    font-size: 100%;
+  }
+  .botonRegistro:hover {
+    background-color: green;
     width: 10%;
     font-size: 80%;
   }
@@ -1130,22 +1149,21 @@
     grid-area: registro;
     text-align: center;
     background-color: rgb(12, 12, 12);
-    font-family: "Jost", sans-serif;
+    font-family: "Sofia Sans", sans-serif;
     font-size: 150%;
     padding-top: 10%;
   }
   .formRecuperarPassword {
+    font-family: "Sofia Sans", sans-serif;
     background-color: rgb(12, 12, 12);
     grid-area: recuperar;
     font-size: 150%;
-    padding-top: 10%;
     padding-bottom: 10%;
     color: rgb(175, 174, 174);
   }
   .recuperar {
     grid-area: recuperar;
     text-align: center;
-    background-color: rgb(107, 172, 209);
     font-family: "Jost", sans-serif;
   }
   .productos {
@@ -1163,24 +1181,19 @@
     font-size: 200%;
   }
   .textoPagesR {
-    padding: 4%;
+    padding-top: 8%;
     font-size: 100%;
     font-family: "Jost", sans-serif;
   }
   .textoPagesReg {
     padding-top: 1%;
     padding-bottom: 7%;
-    font-size: 120%;
+    font-size: 150%;
     font-family: "Jost", sans-serif;
     color: rgb(175, 174, 174);
   }
   .ingresar_email {
     font-size: 100%;
-  }
-  .text_registro {
-    padding-top: 2%;
-    font-size: 100%;
-    color: rgb(175, 174, 174);
   }
   .sucursales {
     grid-area: sucursales;

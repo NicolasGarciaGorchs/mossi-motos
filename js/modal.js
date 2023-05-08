@@ -20,6 +20,10 @@ modeloCarrito.addEventListener('click', (e) => {
 
     if (e.target.classList.contains('boton-eliminar')) {
         eliminarProductoCarrito(e.target.value)
+    } else {
+        (e.target.classList.contains('pagar'))
+            eliminarProductoCarrito(e.target.value)
+                
     }
-})
+});
 

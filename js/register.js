@@ -9,10 +9,10 @@ const newUser = () => {
     const password = document.querySelector('#new-password').value;
     const confirmPassword = document.querySelector('#new-confirmPass').value;
 
-    if (!yourName || !mail || !username || !password || !confirmPassword) {
+    if (!yourName || !yourSurname || !mail || !username || !password || !confirmPassword) {
         Swal.fire({
             title: 'Faltan datos para registrarte',
-            text: 'Inténtelo nuevamente',
+            text: 'Intente nuevamente',
             icon: 'warning',
             confirmButtonText: 'Reintentar',
             background: '#ffffff',
@@ -22,7 +22,7 @@ const newUser = () => {
     } else if (password !== confirmPassword) {
         Swal.fire({
             title: 'Las contraseñas no coinciden',
-            text: 'Inténtelo nuevamente',
+            text: 'Intente nuevamente',
             icon: 'warning',
             confirmButtonText: 'Reintentar',
             background: '#ffffff',
@@ -33,11 +33,10 @@ const newUser = () => {
         const compareUser = users.find(o => o.username === username);
         const compareEmail = users.find(o => o.mail === mail);
 
-
         if (compareUser && compareEmail) {
             Swal.fire({
-                title: 'Error!',
-                text: 'Ese usuario e email ya se encuentran registrados',
+                title: 'Ese usuario e email ya se encuentran registrados',
+                text: 'Intente nuevamente',
                 icon: 'error',
                 confirmButtonText: 'Reintentar',
                 background: '#ffffff',
@@ -46,8 +45,8 @@ const newUser = () => {
             });
         } else if (compareUser) {
             Swal.fire({
-                title: 'Error!',
-                text: 'Ese usuario ya está registrado',
+                title: 'Ese usuario ya está registrado',
+                text: 'Intente nuevamente',
                 icon: 'error',
                 confirmButtonText: 'Reintentar',
                 background: '#ffffff',
@@ -57,7 +56,7 @@ const newUser = () => {
         } else if (compareEmail) {
             Swal.fire({
                 title: 'Email ya registrado',
-                text: 'Intente con otra dirección',
+                text: 'Intente nuevamente',
                 icon: 'warning',
                 confirmButtonText: 'Reintentar',
                 background: '#ffffff',
@@ -74,7 +73,7 @@ const newUser = () => {
                 color: '#000000',
                 confirmButtonColor: '#FFA500'
             }).then(function () {
-                window.location = "../pages/home.html";
+                window.location = "../index.html";
             });
 
             const addNewUser = {
@@ -84,7 +83,6 @@ const newUser = () => {
                 username: username,
                 password: password
             };
-
 
             users.push(addNewUser);
 
@@ -96,3 +94,9 @@ const newUser = () => {
         }
     }
 };
+
+
+const btnRegister = document.querySelector('#register-btn');
+if (btnRegister) {
+    btnRegister.addEventListener('click', newUser);
+}

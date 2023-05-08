@@ -74,7 +74,7 @@ const pintarCarrito = (carrito) => {
       <p>Precio: $${producto.precio}</p>
       <p id=cantidad${producto.id}>Cantidad: ${producto.cantidad}</p>
       <button class="btn waves-effect waves-ligth boton-eliminar" value="${producto.id}">X</button>
-    `
+      `
     contenedor.appendChild(div)
   });
 }
